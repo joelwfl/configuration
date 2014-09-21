@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1 d",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "V ľubovoľnom z vašich kalendárov si v rýchlosti si zobrazte, koľko času máte do ďalšej schôdzky. Kliknutím na tlačidlo prejdete do svojho kalendára."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Kontrola Kalendára Google"
+   },
+   "hours": {
+      "message": "$1 h",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Kalendár Google"
+   },
+   "minutes": {
+      "message": "$1 min",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Podpora viacerých Kalendárov"
+   },
+   "multicalendartooltip": {
+      "message": "Ak chcete povoliť podporu viacerých kalendárov, začiarknite toto políčko"
+   },
+   "name": {
+      "message": "Kontrola Kalendára Google (od spoločnosti Google)"
+   },
+   "notitle": {
+      "message": "(Bez názvu)"
+   },
+   "optionstitle": {
+      "message": "Kontrola Kalendára Google"
+   },
+   "status_saved": {
+      "message": "Nastavenia boli uložené."
+   },
+   "status_saving": {
+      "message": "Prebieha ukladanie...."
+   },
+   "title": {
+      "message": "Kontrola Kalendára Google"
+   }
+}

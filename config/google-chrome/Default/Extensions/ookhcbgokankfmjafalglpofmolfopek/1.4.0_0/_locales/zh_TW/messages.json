@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1d",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "從任何日曆皆可迅速查看距離下次會議還剩下多少時間。按一下按鈕即可前往您的日曆。"
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1h",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google 日曆"
+   },
+   "minutes": {
+      "message": "$1m",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "多重日曆支援"
+   },
+   "multicalendartooltip": {
+      "message": "請勾選此方塊，以啟用多重日曆支援功能"
+   },
+   "name": {
+      "message": "Google Calendar Checker (由 Google 提供)"
+   },
+   "notitle": {
+      "message": "(無標題)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "設定已儲存。"
+   },
+   "status_saving": {
+      "message": "儲存中...."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

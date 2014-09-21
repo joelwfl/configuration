@@ -1,0 +1,919 @@
+﻿<!DOCTYPE html>
+<html> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<meta name=viewport content='initial-scale=1.0' />
+	<title>WeatherBug</title>
+	<script type="text/javascript" src="scripts/jquery-1.5.1.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui-1.8.12.custom.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.ui.selectmenu.js"></script>
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<script type="text/javascript" src="scripts/location.js"></script>
+	<script type="text/javascript" src="scripts/forecast.js"></script>
+	<script type="text/javascript" src="scripts/obs.js"></script>
+	<script type="text/javascript" src="scripts/cameras.js"></script>
+	<script type="text/javascript" src="scripts/maps.js"></script>
+    <script type="text/javascript" src="scripts/embedded_ga_host.js"></script>
+	<script type="text/javascript" src="scripts/notifications.js"></script>
+    <script type="text/javascript" src="scripts/ral.min.js"></script>
+	<link href="css/main/jquery-ui-1.8.12.custom.css" rel="stylesheet" type="text/css" />
+	<link href="css/alerts/jquery-ui-1.8.12.custom.css" rel="stylesheet" type="text/css" />
+	<link href="css/common.css" rel="stylesheet" type="text/css" />
+	<link href="css/wind.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="flexbox vertical">
+
+	<div id="room" class="flexbox vertical flexbox-box">
+
+		<div id="wall-wrap" class="flexbox vertical stretch">
+
+			<header id="header-wrap" class="flexbox vertical">
+				<div id="header" class="flexbox horizontal center">
+					<a href="http://weather.weatherbug.com" target="_blank">
+						<img id="logo" src="images/logo.png" alt="WeatherBug - WeatherBug.com" />
+					</a>
+					<div id="prev-location-wrap">
+						<div id="prev-location" class="location-button"><button>Previous Location</button></div>
+					</div>
+					<div id="locations-wrap" class="flexbox horizontal">
+						<ul id="locations" class="flexbox horizontal start flexbox-box"></ul>
+					</div>
+					<div id="next-location-wrap">
+						<div id="next-location" class="location-button"><button>Next Location</button></div>
+					</div>
+					<div id="location-panel" class="flexbox end pack end">
+						<div id="add-location">
+							<button>Location</button>
+						</div>	
+					</div>
+				</div>
+			</header>
+
+			<div id="wall">
+
+				<div id="left-column">
+
+
+					<div id="map-panel" class="panel-dialog">
+						<div id="map-panel-header" class="panel-dialog-header">
+
+							<span class="panel-title">Maps</span>
+
+							<div class="close-button" title="close maps"></div>
+
+							<div class="full-screen-button" title="maximize"></div>
+							
+							<select id="layer-select">
+						        <option value="0">None</option>
+						        <option value="1">Temperature</option>
+						        <option value="17">Pressure</option>
+						        <option value="14">Humidity</option>
+						        <option value="11">Wind Speed</option>
+						        <option value="52" selected>Radar (U.S.)</option>
+						        <option value="45">Infrared Satellite</option>
+						        <option value="46">Visible Satellite</option>
+						        <option value="47">Global Infrared Satellite</option>
+					        </select>
+						</div>
+						<div class="content-area">
+		    				<iframe id="map-iframe" class="map-iframe" seamless="seamless" src="map_sandbox.html"></iframe>
+						</div>
+					</div>
+
+					<div id="obs-panel" class="panel-dialog">
+						<div class="panel-dialog-header">
+
+							<span class="panel-title">Detailed Observations</span>
+
+							<div class="close-button" title="close obs"></div>
+						</div>
+						<div id="obs-wrap" class="obs flexbox vertical center content-area">
+							<div id="reported-at-row" class="flexbox-box flexbox horizontal center row">
+								As reported at:&nbsp;<div class="obs stationName"><span class="value"></span></div>
+							</div>
+							<div class="flexbox-box flexbox horizontal center row">
+								<div class="flexbox-box flexbox vertical center">
+									<div class="temperature-wrap">
+										<span class="obs temperature"><span class="value"></span></span><span class="obs temperatureUnits"><span class="value"></span></span>
+									</div>
+									<div class="feels-like-wrap">
+										<span class="obs feelsLikeLabel"><span class="value"></span></span> <span class="obs feelsLike"><span class="value"></span></span><span class="obs temperatureUnits"><span class="value"></span></span>
+									</div>
+								</div>
+								<div class="flexbox-box flexbox vertical center pack-center wind">
+									<div class="flexbox-box windspeed-wrap flexbox vertical center pack-center">
+										<div class="obs windSpeed"><span class="value"></span></div>
+										<div class="obs windUnits"><span class="value"></span></div>
+									</div>
+									<img src="images/wind-vane-arrow.png" alt="" width=157 height=156 />
+								</div>
+								<div class="obs icon flexbox-box flexbox vertical center">
+									<span class="value"></span>
+									<div class="alert-icon">
+										<span class="alertCount"><span class="value"></span></span>
+									</div>
+									<div class="obs desc"><span class="value"></span></div>
+								</div>
+							</div>
+							<div class="flexbox-box flexbox horizontal center row">
+								<div class="flexbox-box flexbox vertical center">
+									<div class="obs humidity">
+										<span class="value"></span><span class="obs humidityUnits"><span class="value"></span></span>
+									</div>
+									<div class="obs dewpoint">
+										<span class="value"></span><span class="obs temperatureUnits"><span class="value"></span></span>
+									</div>
+								</div>
+								<div class="flexbox-box flexbox vertical center">
+									<div class="obs press"><span class="new-label">Pressure: </span><span class="value"></span><span class="obs pressUnits"><span class="value"></span></span></div>
+									<div class="obs rainMonthly"><span class="new-label">Monthly Rain: </span><span class="value"></span><span class="obs rainUnits"><span class="value"></span></span></div>
+								</div>
+								<div class="flexbox-box flexbox vertical center">
+									<div class="obs sunriseDateTime"><span class="new-label">Sunrise: </span><span class="value"></span></div>
+									<div class="obs sunsetDateTime"><span class="new-label">Sunset: </span><span class="value"></span></div>
+								</div>
+							</div>
+							<div id="obs-so-far-today" class="ui-widget">
+								<div class="ui-widget-header ui-helper-reset ui-state-default">
+									<header>So Far Today</header>
+								</div>
+								<div class="ui-widget-content ui-helper-reset ui-widget-content flexbox-box flexbox horizontal center row">
+									<div class="flexbox-box flexbox vertical center">
+										<div class="obs temperatureHigh">
+											<span class="value"></span><span class="obs temperatureUnits"><span class="value"></span></span>
+										</div>
+										<div class="obs temperatureLow">
+											<span class="value"></span><span class="obs temperatureUnits"><span class="value"></span></span>
+										</div>
+									</div>
+									<div class="flexbox-box flexbox vertical center">
+										<div class="obs rainDaily">
+											<span class="new-label">Daily Rain: </span><span class="value"></span><span class="obs rainUnits"><span class="value"></span></span>
+										</div>
+										<div class="obs rainRate">
+											<span class="new-label">Rain Rate: </span><span class="value"></span><span class="obs rateUnits"><span class="value"></span></span>
+										</div>
+									</div>
+									<div class="flexbox-box flexbox vertical center">
+										<span class="new-label">Wind Gust: </span>
+										<span class="obs gustDirection"><span class="value"></span></span>
+										<span class="obs gustSpeed"><span class="value"></span></span>
+										<span class="obs windUnits"><span class="value"></span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div id="cameras-panel" class="panel-dialog" title="Weather Cameras">
+						<div class="panel-dialog-header">
+
+							<span class="panel-title">Weather Cameras</span>
+
+							<div class="close-button" title="close cameras"></div>
+						</div>
+						<div class="content-area">
+							<div id="camera" class="camera">
+								<img alt="" />
+							</div>
+
+							<div id="camera-prev" class="camera-button prev">previous</div>
+							<div id="camera-next" class="camera-button next">next</div>
+
+							<div class='image-description-bar'>
+								<div class="name"></div>
+								<div class="city"></div>
+								<span class="image-number"></span>
+							</div>
+						</div>
+					</div>
+
+					<div id="forecast-panel" class="panel-dialog">
+						<div class="panel-dialog-header">
+
+							<span class="panel-title">Forecast</span>
+
+							<div class="close-button" title="close forecast"></div>
+						</div>
+						<div class="content-area">
+							<div id="forecasts" class="flexbox-box flexbox horizontal stretch">
+								<div class="tabs">
+									<ul>
+										<li id="fcast-7day-tab"><a href="#fcast-7day-wrap">Summary Forecast</a></li>
+										<li id="fcast-detailed-tab"><a href="#fcast-detailed-wrap">Detailed Forecast</a></li>
+										<li id="fcast-hourly-tab"><a href="#fcast-hourly-wrap">Hourly Forecast</a></li>
+									</ul>
+									<div id="fcast-7day-wrap" class="forecast-wrap horizontal stretch">
+										<table id="fcast-7day" class="forecast">
+											<thead>
+												<tr>
+													<th scope="col" class="dayTitle day0"><span class="value"></span></th>
+													<th scope="col" class="dayTitle day1"><span class="value"></span></th>
+													<th scope="col" class="dayTitle day2"><span class="value"></span></th>
+													<th scope="col" class="dayTitle day3"><span class="value"></span></th>
+													<th scope="col" class="dayTitle day4"><span class="value"></span></th>
+													<th scope="col" class="dayTitle day5"><span class="value"></span></th>
+													<th scope="col" class="dayTitle day6"><span class="value"></span></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="days">
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="dayTitle day0"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="dayIcon icon day0 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="high day0"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="dayDesc desc day0">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="dayTitle day1"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="dayIcon icon day1 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="high day1"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="dayDesc desc day1">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="dayTitle day2"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="dayIcon icon day2 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="high day2"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="dayDesc desc day2">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="dayTitle day3"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="dayIcon icon day3 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="high day3"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="dayDesc desc day3">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="dayTitle day4"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="dayIcon icon day4 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="high day4"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="dayDesc desc day4">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="dayTitle day5"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="dayIcon icon day5 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="high day5"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="dayDesc desc day5">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="dayTitle day6"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="dayIcon icon day6 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="high day6"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="dayDesc desc day6">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr class="nights">
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="nightTitle day0"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox horizontal center">
+																	<div class="nightIcon icon day0 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="low day0"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="nightDesc desc day0">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="nightTitle day1"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="nightIcon icon day1 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="low day1"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="nightDesc desc day1">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="nightTitle day2"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="nightIcon icon day2 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="low day2"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="nightDesc desc day2">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="nightTitle day3"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="nightIcon icon day3 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="low day3"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="nightDesc desc day3">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="nightTitle day4"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="nightIcon icon day4 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="low day4"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="nightDesc desc day4">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="nightTitle day5"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="nightIcon icon day5 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="low day5"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="nightDesc desc day5">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>
+														<div class="forecast-day-wrap">
+															<header class="nightTitle day6"><span class="value"></span></header>
+															<div class="forecast-day-content">
+																<div class="flexbox vertical center">
+																	<div class="nightIcon icon day6 flexbox-box"><span class="value"></span></div>
+																	<div class="temperature-wrap flexbox-box">
+																		<span class="low day6"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+																	</div>
+																</div>
+																<div class="nightDesc desc day6">
+																	<span class="value"></span>
+																</div>
+															</div>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div id="fcast-detailed-wrap" class="forecast-wrap">
+										<div class="forecast-content-wrap flexbox horizontal flexbox-box">
+											<div id="fcast-detailed" class="forecast-content forecast flexbox-box flexbox vertical">
+												<div class="fcast-detailed day0 flexbox vertical">
+													<header>
+														<span  class="dayTitle day0"><span class="value"></span></span>, 
+														<span class="dateTime day0"><span class="value"></span></span>
+													</header>
+													<div class="day flexbox horizontal">
+														<div class="dayIcon icon day0 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal center pack-center">
+															<span class="high day0"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="dayPred pred day0 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+													<div class="night flexbox horizontal">
+														<div class="nightIcon icon day0 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal center pack-center">
+															<span class="low day0"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="nightPred pred day0 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+												</div>
+												<div class="fcast-detailed day1 flexbox vertical">
+													<header>
+														<span  class="dayTitle day1"><span class="value"></span></span>, 
+														<span class="dateTime day1"><span class="value"></span></span>
+													</header>
+													<div class="day flexbox horizontal">
+														<div class="dayIcon icon day1 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal center pack-center">
+															<span class="high day1"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="dayPred pred day1 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+													<div class="night flexbox horizontal">
+														<div class="nightIcon icon day1 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal vertical center pack-center">
+															<span class="low day1"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="nightPred pred day1 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+												</div>
+												<div class="fcast-detailed day2 flexbox vertical">
+													<header>
+														<span  class="dayTitle day2"><span class="value"></span></span>, 
+														<span class="dateTime day2"><span class="value"></span></span>
+													</header>
+													<div class="day flexbox horizontal">
+														<div class="dayIcon icon day2 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal center pack-center">
+															<span class="high day2"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="dayPred pred day2 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+													<div class="night flexbox horizontal">
+														<div class="nightIcon icon day2 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal vertical center pack-center">
+															<span class="low day2"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="nightPred pred day2 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+												</div>
+												<div class="fcast-detailed day3 flexbox vertical">
+													<header>
+														<span  class="dayTitle day3"><span class="value"></span></span>, 
+														<span class="dateTime day3"><span class="value"></span></span>
+													</header>
+													<div class="day flexbox horizontal">
+														<div class="dayIcon icon day3 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal center pack-center">
+															<span class="high day3"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="dayPred pred day3 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+													<div class="night flexbox horizontal">
+														<div class="nightIcon icon day3 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal vertical center pack-center">
+															<span class="low day3"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="nightPred pred day3 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+												</div>
+												<div class="fcast-detailed day4 flexbox vertical">
+													<header>
+														<span  class="dayTitle day4"><span class="value"></span></span>, 
+														<span class="dateTime day4"><span class="value"></span></span>
+													</header>
+													<div class="day flexbox horizontal">
+														<div class="dayIcon icon day4 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal center pack-center">
+															<span class="high day4"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="dayPred pred day4 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+													<div class="night flexbox horizontal">
+														<div class="nightIcon icon day4 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal vertical center pack-center">
+															<span class="low day4"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="nightPred pred day4 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+												</div>
+												<div class="fcast-detailed day5 flexbox vertical">
+													<header>
+														<span  class="dayTitle day5"><span class="value"></span></span>, 
+														<span class="dateTime day5"><span class="value"></span></span>
+													</header>
+													<div class="day flexbox horizontal">
+														<div class="dayIcon icon day5 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal center pack-center">
+															<span class="high day5"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="dayPred pred day5 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+													<div class="night flexbox horizontal">
+														<div class="nightIcon icon day5 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal vertical center pack-center">
+															<span class="low day5"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="nightPred pred day5 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+												</div>
+												<div class="fcast-detailed day6 flexbox vertical">
+													<header>
+														<span  class="dayTitle day6"><span class="value"></span></span>, 
+														<span class="dateTime day6"><span class="value"></span></span>
+													</header>
+													<div class="day flexbox horizontal">
+														<div class="dayIcon icon day6 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal center pack-center">
+															<span class="high day6"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="dayPred pred day6 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+													<div class="night flexbox horizontal">
+														<div class="nightIcon icon day6 flexbox vertical center pack-center"><span class="value"></span></div>
+														<div class="temperature-wrap flexbox horizontal vertical center pack-center">
+															<span class="low day6"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+														</div>
+														<div class="nightPred pred day6 flexbox-box flexbox horizontal center pack-start">
+															<p class="value"></p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="forecast-slider-wrap border-box flexbox vertical center pack-center">
+												<div class="forecast-slider flexbox-box border-box"></div>
+											</div>
+										</div>
+									</div>
+									<div id="fcast-hourly-wrap" class="forecast-wrap vertical">
+										<header class="header border-box">
+											<table class="forecast-header">
+												<thead>
+													<tr>
+														<th class="dateTime">Time</th>
+														<th class="conditions">Conditions</th>
+														<th class="chancePrecip">Chance Precip</th>
+														<th class="feelsLike">Feels Like</th>
+														<th class="humidity">Humidity</th>
+														<th class="dewPoint">Dew Point</th>
+														<th class="wind">Wind</th>
+														<th class="skyCover obs">Sky Cover</th>
+													</tr>
+												</thead>
+											</table>
+											<select id="fcast-hourly-select"></select>
+										</header>
+										<div class="forecast-content-wrap flexbox horizontal flexbox-box">
+											<div id="fcast-hourly" class="forecast-content forecast flexbox-box flexbox vertical"></div>
+											<div class="forecast-slider-wrap border-box flexbox vertical center pack-center">
+												<div class="forecast-slider flexbox-box border-box"></div>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="alerts-panel" class="panel-dialog" title="Alerts">
+						<div class="panel-dialog-header">
+
+							<span class="panel-title">Alerts</span>
+
+							<div class="close-button" title="close alerts"></div>
+						</div>
+						<div class="content-area">
+							<div id='alerts-dialog-wrap' class='alerts' />
+								<div id="alerts"></div>
+							</div>
+						</div>
+					</div>
+
+					<div id="big-window">
+						<div id="big-window-frame"></div>
+						<div id="window-pane">
+							<video id="video" width="582" height="380" autoplay loop><source src="videos/day_clear.webm" /></video>
+							<img id="window-camera" width="582" height="380" src="images/videos/day_clear.jpg" alt="Clear" />
+						</div>
+					</div>
+
+					<div id="forecast-tiles-container">
+						<table id="fcast-3day" class="forecast">
+							<thead>
+								<tr>
+									<th class="dayTitle day0">
+										<span class="value"></span>
+									</th>
+									<th class="dayTitle day1">
+										<span class="value"></span>
+									</th>
+									<th class="dayTitle day2">
+										<span class="value"></span>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="icon">
+									<td class="dayIcon day0">
+										<span class="value"></span>
+									</td>
+									<td class="dayIcon day1">
+										<span class="value"></span>
+									</td>
+									<td class="dayIcon day2">
+										<span class="value"></span>
+									</td>
+								</tr>
+								<tr>
+									<td class="dayDesc desc day0">
+										<span class="value"></span>
+									</td>
+									<td class="dayDesc desc day1">
+										<span class="value"></span>
+									</td>
+									<td class="dayDesc desc day2">
+										<span class="value"></span>
+									</td>
+									
+								</tr>
+								<tr>
+									<td>
+										<div class="flexbox horizontal">
+											<div class="flexbox horizontal center pack-end flexbox-box forecast-hi-wrap">
+												<span class="high day0"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+											</div>
+											<div class="flexbox horizontal center flexbox-box forecast-lo-wrap">
+												<span class="low day0"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="flexbox horizontal">
+											<div class="flexbox horizontal center pack-end flexbox-box forecast-hi-wrap">
+												<span class="high day1"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+											</div>
+											<div class="flexbox horizontal center flexbox-box forecast-lo-wrap">
+												<span class="low day1"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="flexbox horizontal">
+											<div class="flexbox horizontal center pack-end flexbox-box forecast-hi-wrap">
+												<span class="high day2"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+											</div>
+											<div class="flexbox horizontal center flexbox-box forecast-lo-wrap">
+												<span class="low day2"><span class="value"></span></span><span class="temperatureUnits"><span class="value"></span></span>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="social-container">
+	    				<iframe id="social-iframe" seamless="seamless" src="social_sandbox.html"></iframe>
+					</div>
+
+				</div>
+
+				<div id="right-column">
+
+					<div id="obs-dashboard">
+
+						<div id="location-name"></div>
+
+						<div id="temp-wrap-container" class="temp-info-wrap">
+							<div class="temperature-wrap">
+								<div id="obs-temp-container" class="obs temperature"><span class="value"></span></div>
+								<div id="obs-temp-unit-container" class="obs temperatureUnits"><span class="value"></span></div>
+							</div>
+							<div id="feels-like-container" class="feels-like-wrap">
+								<span class="obs feelsLikeLabel new-label"><span class="value"></span></span> <span class="obs feelsLike"><span class="value"></span></span><span class="obs temperatureUnits"><span class="value"></span></span>
+							</div>
+						</div>
+						<div id="obs-icon-container" class="obs icon vertical">
+							<span class="value"></span>
+							<div class="alert-icon">
+								<span class="alertCount"><span class="value"></span></span>
+							</div>
+						</div>
+						<div id="obs-more-details">
+							<div class="obs desc"><span class="value"></span></div>
+							<div id="obs-hi-lo-wrap" class="temperature-wrap">
+								<span class="obs temperatureHigh"><span class="value"></span></span><span class="obs temperatureUnits"><span class="value"></span></span>
+								<span class="obs temperatureLow"><span class="value"></span></span><span class="obs temperatureUnits"><span class="value"></span></span>
+							</div>
+							<div class="wind-wrap">
+								<span class="obs windDirection"><span class="value"></span></span>
+								<span class="obs windSpeed"><span class="value"></span></span>
+								<span class="obs windUnits"><span class="value"></span></span>
+							</div>
+							<div class="obs humidity">
+								<span class="value"></span><span class="obs humidityUnits"><span class="value"></span></span>
+							</div>
+						</div>
+					</div>
+					
+					<div id="buttons-container">
+						<button id="obs-icon" style="display:none">Detailed Observations</button>
+						<button id="forecast-icon" style="display:none">Forecasts</button>
+						<button id="map-icon" style="display:none">Weather Maps</button>
+						<button id="camera-icon" style="display:none">Cameras</button>
+						<button id="refresh-icon" class="refresh" style="display:none;">Refresh All Weather Data</button>
+					</div>
+					
+					<div id="ad-container">
+						<div id="ad-728x90-wrap" class="ad-wrap">
+							<div id="ad-720x90" class="ad">
+								<!-- <div id="wXx13-ad" class="wXx13" onload="document.getElementById('wXx13').style.visibility='hidden'"></div> -->
+								<iframe id="wXx13-webview" class="ad-webview" allowTransparency="true"></iframe>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<footer class="flexbox vertical center pack-center flexbox-box content-box" id="floor-wrap">
+			<div id="floor" class="flexbox vertical center pack-center flexbox-box">
+			</div>
+		</footer>
+
+	</div>
+
+	<div id="dialogs" style="display:none">
+		<div id="settings-wrap">
+			<div id="settings" class="flexbox vertical stretch">
+				<div class="flexbox horizontal stretch">
+					<fieldset class="ui-widget-content flexbox vertical flexbox-box">
+						<legend><label for="units-0">Temperature Units</label></legend>
+						<input type="radio" name="units" id="units-0" value="0" checked="true" /><label for="units-0">English</label>
+						<input type="radio" name="units" id="units-1" value="1" /><label for="units-1">Metric</label>
+					</fieldset>
+					<fieldset class="ui-widget-content flexbox vertical flexbox-box">
+						<legend><label for="intlUnits-0">International Temperature Units</label></legend>
+						<input type="radio" name="intlUnits" id="intlUnits-0" value="0" checked="true" /><label for="intlUnits-0">English</label>
+						<input type="radio" name="intlUnits" id="intlUnits-1" value="1" /><label for="intlUnits-1">Metric</label>
+					</fieldset>
+				</div>
+				<fieldset class="ui-widget-content flexbox horiztonal">
+					<legend>Window Options</legend>
+					<input type="checkbox" name="showCameraInWindow" id="showCameraInWindow"/>
+					<label for="showCameraInWindow">The closest weather station camera image will display in the window (if available) instead of the weather animation.</label>
+				</fieldset>
+			</div>
+		</div>
+		<div id="help-wrap" class="flexbox vertical">
+			<div id="help" class="flexbox vertical flexbox-box">
+				<dl>
+					<dt>WeatherBug</dt>
+					<dd class="version"></dd>
+				</dl>
+				<p>
+					<!--<a href="mailto:chromeAppFeedback@weatherbug.com?subject=WeatherBug%20Chrome%20Application%20Feedback">
+						Please email us your feedback!
+					</a>-->
+					Please email us your feedback! - chromeAppFeedback@weatherbug.com
+				</p>
+				<div id="help-contents" class="flexbox-box flexbox vertical">
+					<iframe id='help-sandbox' class="flexbox-box" src="help/window-help.html"></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="search-location-wrap" class="search-locations" title="Search for a Location">
+			<p class="error"></p>
+			<div class="flexbox horizontal">
+				<label class="flexbox-box" for="search-location">Enter a Zip Code, City, or Address:</label>
+				<input class="flexbox-box" type="text" id="search-location" value="12345" />
+			</div>
+		</div>
+		<div id="confirm-location-wrap" class="search-locations" title="Select a Location">
+			<p class="error"></p>
+			<div class="flexbox horizontal">
+				<label class="flexbox-box" for="confirm-location">Select:</label>
+				<select id="confirm-location"></select>
+			</div>
+		</div>
+		<div id="delete-location-wrap" class="search-locations" title="Are you sure you want to delete this location?">
+			<div class="flexbox horizontal">
+				<header><h1><span class="displayName"><span class="value"></span></span></h1></header>
+				<span class="index" style="display:none"><span class="value"></span></span>
+			</div>
+		</div>
+	</div>
+
+	<div id="offline-panel">
+		<div class="offline-content-area">
+			<div class="overlay">
+				<div class="title">No Internet Connection Detected</div>
+				<div class="text">The weather information displayed is from the last time WeatherBug had an internet connection; it will be updated when the connection is restored.</div>
+			</div>
+		</div>
+	</div>
+
+	<div id='window-options-conatiner'>
+		<!--<div id="close-app-icon" class="icon" title="close">&#10006;</div>
+		<div id="minimize-app-icon" class="icon" title="minimize"></div>-->
+		<div id="help-icon" class="icon" title="help">&#63;</div>
+		<div id="settings-icon" class="icon" title="settings"></div>
+	</div>
+
+	<div id="omniture" style="position:absolute; bottom:1em; left:0; height:1px; width:1px; line-height:1px;">
+
+	</div>
+    <iframe id="embedded_ga" seamless="seamless" src="embedded_ga_host.html" style="display:none;"></iframe>
+    <!-- Moved all inline js files to this one file-->
+    <script type="text/javascript" src="scripts/trackdt.js"></script>
+
+	<div id="wXx13" class="wXx13" style="overflow: hidden; position: absolute; visibility: hidden; line-height:0;"></div>
+    
+</body>
+</html>

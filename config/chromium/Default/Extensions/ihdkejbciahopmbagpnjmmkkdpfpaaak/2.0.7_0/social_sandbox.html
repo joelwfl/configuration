@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' chrome-extension: https://apis.google.com https://static.addtoany.com;"/>
+    <meta charset="utf-8">
+    <title>Social Sandbox</title>
+	<style type="text/css">
+		html, body {
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+		}
+
+
+		#google-plus-container {
+			float: left;
+		}
+		#facebook-like-container {
+			float: left;
+			width: 100px;
+		}
+		#add-to-any-box {
+			margin-top: 4px;
+			float:right;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="facebook-like-container">
+		<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fweather.weatherbug.com%2Flabs%2Fweatherbug-weather-window-for-google-chrome.html&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+	</div>
+	
+	<!--<div id="google-plus-container">
+		<div class="g-plusone" data-size="medium" data-href="https://chrome.google.com/webstore/detail/weather-window-by-weather/ihdkejbciahopmbagpnjmmkkdpfpaaak"></div>
+	</div> -->
+ 
+	<!-- AddToAny BEGIN -->
+	<div id="add-to-any-box" class="a2a_kit a2a_default_style">
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_google_gmail"></a>
+	</div>
+    <script type="text/javascript" src="scripts/social_sandbox.js"></script>
+	<script type="text/javascript" src="https://static.addtoany.com/menu/page.js"></script>
+	<!-- AddToAny END -->
+
+</body>
+</html>
+
+

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'PFDinDisplayPro';
+    src: url('/css/pfdindisplaypro-thin-webfont.eot');
+    src: url('/css/pfdindisplaypro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/css/pfdindisplaypro-thin-webfont.woff') format('woff'),
+    url('/css/pfdindisplaypro-thin-webfont.ttf') format('truetype'),
+    url('/css/pfdindisplaypro-thin-webfont.svg#PFDinDisplayProThin') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}

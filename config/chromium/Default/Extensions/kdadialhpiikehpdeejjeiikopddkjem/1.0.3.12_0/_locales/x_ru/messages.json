@@ -1,0 +1,286 @@
+{
+    "extension_description": {
+        "message": "Any.DO помогает вам помнить все, что вам нужно сделать.",
+        "description": "Used primarily in installation dialogs and such"
+    },
+
+    "task_added": {
+        "message": "Задача успешно добавлена.",
+        "description": "Gmail: Shown after adding a task"
+    },
+    "error_must_login_first": {
+        "message": "Сначала вам нужно войти в Any.DO.",
+        "description": "Shown when trying to add tasks from Gmail when the user isn't logged in to Any.DO in the extension"
+    },
+
+    "remind_me": {
+        "message": "Напомнить мне",
+        "description": "Primary Gmail Button"
+    },
+    "add_this_thread": {
+        "message": "Добавить эту задачу ",
+        "description": "Gmail button tooltip"
+    },
+    "add_to_my_anydo": {
+        "message": "Добавить в мое Any.DO",
+        "description": "Gmail dropdown: Main Title"
+    },
+    "gmail_task_title_label": {
+        "message": "Название",
+        "description": "Label before task title field"
+    },
+
+    "date_today": {
+        "message": "Сегодня"
+    },
+    "date_tomorrow": {
+        "message": "Завтра"
+    },
+    "date_this_week": {
+        "message": "На этой неделе"
+    },
+    "date_later": {
+        "message": "Позже"
+    },
+    "date_custom": {
+        "message": "Пользовательский"
+    },
+
+    "in_2_hours": {
+        "message": "Через 2 ч.",
+        "description": "A short links to add quick reminders. Specifically for 2 hours from now. Must be as short as possible"
+    },
+    "in_x_hours": {
+        "message": "Через $number$ ч.",
+        "description": "A short link to add quick reminders. Must be as short as possible.",
+        "placeholders": {
+            "number": {
+                "content": "$1",
+                "example": "4"
+            }
+        }
+    },
+    "10am": {
+        "message": "10 утра",
+        "description": "Keep it short"
+    },
+    "1pm": {
+        "message": "1 дня",
+        "description": "Keep it short"
+    },
+    "5pm": {
+        "message": "5 вечера",
+        "description": "Keep it short"
+    },
+    "reminder_window_title": {
+        "message": "Установить время "
+    },
+    "alert_when": {
+        "message": "Когда:",
+        "description": "Label in front of the alert time dropdowns"
+    },
+
+    "today": {
+        "message": "Сегодня"
+    },
+    "sun": {
+        "message": "Вс"
+    },
+    "mon": {
+        "message": "Пн"
+    },
+    "tue": {
+        "message": "Вт"
+    },
+    "wed": {
+        "message": "Ср"
+    },
+    "thu": {
+        "message": "Чт"
+    },
+    "fri": {
+        "message": "Пт"
+    },
+    "sat": {
+        "message": "Сб"
+    },
+
+    "jan": {
+        "message": "Янв."
+    },
+    "feb": {
+        "message": "Февр."
+    },
+    "mar": {
+        "message": "Март"
+    },
+    "apr": {
+        "message": "Апр."
+    },
+    "may": {
+        "message": "Май"
+    },
+    "jun": {
+        "message": "Июнь"
+    },
+    "jul": {
+        "message": "Июль"
+    },
+    "aug": {
+        "message": "Авг."
+    },
+    "sep": {
+        "message": "Сент."
+    },
+    "oct": {
+        "message": "Окт."
+    },
+    "nov": {
+        "message": "Нояб."
+    },
+    "dec": {
+        "message": "Дек."
+    },
+
+    "back": {
+        "message": "Назад"
+    },
+    "set": {
+        "message": "Установить"
+    },
+
+
+    "welcome_title": {
+        "message": "Привет!",
+        "description": "Top headline in welcome screen"
+    },
+    "welcome_intro": {
+        "message": "Синхронизируйтесь со своим мобильным приложением и начните делать вещи",
+        "description": "Into paragraph"
+    },
+    "register": {
+        "message": "Зарегистрироваться"
+    },
+    "login": {
+        "message": "Логин"
+    },
+    "log_in": {
+        "message": "Войти"
+    },
+    "forgot": {
+        "message": "Забыли пароль?"
+    },
+    "your_email": {
+        "message": "Ваш адрес эл. почты"
+    },
+    "password": {
+        "message": "Пароль"
+    },
+    "choose_a_password": {
+        "message": "Выберите пароль"
+    },
+    "enter_your_name": {
+        "message": "Введите свое имя"
+    },
+    "already": {
+        "message": "Уже зарегистрированы?"
+    },
+
+    "priority": {
+        "message": "Приоритет"
+    },
+    "folder": {
+        "message": "Папка"
+    },
+    "reminder": {
+        "message": "Напоминание"
+    },
+    "notes": {
+        "message": "Примечания"
+    },
+    "share": {
+        "message": "поделиться"
+    },
+
+    "personal": {
+        "message": "Личное"
+    },
+    "work": {
+        "message": "Работа"
+    },
+
+    "add_note": {
+        "message": "Добавить новое примечание"
+    },
+
+    "choose_folder": {
+        "message": "Выбрать папку"
+    },
+    "new_folder": {
+        "message": "Новая папка...",
+        "description": "Placeholder"
+    },
+    "insert_new_task": {
+        "message": "Вставить новую задачу...",
+        "description": "Placeholder"
+    },
+    "show_by_date": {
+        "message": "Показать по дате"
+    },
+    "show_by_folder": {
+        "message": "Показать по папкам"
+    },
+    "clear_completed": {
+        "message": "Очистить выполненные задачи"
+    },
+    "user_options": {
+        "message": "Параметры пользователя"
+    },
+    "pop_out": {
+        "message": "Во вспл.окне"
+    },
+    "send_feedback": {
+        "message": "Отправьте нам отзыв"
+    },
+    "week_start": {
+        "message": "Начало недели"
+    },
+    "sign_out": {
+        "message": "Выйти"
+    },
+
+    "things": {
+        "message": "дела"
+    },
+
+    "context_add_to_anydo": {
+        "message": "Добавить в Any.DO",
+        "description": "Context Menu Title"
+    },
+
+    "dismiss": {
+        "message": "Отклонить"
+    },
+    "snooze": {
+        "message": "Отложить"
+    },
+    "5_minutes": {
+        "message": "5 минут"
+    },
+    "15_minutes": {
+        "message": "15 минут"
+    },
+    "30_minutes": {
+        "message": "30 минут"
+    },
+    "1_hour": {
+        "message": "1 час"
+    },
+    "3_hours": {
+        "message": "3 часа"
+    },
+    "tomorrow": {
+        "message": "завтра"
+    }
+}
+

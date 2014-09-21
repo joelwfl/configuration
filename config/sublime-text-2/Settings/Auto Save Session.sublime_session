@@ -1,0 +1,1106 @@
+{
+	"folder_history":
+	[
+		"/home/joel/.config/plank",
+		"/home/joel",
+		"/home/joel/Documents"
+	],
+	"last_window_id": 5,
+	"settings":
+	{
+		"new_window_height": 627.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/joel/configs/xresources.julius",
+				"/home/joel/.Xresources",
+				"/home/joel/.local/share/applications/wine-extension-ini.desktop",
+				"/home/joel/.config/openbox/rc.xml",
+				"/home/joel/.local/share/applications/mutt.desktop",
+				"/home/joel/.local/share/applications/chrome-pjkljhegncpnkpknbcohdijeoejaedia-Default.desktop",
+				"/home/joel/xresources/grey-and-red.xresources",
+				"/home/joel/.local/share/applications/ranger.desktop",
+				"/usr/share/applications/Thunar.desktop",
+				"/usr/bin/cortex",
+				"/home/joel/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+				"/home/joel/.pastebinit.xml",
+				"/home/joel/.config/sublime-text-2/Packages/Default/Symbol List.tmPreferences.cache",
+				"/home/joel/xresourcesback",
+				"/home/joel/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+				"/home/joel/.config/plank/dock1/settings",
+				"/home/joel/configs/vitsnyggresources",
+				"/home/joel/configs/mörkresource",
+				"/home/joel/backup.Xresources",
+				"/home/joel/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+				"/home/joel/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"font",
+					"ncmpc",
+					"ncmpccp",
+					"ncm",
+					"ncmpccp",
+					"ncmpc",
+					"ranger",
+					"mime",
+					"urxvt -e",
+					"ncmpccp",
+					"nvpy",
+					"black",
+					"colors",
+					"bg",
+					"color",
+					"background",
+					"bf43"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"white"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 1076.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "w# set default\n  color normal      yellow         default\n\n# main colors\n  color status      black         red\n  color indicator   brightwhite   magenta\n  color tree        blue          default\n  color error       brightred     default\n  color message     brightyellow  red\n \n#\n# message states\n#\n# order matters here since some states override others\n#\n\n# messages to me\nuncolor index \"~P\"\n  color index brightwhite default \"~P\"\n\n# threads containing new messages\nuncolor index \"~(~N)\"\n  color index brightwhite default \"~(~N)\"\n\n# new messages themselves\nuncolor index \"~N\"\n  color index red default \"~N\"\n\n# tagged\nuncolor index \"~T\"\n  color index brightgreen default \"~T\"\n\n# deleted\nuncolor index \"~D\"\n  color index brightred default \"~D\"\n\n# set up the headers\n  color header     red           default \"^from:\"\n  color header     red           default \"^to:\"\n  color header     yellow        default \"^cc:\"\n  color header     magenta       default \"^date:\"\n  color header     brightblue    default \"^subject:\"\n\n# message bodies\n  color message    red   default\n  color attachment brightblue    default\n  color search     red           brightblack\n  color signature  magenta       default\n  color tilde      blue          default\n\n# urls\n  color body       red    default \"(^|<| )mailto:[^ ]+@[^ ]( |>|$)\"\n  color body       red    default \"(^|<| )(www|http|https|ftp|file|telnet|news|finger)://[^ ]+( |>|$)\"\n\n# smileys, the right way and the backward-ass euro way\n  color body       magenta default \"(^| )+(|[<>|])[8;:](|[^ ])[)(/|DOPS]( |$)+\"\n  color body       magenta default \"(^| )+[)(/|DOPS](|[^ ])[8;:](|[<>|])( |$)+\"\n\n# *bold*, _underline_, and /italic/\n  color body       magenta    default \"(^| )\\\\*[^*]+\\\\*( |$)\"\n  color body       magenta    default \"(^| )_[^_]+_( |$)\"\n  color body       magenta    default \"(^| )/[^/]+/( |$)\"\n\n# quote blocks\n  color quoted     magenta       default\n  color quoted1    red           default\n  color quoted2    brightblue    default\n  color quoted3    magenta       default\n  color quoted4    red           default\n  color quoted5    brightblue    default\n  color quoted6    magenta       default\n  color quoted7    red           default\n",
+					"file": "/home/joel/.mutt/colors.muttrc",
+					"file_size": 2185,
+					"file_write_time": 1409146171000000,
+					"settings":
+					{
+						"buffer_size": 2186,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "! New colorset\n*foreground: #AAAAAA\n*background: #151515\n\n#3b3b3b:#2a2a29:#ba4d4d:#984040:#94c19b:#7b9f81:#d7cd94:#b3ab7c:#66AABB :#508a98:#8e6a80:#745568:#989081:#827c6f:#eae8e6:#cfcdcc\n\n\n\n",
+					"settings":
+					{
+						"buffer_size": 190,
+						"line_ending": "Unix",
+						"name": "! New colorset"
+					}
+				},
+				{
+					"contents": "[global_config]\n  title_inactive_bg_color = \"#000000\"\n[keybindings]\n  new_tab = <Primary>t\n  copy = <Primary>c\n  close_term = <Primary>w\n  paste = <Primary>v\n  close_window = <Primary>q\n[profiles]\n  [[default]]\n    palette = \"#3b3b3b:#2a2a29:#ba4d4d:#984040:#94c19b:#7b9f81:#d7cd94:#b3ab7c:#66AABB:#508a98:#8e6a80:#745568:#989081:#827c6f:#eae8e6:#cfwcdcc\"\n    background_image = None\n    background_darkness = 0.8\n    background_type = transparent\n    use_system_font = False\n    foreground_color = \"#ffffff\"\n    icon_bell = False\n    show_titlebar = False\n    font = Liberation Mono 10\n    background_color = \"#2d2d2d\"\n[layouts]\n  [[default]]\n    [[[child1]]]\n      type = Terminal\n      parent = window0\n    [[[window0]]]\n      type = Window\n      parent = \"\"\n[plugins]\n",
+					"file": "/home/joel/.config/terminator/config",
+					"file_size": 771,
+					"file_write_time": 1410263263000000,
+					"settings":
+					{
+						"buffer_size": 772,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/.Xresources",
+					"settings":
+					{
+						"buffer_size": 3769,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/.config/ranger/rifle.conf",
+					"settings":
+					{
+						"buffer_size": 8763,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/.config/openbox/rc.xml",
+					"settings":
+					{
+						"buffer_size": 33226,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/.config/obmenu-generator/schema.pl",
+					"settings":
+					{
+						"buffer_size": 6160,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "All lua scripts are based on Rings\" Meters for Conky by ~londonali1010  -   http://londonali1010.deviantart.com/art/quot-Rings-quot-Meters-for-Conky-141961783\nAnd mine is based on LovelyBacon's: http://fav.me/d6awz1i\n\nNote\n\n1. This setup assumes that you have a separate root and home partition, if you partitioned differently, you'll have to modify both the lua script and the conkyrc\n\n2. The Lime font from Artwiz is required: http://artwizaleczapka.sourceforge.net/\n\nInstallation\n\n1. extract the *.zip to a folder and place it wherever you like\n\n2. for conkyrc files\n\nopen the conkyrc in a text editor and change the path to where you placed the rings.lua \n\n3. for lua script\n\nopen *.lua in a text editor. Most is self explained, except the downspeedf and upspeedf rings where one have to set the max value to ones maximum internet speed (use speedtest.net if unsure). The value is in Kilobytes (KB) and you can convert the values you need here http://www.ibeast.com/content	/tools/band-calc.asp\n\nexecution\n\na. either copy everything in the conkyrc file to ~/.conkyrc and restart conky\n\nb. or run the conkyrc in a terminal from the folder where the conkyrc is located with the command: conky -c conkyrc\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+					"file": "/home/joel/.cache/.fr-rzq9eN/HOWTO",
+					"file_size": 1226,
+					"file_write_time": 1374262018000000,
+					"settings":
+					{
+						"buffer_size": 1227,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/HTML And CSS - Design And Build Websites V413HAV/Read Me.txt",
+					"settings":
+					{
+						"buffer_size": 351,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/home/joel/Learning Web Design A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics/Torrent downloaded from AhaShare.com.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/Learning Web Design A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics/tracked_by_h33t_com.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/z1",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/XX",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/Suits.S02E08.720p.HDTV.x264-EVOLVE.HI.srt",
+					"settings":
+					{
+						"buffer_size": 66736,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/home/joel/tintc",
+					"settings":
+					{
+						"buffer_size": 2469,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "[Desktop Entry]\nType=Application\nName=Ncmpcpp\nGenericName=NCurses Music Player Client\nExec=urxvt -name ncmpcpp -e ncmpcpp -h 192.168.1.2 -p 1337\nTerminal=true\nCategories=AudioVideo;Audio;Player;ConsoleOnly;\nIcon=/home/joel/evolution-mail.png",
+					"file": "/usr/share/applications/ncmpcpp.desktop",
+					"file_size": 241,
+					"file_write_time": 1409902425000000,
+					"settings":
+					{
+						"buffer_size": 241,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/.config/openbox/autostart.sh",
+					"settings":
+					{
+						"buffer_size": 377,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/.config/obmenu-generator/config.pl",
+					"settings":
+					{
+						"buffer_size": 4318,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/.nvpy.cfg",
+					"settings":
+					{
+						"buffer_size": 2613,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/configs/mörkresource",
+					"settings":
+					{
+						"buffer_size": 359,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/joel/configs/vitfula",
+					"settings":
+					{
+						"buffer_size": 1530,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/joel/.config/terminator/config",
+				"/home/joel/configs/vitsnyggresources",
+				"/home/joel/configs/xresources.julius",
+				"/home/joel/.config/openbox/rc.xml",
+				"/home/joel/.Xresources",
+				"/home/joel/Downloads/st-0.5/README",
+				"/home/joel/Downloads/README",
+				"/home/joel/.local/share/applications/wine-extension-ini.desktop",
+				"/home/joel/.local/share/applications/mutt.desktop",
+				"/home/joel/.local/share/applications/chrome-pjkljhegncpnkpknbcohdijeoejaedia-Default.desktop",
+				"/home/joel/xresources/grey-and-red.xresources",
+				"/home/joel/.local/share/applications/ranger.desktop",
+				"/usr/share/applications/Thunar.desktop",
+				"/usr/bin/cortex",
+				"/home/joel/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+				"/home/joel/.pastebinit.xml",
+				"/home/joel/.config/sublime-text-2/Packages/Default/Symbol List.tmPreferences.cache",
+				"/home/joel/xresourcesback",
+				"/home/joel/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+				"/home/joel/.config/plank/dock1/settings",
+				"/home/joel/configs/mörkresource",
+				"/home/joel/backup.Xresources",
+				"/home/joel/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+				"/home/joel/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"editor",
+					"5",
+					"sublime-text",
+					"ranger",
+					"]]\n",
+					",",
+					"*color",
+					"ranger",
+					"font",
+					"ncmpc",
+					"ncmpccp",
+					"ncm",
+					"ncmpccp",
+					"ncmpc",
+					"ranger",
+					"mime",
+					"urxvt -e",
+					"ncmpccp",
+					"nvpy",
+					"black",
+					"colors",
+					"bg",
+					"color",
+					"background",
+					"bf43"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"vim",
+					" :",
+					" ",
+					"white"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/home/joel/Documents"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 4,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/joel/.mutt/colors.muttrc",
+							"settings":
+							{
+								"buffer_size": 2186,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1,
+										1
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"settings":
+							{
+								"buffer_size": 190,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										186,
+										186
+									]
+								],
+								"settings":
+								{
+									"auto_name": "! New colorset",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/joel/.config/terminator/config",
+							"settings":
+							{
+								"buffer_size": 772,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										350,
+										350
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/joel/.Xresources",
+							"settings":
+							{
+								"buffer_size": 3769,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 1197.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/home/joel/.config/ranger/rifle.conf",
+							"settings":
+							{
+								"buffer_size": 8763,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										7584,
+										7584
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 2175.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/home/joel/.config/openbox/rc.xml",
+							"settings":
+							{
+								"buffer_size": 33226,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/XML/XML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 1639.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/home/joel/.config/obmenu-generator/schema.pl",
+							"settings":
+							{
+								"buffer_size": 6160,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Perl/Perl.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/home/joel/.cache/.fr-rzq9eN/HOWTO",
+							"settings":
+							{
+								"buffer_size": 1227,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										978,
+										978
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 45.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/home/joel/HTML And CSS - Design And Build Websites V413HAV/Read Me.txt",
+							"settings":
+							{
+								"buffer_size": 351,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 9,
+							"file": "/home/joel/Learning Web Design A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics/Torrent downloaded from AhaShare.com.txt",
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 10,
+							"file": "/home/joel/Learning Web Design A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics/tracked_by_h33t_com.txt",
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 11,
+							"file": "/home/joel/z1",
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 12,
+							"file": "/home/joel/XX",
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 585.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 13,
+							"file": "/home/joel/Suits.S02E08.720p.HDTV.x264-EVOLVE.HI.srt",
+							"settings":
+							{
+								"buffer_size": 66736,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 14,
+							"file": "/home/joel/tintc",
+							"settings":
+							{
+								"buffer_size": 2469,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 1710.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 15,
+							"file": "/usr/share/applications/ncmpcpp.desktop",
+							"settings":
+							{
+								"buffer_size": 241,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										85,
+										85
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 16,
+							"file": "/home/joel/.config/openbox/autostart.sh",
+							"settings":
+							{
+								"buffer_size": 377,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 17,
+							"file": "/home/joel/.config/obmenu-generator/config.pl",
+							"settings":
+							{
+								"buffer_size": 4318,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3152,
+										3158
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Perl/Perl.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 1440.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 18,
+							"file": "/home/joel/.nvpy.cfg",
+							"settings":
+							{
+								"buffer_size": 2613,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 492.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 19,
+							"file": "/home/joel/configs/mörkresource",
+							"settings":
+							{
+								"buffer_size": 359,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 483.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 20,
+							"file": "/home/joel/configs/vitfula",
+							"settings":
+							{
+								"buffer_size": 1530,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										448,
+										448
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 522.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,0,0,0,0,149,40,1354,667,1366,768",
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"window_id": 2,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

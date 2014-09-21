@@ -1,0 +1,5 @@
+shell gedit nyheter
+open_with r§
+shell mkdir
+shell mkdir colorschemes
+shell gedit classytouch.py

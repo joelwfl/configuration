@@ -1,0 +1,285 @@
+{
+    "extension_description": {
+        "message": "Any.DO te ayuda a recordar todo lo que tienes que hacer.",
+        "description": "Used primarily in installation dialogs and such"
+    },
+
+    "task_added": {
+        "message": "La tarea se agregó con éxito.",
+        "description": "Gmail: Shown after adding a task"
+    },
+    "error_must_login_first": {
+        "message": "Primero debes iniciar sesión en Any.DO.",
+        "description": "Shown when trying to add tasks from Gmail when the user isn't logged in to Any.DO in the extension"
+    },
+
+    "remind_me": {
+        "message": "Recuérdame",
+        "description": "Primary Gmail Button"
+    },
+    "add_this_thread": {
+        "message": "Agregar esta tarea",
+        "description": "Gmail button tooltip"
+    },
+    "add_to_my_anydo": {
+        "message": "Agregar a mi Any.DO",
+        "description": "Gmail dropdown: Main Title"
+    },
+    "gmail_task_title_label": {
+        "message": "Título",
+        "description": "Label before task title field"
+    },
+
+    "date_today": {
+        "message": "Hoy"
+    },
+    "date_tomorrow": {
+        "message": "Mañana"
+    },
+    "date_this_week": {
+        "message": "Esta semana"
+    },
+    "date_later": {
+        "message": "Más tarde"
+    },
+    "date_custom": {
+        "message": "Personalizar"
+    },
+
+    "in_2_hours": {
+        "message": "En 2h",
+        "description": "A short links to add quick reminders. Specifically for 2 hours from now. Must be as short as possible"
+    },
+    "in_x_hours": {
+        "message": "En $number$h",
+        "description": "A short link to add quick reminders. Must be as short as possible.",
+        "placeholders": {
+            "number": {
+                "content": "$1",
+                "example": "4"
+            }
+        }
+    },
+    "10am": {
+        "message": "10am",
+        "description": "Keep it short"
+    },
+    "1pm": {
+        "message": "1pm",
+        "description": "Keep it short"
+    },
+    "5pm": {
+        "message": "5pm",
+        "description": "Keep it short"
+    },
+    "reminder_window_title": {
+        "message": "Determinar hora"
+    },
+    "alert_when": {
+        "message": "Cuando:",
+        "description": "Label in front of the alert time dropdowns"
+    },
+
+    "today": {
+        "message": "Hoy"
+    },
+    "sun": {
+        "message": "Dom"
+    },
+    "mon": {
+        "message": "Lun"
+    },
+    "tue": {
+        "message": "Mar"
+    },
+    "wed": {
+        "message": "Miér"
+    },
+    "thu": {
+        "message": "Jue"
+    },
+    "fri": {
+        "message": "Vi"
+    },
+    "sat": {
+        "message": "Sáb"
+    },
+
+    "jan": {
+        "message": "Ene"
+    },
+    "feb": {
+        "message": "Feb"
+    },
+    "mar": {
+        "message": "Mar"
+    },
+    "apr": {
+        "message": "Abr"
+    },
+    "may": {
+        "message": "Mayo"
+    },
+    "jun": {
+        "message": "Jun"
+    },
+    "jul": {
+        "message": "Jul"
+    },
+    "aug": {
+        "message": "Ago"
+    },
+    "sep": {
+        "message": "Sep"
+    },
+    "oct": {
+        "message": "Oct"
+    },
+    "nov": {
+        "message": "Nov"
+    },
+    "dec": {
+        "message": "Dic"
+    },
+
+    "back": {
+        "message": "Atrás"
+    },
+    "set": {
+        "message": "Determinar"
+    },
+
+
+    "welcome_title": {
+        "message": "¡Mira, aquí!",
+        "description": "Top headline in welcome screen"
+    },
+    "welcome_intro": {
+        "message": "Sincroniza con tu aplicación móvil y comienza a hacer realidad las cosas",
+        "description": "Into paragraph"
+    },
+    "register": {
+        "message": "Registro"
+    },
+    "login": {
+        "message": "Inicio de sesión"
+    },
+    "log_in": {
+        "message": "Iniciar sesión"
+    },
+    "forgot": {
+        "message": "¿Olvidaste la contraseña?"
+    }, 
+    "your_email": {
+        "message": "Tu email"
+    },
+    "password": {
+        "message": "Contraseña"
+    },
+    "choose_a_password": {
+        "message": "Elige una contraseña"
+    },
+    "enter_your_name": {
+        "message": "Ingresa tu nombre"
+    },
+    "already": {
+        "message": "¿Ya eres miembro?"
+    },
+
+    "priority": {
+        "message": "Prioridad"
+    },
+    "folder": {
+        "message": "Carpeta"
+    },
+    "reminder": {
+        "message": "Recordatorio"
+    },
+    "notes": {
+        "message": "Notas"
+    },
+    "share": {
+        "message": "compartir"
+    },
+
+    "personal": {
+        "message": "Personal"
+    },
+    "work": {
+        "message": "Trabajo"
+    },
+
+    "add_note": {
+        "message": "Agrega una nueva nota"
+    },
+
+    "choose_folder": {
+        "message": "Elige una carpeta"
+    },
+    "new_folder": {
+        "message": "Nueva carpeta...",
+        "description": "Placeholder"
+    },
+    "insert_new_task": {
+        "message": "Inserta una nueva tarea...",
+        "description": "Placeholder"
+    },
+    "show_by_date": {
+        "message": "Mostrar por fecha"
+    },
+    "show_by_folder": {
+        "message": "Mostrar por carpeta"
+    },
+    "clear_completed": {
+        "message": "Borrar tareas realizadas"
+    },
+    "user_options": {
+        "message": "Opciones de usuario"
+    },
+    "pop_out": {
+        "message": "Emergente"
+    },
+    "send_feedback": {
+        "message": "Envíanos comentarios"
+    },
+    "week_start": {
+        "message": "Inicio de semana"
+    },
+    "sign_out": {
+        "message": "Cerrar sesión"
+    },
+
+    "things": {
+        "message": "cosas"
+    },
+
+    "context_add_to_anydo": {
+        "message": "Agregar a Any.DO",
+        "description": "Context Menu Title"
+    },
+
+    "dismiss": {
+        "message": "Desestimar"
+    },
+    "snooze": {
+        "message": "Repetición"
+    },
+    "5_minutes": {
+        "message": "5 minutos"
+    },
+    "15_minutes": {
+        "message": "15 minutos"
+    },
+    "30_minutes": {
+        "message": "30 minutos"
+    },
+    "1_hour": {
+        "message": "1 hora"
+    },
+    "3_hours": {
+        "message": "3 horas"
+    },
+    "tomorrow": {
+        "message": "mañana"
+    }
+}

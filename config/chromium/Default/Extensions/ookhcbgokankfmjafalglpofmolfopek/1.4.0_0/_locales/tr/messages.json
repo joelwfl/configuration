@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1g",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Takvimlerinizden herhangi birine bakarak bir sonraki toplantınıza ne kadar zaman kaldığını hemen görün. Takviminizi açmak için düğmeyi tıklayın."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1s",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google Takvim"
+   },
+   "minutes": {
+      "message": "$1d",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Birden Fazla Takvim Desteği"
+   },
+   "multicalendartooltip": {
+      "message": "Birden fazla takvim desteğini etkinleştirmek için lütfen kutuyu işaretleyin"
+   },
+   "name": {
+      "message": "Google Calendar Checker (Google'dan)"
+   },
+   "notitle": {
+      "message": "(Başlıksız)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Ayarlar Kaydedildi."
+   },
+   "status_saving": {
+      "message": "Kaydediliyor..."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

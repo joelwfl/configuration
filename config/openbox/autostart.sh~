@@ -1,0 +1,10 @@
+compton &
+lxappearance &
+nitrogen --restore & 
+tint2 -c /home/joel/configs/tint2rc &
+xfce4-panel &
+synapse &
+setxkbmap -option terminate:ctrl_alt_bksp &
+nm-applet &
+whaw &
+

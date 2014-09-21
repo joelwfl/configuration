@@ -1,0 +1,110 @@
+[
+    {
+        "name": "state-manager",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8080/anonymous/update/1.0/",
+        "status": "ON"
+    },
+    {
+        "name": "search-user",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8080/anonymous/contact/search",
+        "status": "ON"
+    },
+    {
+        "name": "auto-complete-cache",
+        "version": "1.0",
+        "url": "http://s3.amazonaws.com/anydo/test/auto-complete/auto-complete-cache.txt.gz",
+        "status": "ON"
+    },
+    {
+        "name": "auto-complete-stats",
+        "version": "1.1",
+        "url": "http://sm-dev.any.do/anonymous/ac-report",
+        "status": "OFF"
+    },
+    {
+        "name": "auto-complete-stats",
+        "version": "1.0",
+        "url": "http://ac-stats-test.appspot.com/auto-complete/stats",
+        "status": "ON"
+    },
+    {
+        "name": "get-task-by-id",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8080/anonymous/task/",
+        "status": "ON"
+    },
+    {
+        "name": "share-task",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8080/anonymous/task/share",
+        "status": "ON"
+    },
+    {
+        "name": "auto-complete",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8081/auto-complete/ac",
+        "status": "ON"
+    },
+    {
+        "name": "auto-complete",
+        "version": "2.0",
+        "url": "http://ac-anydo.elasticbeanstalk.com/auto-complete",
+        "status": "ON"
+    },
+    {
+        "name": "user-tasks",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8080/anonymous/user/{puid}/tasks",
+        "status": "ON"
+    },
+    {
+        "name": "update-shared-user-status",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8080/anonymous/task/update-shared-user-status",
+        "status": "ON"
+    },
+    {
+        "name": "share-task-via-email",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8080/anonymous/task/share/{globalTaskId}/via-email/{email}/{recipientName}/{invitedByPUID}",
+        "status": "ON"
+    },
+    {
+        "name": "share-task-via-sms",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8080/anonymous/task/share/{globalTaskId}/via-sms/{phone}/{recipientName}/{invitedByPUID}",
+        "status": "ON"
+    },
+    {
+        "name": "register-user",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8080/anonymous/user/register",
+        "status": "ON"
+    },
+    {
+        "name": "invite-friends",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8080/anonymous/user/{puid}/invite-friends",
+        "status": "ON"
+    },
+    {
+        "name": "execution",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:7486/execution/get",
+        "status": "OFF"
+    },
+    {
+        "name": "error-report",
+        "version": "1.0",
+        "url": "http://sm-dev.any.do:8080/anonymous/error-report",
+        "status": "ON"
+    },
+    {
+        "name": "calendar-stats",
+        "version": "1.0",
+        "url": "",
+        "status": "OFF"
+    }
+]

@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1 j",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Vérifiez rapidement dans vos agendas le temps qu'il vous reste avant votre prochaine réunion. Cliquez sur le bouton pour ouvrir l'agenda correspondant."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1 h",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google Agenda"
+   },
+   "minutes": {
+      "message": "$1 mn",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Prise en charge multi-agendas"
+   },
+   "multicalendartooltip": {
+      "message": "Cocher la case pour activer la prise en charge multi-agendas"
+   },
+   "name": {
+      "message": "Google Calendar Checker (par Google)"
+   },
+   "notitle": {
+      "message": "(Sans titre)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Paramètres enregistrés"
+   },
+   "status_saving": {
+      "message": "Enregistrement...."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

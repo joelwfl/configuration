@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1 d",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Brzo pogledajte koliko imate vremena do idućeg sastanka iz svih svojih kalendara. Kliknite gumb koji će vas odvesti u vaš kalendar."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1 h",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google Kalendar"
+   },
+   "minutes": {
+      "message": "$1 m",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Podrška za više kalendara"
+   },
+   "multicalendartooltip": {
+      "message": "Uključite potvrdni okvir za omogućavanje podrške za više kalendara"
+   },
+   "name": {
+      "message": "Google Calendar Checker (od Googlea)"
+   },
+   "notitle": {
+      "message": "(Nema naslova)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Postavke su spremljene."
+   },
+   "status_saving": {
+      "message": "Spremanje...."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

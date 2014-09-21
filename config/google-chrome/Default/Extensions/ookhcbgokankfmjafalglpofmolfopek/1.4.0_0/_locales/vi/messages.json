@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1d",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Xem nhanh thời gian trước khi đến cuộc họp tiếp theo từ bất kỳ lịch nào của bạn. Hãy nhấp vào nút để được đưa đến lịch của bạn."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1h",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Lịch Google"
+   },
+   "minutes": {
+      "message": "$1m",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Hỗ trợ nhiều lịch"
+   },
+   "multicalendartooltip": {
+      "message": "Vui lòng chọn hộp này để bật tính năng hỗ trợ nhiều lịch"
+   },
+   "name": {
+      "message": "Google Calendar Checker (của Google)"
+   },
+   "notitle": {
+      "message": "(Không có tiêu đề)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Đã lưu cài đặt."
+   },
+   "status_saving": {
+      "message": "Đang lưu...."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

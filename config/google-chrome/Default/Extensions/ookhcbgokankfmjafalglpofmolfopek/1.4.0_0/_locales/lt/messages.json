@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1 d.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Bet kuriame iš savo kalendorių greitai žiūrėkite, kiek laiko liko iki kito susitikimo. Jei norite patekti į kalendorių, spustelėkite mygtuką."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1 val.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "„Google“ kalendorius"
+   },
+   "minutes": {
+      "message": "$1 min.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Kelių kalendorių palaikymas"
+   },
+   "multicalendartooltip": {
+      "message": "Kad įgalintumėte kelių kalendorių palaikymą, pažymėkite laukelį"
+   },
+   "name": {
+      "message": "Google Calendar Checker (Google)"
+   },
+   "notitle": {
+      "message": "(Nėra pavadinimo)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Nustatymai išsaugoti."
+   },
+   "status_saving": {
+      "message": "Išsaugoma..."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

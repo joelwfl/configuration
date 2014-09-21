@@ -1,0 +1,23 @@
+{
+   "background": {
+      "scripts": [ "vendor/jquery.js", "js/background.js" ]
+   },
+   "content_scripts": [ {
+      "css": [ "css/content-page.css" ],
+      "js": [ "vendor/jquery.js", "js/lib.js", "js/api.js", "js/content-script.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "An extremely customizable keyboard shortcuts interface that aims to rid you of the rodent :)",
+   "icons": {
+      "128": "res/logo-128.png",
+      "16": "res/logo-16.png",
+      "48": "res/logo-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDThmtd41P3Cct15yPTisxK+8F9j+WWvSlsXpfitMJZBIzMsp6jtR7Futk3DxJjQxRAB2qWzBNtebFBBFVnpp5cjY0iKQT7puCMFfXYl6DeH1iE+N/or4e74mB2vZojKHlNxAR5Ec6j0BdNBNlfAidUAW+gDZWRZhxg+tcl5Ak+/QIDAQAB",
+   "manifest_version": 2,
+   "name": "Keyboard-fu",
+   "options_page": "options.html",
+   "permissions": [ "http://*/*", "https://*/*", "tabs", "bookmarks" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.7.1"
+}

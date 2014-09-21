@@ -1,0 +1,14 @@
+{
+    "10am": {
+        "message": "10:00",
+        "description": "Keep it short"
+    },
+    "1pm": {
+        "message": "13:00",
+        "description": "Keep it short"
+    },
+    "5pm": {
+        "message": "17:00",
+        "description": "Keep it short"
+    }
+}

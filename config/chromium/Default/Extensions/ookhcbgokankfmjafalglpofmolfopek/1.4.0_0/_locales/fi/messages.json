@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1 pv",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Näet nopeasti ajan seuraavaan tapaamiseesi mistä tahansa kalenteristasi. Siirryt kalenteriin napsauttamalla painiketta."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1 t",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google-kalenteri"
+   },
+   "minutes": {
+      "message": "$1 min",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Useiden kalentereiden tuki"
+   },
+   "multicalendartooltip": {
+      "message": "Ota useiden kalentereiden tuki käyttöön valitsemalla valintaruutu"
+   },
+   "name": {
+      "message": "Google Calendar Checker (Googlen tekemä)"
+   },
+   "notitle": {
+      "message": "(Ei nimeä)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Asetukset tallennettu."
+   },
+   "status_saving": {
+      "message": "Tallennetaan..."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

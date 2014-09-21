@@ -1,0 +1,27 @@
+{
+   "app": {
+      "launch": {
+         "local_path": "index.html"
+      }
+   },
+   "background": {
+      "scripts": [ "placeholder.js" ]
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com/ https://drive.google.com/; object-src 'self'",
+   "description": "A RSS reader that stores the data on your own Google Drive or Dropbox; This is an real app that works offline and not a website!",
+   "icons": {
+      "128": "rss-128.png",
+      "16": "rss-16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr1R5Y1v+lJehhsSO9zTgBv9EBe6RoG/hMx+HGEh4CwvSSAAdPQ7eNaWRs9wxmqRuJmVb3Mazp4waKxkvFoXH2Evd2fxKNB28SKH4ZNgnaJmBB08pIOMZYUz90wW0ppIrLdDFstVANGig9TQT+3F4A3cOk9HZE/8DyAEVgJxnCBwIDAQAB",
+   "manifest_version": 2,
+   "name": "RSS Reader",
+   "oauth2": {
+      "client_id": "64840406425.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/userinfo.email" ]
+   },
+   "offline_enabled": true,
+   "permissions": [ "storage", "tabs", "unlimitedStorage", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3"
+}

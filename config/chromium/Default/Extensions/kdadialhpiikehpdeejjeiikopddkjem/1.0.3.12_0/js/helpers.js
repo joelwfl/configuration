@@ -1,0 +1,1 @@
+define(["jquery","underscore"],function(f,c){return{getStorageItemsByKeyStart:function(d){var b={},e=RegExp("^"+d.join("|^"));c.each(Object.keys(localStorage),function(a){e.test(a)&&(b[a]=localStorage.getItem(a))});return b}}});

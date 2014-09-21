@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1nap",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Gyorsan megnézheti bármelyik naptárában, hogy mennyi ideje van még a következő találkozóig. Kattintson a gombra a naptár megtekintéséhez."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1ó",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google Naptár"
+   },
+   "minutes": {
+      "message": "$1p",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Több naptár támogatása"
+   },
+   "multicalendartooltip": {
+      "message": "Kérjük, jelölje be a jelölőnégyzetet több naptár támogatásának engedélyezéséhez"
+   },
+   "name": {
+      "message": "Google Calendar Checker (a Google-tól)"
+   },
+   "notitle": {
+      "message": "(Nincs cím)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Beállítások elmentve."
+   },
+   "status_saving": {
+      "message": "Mentés..."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

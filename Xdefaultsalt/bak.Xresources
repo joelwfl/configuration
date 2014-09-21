@@ -1,0 +1,88 @@
+ 
+URxvt.perl-ext-common : tabbedex,default,keyboard-select,url-select,clipboard,
+URxvt.perl-lib: /usr/lib/urxvt/perl
+URxvt.keysym.M-x           : perl:keyboard-select:activate
+URxvt.keysym.M-u           : perl:url-select:select_next
+URxvt.keysym.C-c           : perl:clipboard:copy
+URxvt.keysym.C-v           : perl:clipboard:paste
+URxvt.keysym.M-s           : perl:keyboard-select:search
+URxvt.keysym.M-C-v         : perl:clipboard:paste_escaped
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.keysym.Shift-F1: perl:tabbedex:next_tab
+URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+!Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+xscreensaver.Dialog.headingFont:        -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.foreground:         #101010
+xscreensaver.Dialog.background:         white
+xscreensaver.Dialog.topShadowColor:     #D8D8D8
+xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
+xscreensaver.Dialog.Button.foreground:  #101010
+xscreensaver.Dialog.Button.background:  #E5E5E5
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #101010
+xscreensaver.Dialog.text.background:    #E5E5E5
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        0
+xscreensaver.Dialog.shadowThickness:    2
+xscreensaver.passwd.thermometer.foreground:  #101010
+xscreensaver.passwd.thermometer.background:  #2E2E2E
+xscreensaver.passwd.thermometer.width:       8
+URxvt*externalBorder: 0
+URxvt*internalBorder: 10
+URxvt*borderLess: true
+URxvt*transparent: true
+urxvt*fading:    0
+urxvt*tintColor: white
+urxvt*shading:   77
+urxvt.scrollTtyOutput: 0
+urxvt.scrollTtyKeypress: 1
+urxvt.scrollBar_right: 0
+urxvt.scrollBar_floating: 0
+urxvt.scrollBar: 0
+urxvt.saveLines: 10000
+urxvt.internalBorder: 5
+URxvt*font: xft:Liberation Mono:pixelsize=13:antialias=true:hinting=true
+URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=13:antialias=true:hinting=true
+
+
+
+URxvt.matcher.button:     16
+URxvt.tabbed.tabbar-fg:   8
+URxvt.tabbed.tabbar-bg:   8
+URxvt.tabbed.tab-fg:      8
+URxvt.tabbed.tab-bg:      15
+URxvt.tabbed.new-button:  no
+URxvt.tabbed.title:       no
+URxvt.geometry: 55x16
+urxvt*background: #white
+urxvt*foreground:  #ffffff
+urxvt*color0:      #000000
+urxvt*color1:      #9e1828
+urxvt*color2:      #aece92
+urxvt*color3:      #968a38
+urxvt*color4:      #414171
+urxvt*color5:      #963c59
+urxvt*color6:      #418179
+urxvt*color7:      #bebebe
+urxvt*color8:      #666666
+urxvt*color9:      #cf6171
+urxvt*color10:     #c5f779
+urxvt*color11:     #fff796
+urxvt*color12:     #4186be
+urxvt*color13:     #cf9ebe
+urxvt*color14:     #71bebe
+urxvt*color15:     #ffffff

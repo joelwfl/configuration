@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/usr/share/adeskbar/adesk/bar.py", line 990, in load_plugin
+    widget = plugin.Plugin(self.bar, settings)
+  File "/usr/share/adeskbar/plugins/systray.py", line 48, in __init__
+    self.systray = SysTray(display, error, self, bar)
+NameError: global name 'display' is not defined
+/usr/share/adeskbar/adesk/ui.py:162: Warning: Source ID 37 was not found when attempting to remove it
+  gobject.source_remove(self.timeout)
+/usr/share/adeskbar/adesk/ui.py:162: Warning: Source ID 51 was not found when attempting to remove it
+  gobject.source_remove(self.timeout)
+/usr/share/adeskbar/adesk/ui.py:162: Warning: Source ID 71 was not found when attempting to remove it
+  gobject.source_remove(self.timeout)
+/usr/share/adeskbar/adesk/ui.py:162: Warning: Source ID 99 was not found when attempting to remove it
+  gobject.source_remove(self.timeout)
+Traceback (most recent call last):
+  File "/usr/share/adeskbar/adesk/bar.py", line 989, in load_plugin
+    exec("import plugins.%s as plugin" % p)
+  File "<string>", line 1, in <module>
+  File "/usr/share/adeskbar/plugins/windowlist.py", line 4, in <module>
+    import wnck
+ImportError: No module named wnck
+/usr/share/adeskbar/adesk/ui.py:162: Warning: Source ID 1122 was not found when attempting to remove it
+  gobject.source_remove(self.timeout)
+Mixer plugin ERR: global name 'alsa' is not defined
+Mixer plugin ERR: global name 'alsa' is not defined
+resize and update icon for all plugins

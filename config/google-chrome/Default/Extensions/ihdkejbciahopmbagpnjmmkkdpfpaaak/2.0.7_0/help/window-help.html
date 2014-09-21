@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<style>
+		html { font-size: 67.5%; margin:0; padding:0; }
+		body {
+			background: #fff;
+			color: #000;
+			margin:0; padding: .25em;
+			font-family: Arial, Helvetica, Sans-Serif;
+			font-size:1.1em;
+			height: 370px;
+			overflow: auto;
+		}
+		header { font-size:1.2em; }
+		h1, h2, h3, h4, h5, h6 { font-size:inherit; }
+		ul, ol { margin:0 0 1em 2em; padding:0; }
+		li { margin:0; padding:0; }
+		h1 { text-align:center; }
+		table { border:0; width:100%; }
+		table th, table td { padding:5px; }
+	</style>
+	<title>WeatherBug Google Chrome App Help</title>
+</head>
+<body>
+	<!--<p>View this in a <a id="url-link" href="#" target="_blank">new tab.</a></p>
+	<script type="text/javascript" src="scripts/inline.js"></script>-->
+	<header><h1>
+		WeatherBug<br />
+		Google Chrome App<br />
+		Help
+	</h1></header>
+		<ol>
+			<li>
+				<header><h2>Features</h2></header>
+				<p>
+					This application is a one-page display, with additional features in expandable windows. The main page consists of:
+				</p>
+				<ul>
+					<li>
+						tabs for each of your saved weather locations
+					</li>
+					<li>
+						detailed current conditions
+					</li>
+					<li>
+						a weather window or weather camera image to show the outside conditions at a glance
+					</li>
+					<li>
+						3-day forecast
+					</li>
+				</ul>
+				<p>
+					All information displayed is for the active (highlighted) location tab. You may view additional information by opening the following windows:
+				</p>
+
+				<table>
+					<tr>
+						<th>
+							<img src="images/obs-icon.jpg" alt="Forecast Icon">
+						</th>
+						<td>
+							<strong>Observations:</strong> : Clicking on the sun icon opens the observations window. This displays both current observations and conditions "so far today".
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<img src="images/forecast-icon.jpg" alt="Forecast Icon">
+						</th>
+						<td>
+							<strong>Forecasts:</strong> : Clicking on the umbrella icon or any of the 3-day forecasts opens the forecast window. You may view the 7-Day Summary, 7-Day Detail or Hourly Forecasts*.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<img src="images/map-icon.jpg" alt="Map Icon">
+						</th>
+						<td>
+							<strong>Weather Map:</strong> Clicking on the globe icon opens the weather map.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<img src="images/camera-icon.jpg" alt="Camera Icon">
+						</th>
+						<td>
+							<strong>Weather Cameras:</strong> Clicking on the camera icon displays pictures from weather stations within a 100-mile radius of your location*.
+						</td>
+					</tr>
+				</table>
+
+				<p>
+					Only one window may be opened at a time. To close a window, click the close button
+					<img src="images/close-icon.jpg" alt="close button" />
+					in the upper right-hand corner.
+				</p>
+				<p>
+					*Hourly Forecasts and Weather Camera images may not be available for all locations.
+				</p>
+			</li>
+			<li>
+				<header><h2>Weather Alerts</h2></header>
+				<p>
+					Alerts are currently available for the United States, Canada, United Kingdom and Spain.
+				</p>
+				<p>
+					The alert icon <img src="images/alert-icon.jpg" alt="Alert Icon" /> will only appear if an alert is active. The number within the icon displays the number of active alerts. The icon appears in the following places:
+				</p>
+				<ul>
+					<li>
+						to the left of the locations name in the saved locations tabs (displays for all locations that have active alerts)</li>
+					<li>
+						over the cloud cover image in the detailed current conditions (only displays for the current location being viewed)</li>
+				</ul>
+				<p>
+					Click on the icon over the cloud cover image to open a window containing the alert details. The icon in the location tab is non-clickable.
+				</p>
+			</li>
+			<li>
+				<header><h2>Display Units</h2></header>
+				<p>
+					Weather data may be displayed in either English or Metric units. Clicking on the
+					cog <img src="images/settings-icon.jpg" alt="settings icon" /> in the upper right-hand corner of the window allows you to change the display.
+				</p>
+			</li>
+			<li>
+				<header><h2>Window Image Display</h2></header>
+				<p>
+					By default, the window in the center of the application displays a weather video that closely matches the current outside conditions for your location. You may choose to display a camera image from the closest weather station within a 100-mile radius of your location instead by following these steps:
+				</p>
+				<ol>
+					<li>
+						Click on the Settings cog <img src="images/settings-icon.jpg" alt="settings icon" /> in the upper right-hand corner of the window.
+					</li>
+					<li>
+						Check the camera image option under Window Options.
+					</li>
+					<li>
+						Click Save. The Settings window will close and the camera image will be displayed.
+					</li>
+				</ol>
+			</li>
+			
+			<li>
+				<header><h2>Locations</h2></header>
+				<p>
+					You are able to view weather for many locations. There is a set of tabs at the top of the page that display each saved location, along with basic weather details and active alerts. You may add new locations, reorder, delete and view detailed weather information by using the tabs.
+				</p>
+				<ul style="list-style: none;">
+					<li>
+						<header><h3>Add</h3></header>
+						<p>
+							Any time a new location is added, it is automatically saved and displayed in your location tabs. You must add a location in order to view the weather data (you may add up to 10 locations). To add a new location:
+						</p>
+						<ol>
+							<li>
+								Click on the Add Location button to the right of the location tabs at the top of the window.
+							</li>
+							<li>
+								You may either search for a location or geolocate:
+								<ol style="list-style-type: lower-alpha">
+									<li>
+										To search: Enter the U.S. zip code, city name or address and click the Search button.</li>
+									<li>
+										To geolocate: Click the Geolocate button.</li>
+								</ol>
+							</li>
+							<li>
+								The closest match will be returned in a Select field.
+							</li>
+							<li>
+								Click Select to add the location.</li>
+							<li>
+								Click on the arrow to the right of the field to expand the list of locations to select a different location if multiple locations were returned.</li>
+							<li>
+								Click Cancel if you don't want to add the location.</li>
+						</ol>
+					</li>
+					<li>
+						<header><h3>Reorder</h3></header>
+						<p>
+							The location at the far left of the list is your default display every time you open the application. To reorder your locations:
+						</p>
+						<ol>
+							<li>
+								Click and drag on the location tab you wish to move.
+							</li>
+							<li>
+								Release the mouse button once the tab is in the desired position.</li>
+						</ol>
+					</li>
+					<li>
+						<header><h3>Delete Location</h3></header>
+						<p>
+							To delete a location:
+						</p>
+						<ol>
+							<li>
+								Click on the delete control <img src="images/close-icon.jpg" alt="Delete button" /> to the right of the location name.
+							</li>
+							<li>
+								A confirmation window will open.
+							</li>
+							<li>
+								Click the Delete button.</li>
+						</ol>
+					</li>
+					<li>
+						<header><h3>Switch Locations/View Weather Details</h3></header>
+						<p>
+							To switch locations:
+						</p>
+						<ol>
+							<li>
+								Click on the tab for the location you wish to view (make active).</li>
+							<li>
+								The information in the main display will reset for the selected location.</li>
+						</ol>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<header><h2>Map Actions</h2></header>
+				<p>
+					You are able to pan, zoom in, zoom out and animate the map. The standard Google map navigation controls are displayed at the top, left-hand corner of the map.
+				</p>
+				<ul>
+					<li>
+						The zoom buttons (+/-) allow you to zoom in or out.
+					</li>
+				</ul>
+				<p>
+					You may also use your mouse scroll wheel to zoom in or out.
+				</p>
+				<p>
+					An animation bar is displayed at the bottom, right-hand corner of the map for layers that allow animation (currently Satellite and Doppler Radar).</p>
+
+				<table>
+					<tr>
+						<th>
+							<img src="images/anim-play.jpg" alt="Play Animation Button" />
+						</th>
+						<td>
+							Allows you to start animation. (If the map is animating, this will change to a stop button.)
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<img src="images/anim-next.jpg" alt="Next Animation Button" />
+						</th>
+						<td>
+							Allows you to advance forward, frame by frame.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<img src="images/anim-last.jpg" alt="Last Animation Button" />
+						</th>
+						<td>
+							Allows you to jump to the last animation frame.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<img src="images/anim-prev.jpg" alt="Previous Animation Button" />
+						</th>
+						<td>
+							Allows you to move backwards, frame by frame.
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<img src="images/anim-first.jpg" alt="Start Animation Button" />
+						</th>
+						<td>
+							Allows you to jump to the first animation frame.
+						</td>
+					</tr>
+				</table>
+
+			</li>
+			<li>
+				<header><h2>Map Layers</h2></header>
+				<p>
+					You can customize your maps by selecting from three different types of views:
+				</p>
+				<ul>
+					<li>
+						<strong>WeatherBug Weather Layers</strong>
+						<ul>
+							<li>
+								<strong>Temperature:</strong> Displays a color-coded contour layer of the current
+								temperature.
+							</li>
+							<li>
+								<strong>Pressure:</strong> Displays a color-coded contour layer of the current pressure.
+							</li>
+							<li>
+								<strong>Humidity:</strong> Displays a color-contour contour layer of the current
+								humidity.
+							</li>
+							<li>
+								<strong>Wind Speed:</strong> Displays a color-coded contour layer of current wind
+								speeds.
+							</li>
+							<li>
+								<strong>Radar (U.S.):</strong> Displays a radar image only for locations in the
+								Continental United States.
+							</li>
+							<li>
+								<strong>o	Infrared Satellite and Global Infrared Satellite:</strong> Cloud cover is shown by detection of water
+								vapor/droplet temperatures.
+							</li>
+							<li>
+								<strong>Visible Satellite:</strong> Cloud cover is shown by reflected sunlight off
+								the cloud tops. This layer only displays cloud cover in the daytime.
+							</li>
+							<!--<li>
+								<strong>Highs Tomorrow:</strong> Displays a color-coded contour layer of tomorrow's
+								forecasted high temperatures.
+							</li>
+							<li>
+								<strong>Lows Tomorrow:</strong> Displays a color-coded contour layer of tomorrow's
+								forecasted low temperatures.</li>-->
+						</ul>
+						<p>
+							By default, the Doppler Radar layer will show for U.S. locations and the Infrared Satellite layer will show for international locations. You may only view one weather layer at a time.
+						</p>
+					</li>
+					<li>
+						<strong>Google Base Map Options</strong>
+						<ul>
+							<li><strong>Map:</strong> Displays a basic street map. The further you zoom in, the more details display.</li>
+							<li><strong>Satellite:</strong> Displays high-resolution satellite images.</li>
+							<li><strong>Terrain:</strong> Displays basic topographic features.</li>
+						</ul>
+					</li>
+				</ul>
+				<p>
+					A legend, which displays at the bottom of the map, provides a value key for each color in all color-coded weather layers.
+				</p>
+			</li>
+			<li>
+				<header><h2>Social Networking</h2></header>
+				<p>
+					We allow you to either Share the weather on your Twitter and Facebook pages. This will add a link our webpage if there is any weather news you wish to share. For you Facebook members, clicking the Facebook Like button will show your appreciation and we strongly hope that you will like us!
+				</p>
+			</li>
+		</ol>
+	</body>
+</html>

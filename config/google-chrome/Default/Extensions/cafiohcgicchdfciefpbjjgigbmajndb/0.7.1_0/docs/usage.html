@@ -1,0 +1,109 @@
+<h1>Keyboard-fu Usage</h1>
+<h2>Introduction</h2>
+<p>Keyboard-fu (also referred to as kfu in short) lets you assign arbitrary
+javascript to be executed for particular keystrokes. You are provided an API for
+various browser related actions from scrolling the page you are viewing to
+moving tabs, undo close tabs etc. You may mix and match these API functions and
+top it up with any arbitrary javascript to make your magic come true.</p>
+<p>For example, you could have a single keystroke that only works on <code>twitter.com</code>
+(yes, kfu supports a simple and powerful filtering mechanism), hitting which,
+may aggregate all the youtube video links you have in your timeline and open
+them up in individual tabs. Or, you could have a hotkey that works only on
+<code>youtube.com/v/*</code> which would like/unlike the video you are watching. The
+possibilities are endless.</p>
+<h2>Configuring keys</h2>
+<p>In the options page, you can see the currently available hotkeys to the left of
+the page. Click on one of them to view/edit it. There is also a <em>Add new
+hotkey</em> at the bottom of that list to add a new hotkey.</p>
+<p>When you are editing a hotkey, click on the <em>Start Capture</em> button and hit the
+keys you want to have this hotkey to trigger. For example, if you hit the keys
+<code>abcd</code> while capture is on, they will be recorded and appear in the field next
+to the capture button. To invoke the javascript code associated with this
+hotkey, you have to hit the keys <code>a</code>, <code>b</code>, <code>c</code>, <code>d</code> in that order as you did
+the recording and do that a bit quickly. When you hit <code>d</code> the code associated
+with this hotkey will run in the current page. Try it out, put the following
+code in the code field and save it.</p>
+<pre><code>alert('yay! fu rocks!');
+</code></pre>
+<p>Now go to any webpage, say instapaper.com and hit the key(s) you have assigned
+to this hotkey. You should see the alert you put in the code appear. This is
+pretty much the basics of what you need to know to create simple hotkeys.</p>
+<h2>Using the URL filters</h2>
+<p>The way the filters work might seem tricky at first, but bear with me, it is
+the best combination of simplicity and power I could gather. Once you get the
+gist of it, you can easily create hotkeys that work on certain pages and don't
+on some other pages.</p>
+<p>First off, there are two sets of filters for each hotkey. The local filters and
+the global filters. Local filters are local to the hotkey in which they are
+defined, but global hotkeys are common to all hotkeys. You can view/edit global
+hotkeys by clicking on <em>Global Filters</em> in the left side of the options page.
+Similarly, local filters can be configured for each hotkey in the hotkey
+editing form.</p>
+<p>Now, when you open a webpage in chrome, Keyboard-fu goes through all the
+defined hotkeys and decides whether they apply on the page you are viewing or
+not. The way this is done is quite simple. For each hotkey, we create a master
+filter list as the following</p>
+<blockquote>
+<p>Master filters list = Local filters list + Global filters list</p>
+</blockquote>
+<p>Using this master filters list, we iterate over each filter and check if the
+URL of the page you are viewing matches the filter and stop at the first match.
+If this matched filter starts with a <code>-</code>, then the hotkey is <strong>not</strong> loaded,
+else it is loaded. If none of the filters match the url you are viewing, the
+hotkey is <strong><em>not</em></strong> loaded. This is why it is recommended to add a <em>match all</em>
+filter, i.e., <code>*</code> as the last item in the global filters.</p>
+<p>Also, note that when matching a filter with the url, a leading <code>-</code> if any, will
+be stripped off before doing a match check.</p>
+<h2>Using the API</h2>
+<p>In the javascript you write in the code field for each hotkey, you are given
+access to a simple yet powerful API to enable performing certain actions. You
+can know more about the API available by clicking the <em>API Documentation</em> item
+in the left side of the options page. The API is still evolving and does not
+have everything under the sky. If you think something could be added to the
+API, please let me know.</p>
+<p>In addition of the API provided by Keyboard-fu, jQuery 1.5.1 is also available
+for these code snippets. You may use this to do all sorts of DOM manipulations
+or various ajax calls etc. Oh, and you don't need to wrap your code in the
+jQuery's ready event, if you're wondering, because by the time the hotkeys are
+loaded, the ready event will have fired.</p>
+<h1>Known problems/Caveats</h1>
+<h2>Problems</h2>
+<ul>
+<li>Opening options page through API opens a new tab with options, even if an
+  options tab is already open.</li>
+<li><code>history.back</code> and <code>history.forward</code> don't integrate with the native
+  back/forward buttons, sometimes.</li>
+</ul>
+<h2>Limitations</h2>
+<p>There are a few limitations on what you could achieve with Keyboard-fu. The
+reason for these is sometimes the limits imposed by chrome's extension API, or
+a lack of knowledge in me, or just plain oversight.</p>
+<ul>
+<li>Hotkeys don't work on chrome extension pages and the webstore.
+  This is a security limitation imposed by Google</li>
+<li>They also don't work on special chrome pages like the start page, extensions
+  page etc.</li>
+<li>Some API functions may behave weirdly when operating with multiple windows.
+  If you face any such issue, please let me know.</li>
+<li>If you configured a hotkey and the webpage you open also uses the same
+  hotkey, both will be fired when you hit the key. This is because I couldn't
+  figure out a way to detect if the webpage is handling a particular key. The
+  only way around this currently, is to add that webpage as a negative filter
+  (with a <code>-</code> in the front) to that hotkey.</li>
+</ul>
+<h1>Myself</h1>
+<p>I am Shrikant Sharat, from Mumbai. The best way to get in touch with me is via
+email (<a href="mailto:shrikantsharat.k@gmail.com">self@sharats.me</a>) or twitter
+(<a href="http://twitter.com/sharat87">@sharat87</a>).</p>
+<p>Also, don't forget to <a href="https://chrome.google.com/webstore/detail/cafiohcgicchdfciefpbjjgigbmajndb">rate the
+extension</a>
+:)</p>
+<h1>License</h1>
+<p>Keyboard-fu is released with the <a href="http://mit.sharats.me">MIT license</a>.</p>
+<p>The source code is <a href="http://github.com/sharat87/keyboard-fu">hosted on github</a>.
+Clone it and send a pull request to contribute. If you're making a fairly large
+change to the project, I'd prefer if you open an issue on github first, so we
+can discuss the right way to accomplish what you want.</p>
+<hr />
+<p>by Shrikant Sharat Kandula (<a href="http://twitter.com/sharat87">@sharat87</a>)</p>
+<link rel=stylesheet href=/css/usage.css>

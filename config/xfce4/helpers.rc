@@ -1,0 +1,5 @@
+WebBrowser=custom-WebBrowser
+MailReader=mutt
+FileManager=custom-FileManager
+TerminalEmulator=urxvt
+

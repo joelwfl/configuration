@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1 z",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Vedeţi rapid timpul până la următoarea întâlnire, din oricare dintre calendarele dvs. Faceţi clic pe buton pentru a accesa calendarul."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1 h",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google Calendar"
+   },
+   "minutes": {
+      "message": "$1 m",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Asistenţă pentru mai multe calendare"
+   },
+   "multicalendartooltip": {
+      "message": "Bifaţi caseta pentru a activa asistenţa pentru mai multe calendare"
+   },
+   "name": {
+      "message": "Google Calendar Checker (de la Google)"
+   },
+   "notitle": {
+      "message": "(Fără titlu)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Setările au fost salvate."
+   },
+   "status_saving": {
+      "message": "Se salvează..."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

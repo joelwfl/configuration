@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/pfdindisplaypro.css"/>
+    <style>
+        .clearfix:before,
+        .clearfix:after {
+            content: " ";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+/*        * {
+            background: rgba(0,0,0,0.1);
+            outline: 1px solid rgba(255,0,0,0.3);
+        }*/
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            width: 300px;
+            height: 150px;
+        }
+        h3 {
+            margin: 0;
+        }
+        #task {
+            font-weight: bold;
+            font-size: 15px;
+
+            white-space: nowrap;
+            width: 100%;
+            max-width: 205px;
+            white-space: nowrap;
+            overflow: hidden;
+            -webkit-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+        #task a {
+            color: #000;
+            overflow: hidden;
+            -webkit-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            display: block;
+        }
+        #task a:after {
+            content: url("/images/exec_mail_big.png");
+            position: absolute;
+            top: 54px;
+            right: 14px;
+        }
+        #task a:hover {
+            color: #009640;
+        }
+        #description {
+            color: gray;
+            font-size: 12px;
+            padding-bottom: 17px;
+        }
+        #back {
+            float: left;
+        }
+        #snooze {
+            float: left;
+        }
+        #done, #dismiss {
+            float: right;
+            text-align: right;
+            padding-right: 45px;
+        }
+        .menu {
+            border-top: 1px solid #eee;
+            font-family: PFDinDisplayPro, sans-serif;
+            font-weight: 200;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            margin: 0;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .bell {
+            width: 32px;
+            margin-bottom: 5px;
+        }
+        .alert-info {
+            margin: 10px 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+
+        }
+        tr {
+
+        }
+        td {
+            padding: 10px 20px;
+            border: 1px solid #eee;
+        }
+        .page {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            -webkit-transition: left 0.3s ease-in-out;
+        }
+        #snooze-page {
+            left: 100%;
+        }
+        #snooze-page.visible {
+            left: 0;
+        }
+        #alert-page {
+            left: -100%;
+        }
+        #alert-page.visible {
+            left: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="alert">
+
+    <div class="page visible" id="alert-page">
+        <div class="alert-info">
+            <img class="bell" src="/images/bell_white.gif"/>
+            <div id="link"></div>
+            <div id="task"></div>
+            <div id="description"></div>
+        </div>
+
+        <ul class="menu clearfix">
+            <li id="snooze">Snooze</li>
+            <!--<li id="done">Complete</li>-->
+            <li id="dismiss">Dismiss</li>
+        </ul>
+
+    </div>
+
+    <div class="page" id="snooze-page">
+        <table id="snooze-menu">
+            <tr>
+                <td data-minutes="5">5 minutes</td>
+                <td data-minutes="60">1 hour</td>
+            </tr>
+            <tr>
+                <td data-minutes="15">15 minutes</td>
+                <td data-minutes="180">3 hours</td>
+            </tr>
+            <tr>
+                <td data-minutes="30">30 minutes</td>
+                <td data-minutes="720">tomorrow</td>
+            </tr>
+        </table>
+        <ul class="menu" style="border: 0">
+            <li id="back">Back</li>
+        </ul>
+    </div>
+
+
+
+</div>
+
+<script src="/js/libs/require/require.js"></script>
+<script src="/js/libs/jquery/jquery-min.js"></script>
+<script src="/js/notification.js"></script>
+
+</body>
+</html>

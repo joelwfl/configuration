@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1 d",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Varat ātri skatīt, cik daudz laika atlicis līdz nākamajai sapulcei, izmantojot jebkuru no saviem kalendāriem. Lai atvērtu kalendāru, nospiediet pogu."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1 h",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google kalendārs"
+   },
+   "minutes": {
+      "message": "$1 min",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Vairāku kalendāru atbalsts"
+   },
+   "multicalendartooltip": {
+      "message": "Lūdzu, atzīmējiet lodziņu, lai iespējotu vairāku kalendāru atbalstu."
+   },
+   "name": {
+      "message": "Google Calendar Checker (nodrošina Google)"
+   },
+   "notitle": {
+      "message": "(Bez nosaukuma)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Iestatījumi ir saglabāti."
+   },
+   "status_saving": {
+      "message": "Notiek saglabāšana..."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

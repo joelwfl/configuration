@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1 Tage",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Werfen Sie schnell einen Blick auf die verbleibende Zeit bis zum nächsten Termin in einem Ihrer Kalender. Klicken Sie zum Öffnen Ihres Kalenders auf die Schaltfläche."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1 Std.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google Kalender"
+   },
+   "minutes": {
+      "message": "$1 Min.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Unterstützung mehrerer Kalender"
+   },
+   "multicalendartooltip": {
+      "message": "Aktivieren Sie das Kontrollkästchen, um die Unterstützung mehrerer Kalender einzuschalten."
+   },
+   "name": {
+      "message": "Google Calendar Checker"
+   },
+   "notitle": {
+      "message": "(Kein Titel)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Einstellungen gespeichert"
+   },
+   "status_saving": {
+      "message": "Speichern...."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

@@ -1,0 +1,285 @@
+{
+    "extension_description": {
+        "message": "Any.DO는 모든 할 일을 기억하는 것을 도와줍니다.",
+        "description": "Used primarily in installation dialogs and such"
+    },
+
+    "task_added": {
+        "message": "작업을 추가했습니다.",
+        "description": "Gmail: Shown after adding a task"
+    },
+    "error_must_login_first": {
+        "message": "먼저 Any.DO에 로그인해야 합니다.",
+        "description": "Shown when trying to add tasks from Gmail when the user isn't logged in to Any.DO in the extension"
+    },
+
+    "remind_me": {
+        "message": "알림",
+        "description": "Primary Gmail Button"
+    },
+    "add_this_thread": {
+        "message": "이 작업 추가",
+        "description": "Gmail button tooltip"
+    },
+    "add_to_my_anydo": {
+        "message": "나의 Any.DO에 추가",
+        "description": "Gmail dropdown: Main Title"
+    },
+    "gmail_task_title_label": {
+        "message": "제목",
+        "description": "Label before task title field"
+    },
+
+    "date_today": {
+        "message": "오늘"
+    },
+    "date_tomorrow": {
+        "message": "내일"
+    },
+    "date_this_week": {
+        "message": "이번 주"
+    },
+    "date_later": {
+        "message": "나중에"
+    },
+    "date_custom": {
+        "message": "사용자 정의"
+    },
+
+    "in_2_hours": {
+        "message": "2시간 후",
+        "description": "A short links to add quick reminders. Specifically for 2 hours from now. Must be as short as possible"
+    },
+    "in_x_hours": {
+        "message": "$number$시간 후",
+        "description": "A short link to add quick reminders. Must be as short as possible.",
+        "placeholders": {
+            "number": {
+                "content": "$1",
+                "example": "4"
+            }
+        }
+    },
+    "10am": {
+        "message": "오전 10시",
+        "description": "Keep it short"
+    },
+    "1pm": {
+        "message": "오후 1시",
+        "description": "Keep it short"
+    },
+    "5pm": {
+        "message": "오후 5시",
+        "description": "Keep it short"
+    },
+    "reminder_window_title": {
+        "message": "시간 설정"
+    },
+    "alert_when": {
+        "message": "시간:",
+        "description": "Label in front of the alert time dropdowns"
+    },
+
+    "today": {
+        "message": "오늘"
+    },
+    "sun": {
+        "message": "일"
+    },
+    "mon": {
+        "message": "월"
+    },
+    "tue": {
+        "message": "화"
+    },
+    "wed": {
+        "message": "수"
+    },
+    "thu": {
+        "message": "목"
+    },
+    "fri": {
+        "message": "금"
+    },
+    "sat": {
+        "message": "토"
+    },
+
+    "jan": {
+        "message": "1월"
+    },
+    "feb": {
+        "message": "2월"
+    },
+    "mar": {
+        "message": "3월"
+    },
+    "apr": {
+        "message": "4월"
+    },
+    "may": {
+        "message": "5월"
+    },
+    "jun": {
+        "message": "6월"
+    },
+    "jul": {
+        "message": "7월"
+    },
+    "aug": {
+        "message": "8월"
+    },
+    "sep": {
+        "message": "9월"
+    },
+    "oct": {
+        "message": "10월"
+    },
+    "nov": {
+        "message": "11월"
+    },
+    "dec": {
+        "message": "12월"
+    },
+
+    "back": {
+        "message": "뒤로"
+    },
+    "set": {
+        "message": "설정"
+    },
+
+
+    "welcome_title": {
+        "message": "안녕하세요!",
+        "description": "Top headline in welcome screen"
+    },
+    "welcome_intro": {
+        "message": "모바일 앱과 동기화하고 작업을 시작하세요",
+        "description": "Into paragraph"
+    },
+    "register": {
+        "message": "등록"
+    },
+    "login": {
+        "message": "로그인"
+    },
+    "log_in": {
+        "message": "로그인"
+    },
+    "forgot": {
+        "message": "비밀번호 찾기"
+    },
+    "your_email": {
+        "message": "이메일"
+    },
+    "password": {
+        "message": "비밀번호"
+    },
+    "choose_a_password": {
+        "message": "비밀번호 선택"
+    },
+    "enter_your_name": {
+        "message": "이름 입력"
+    },
+    "already": {
+        "message": "이미 회원이세요?"
+    },
+
+    "priority": {
+        "message": "우선순위"
+    },
+    "folder": {
+        "message": "폴더"
+    },
+    "reminder": {
+        "message": "알림"
+    },
+    "notes": {
+        "message": "메모"
+    },
+    "share": {
+        "message": "공유"
+    },
+
+    "personal": {
+        "message": "개인"
+    },
+    "work": {
+        "message": "업무"
+    },
+
+    "add_note": {
+        "message": "새 메모 추가"
+    },
+
+    "choose_folder": {
+        "message": "폴더 선택"
+    },
+    "new_folder": {
+        "message": "새 폴더...",
+        "description": "Placeholder"
+    },
+    "insert_new_task": {
+        "message": "새 작업 추가...",
+        "description": "Placeholder"
+    },
+    "show_by_date": {
+        "message": "날짜별 표시"
+    },
+    "show_by_folder": {
+        "message": "폴더별 표시"
+    },
+    "clear_completed": {
+        "message": "완료한 작업 지우기"
+    },
+    "user_options": {
+        "message": "사용자 옵션"
+    },
+    "pop_out": {
+        "message": "팝 아웃"
+    },
+    "send_feedback": {
+        "message": "피드백 전송"
+    },
+    "week_start": {
+        "message": "주 시작"
+    },
+    "sign_out": {
+        "message": "로그아웃"
+    },
+
+    "things": {
+        "message": "할 일"
+    },
+
+    "context_add_to_anydo": {
+        "message": "Any.DO에 추가",
+        "description": "Context Menu Title"
+    },
+
+    "dismiss": {
+        "message": "무시"
+    },
+    "snooze": {
+        "message": "스누즈"
+    },
+    "5_minutes": {
+        "message": "5분"
+    },
+    "15_minutes": {
+        "message": "15분"
+    },
+    "30_minutes": {
+        "message": "30분"
+    },
+    "1_hour": {
+        "message": "1시간"
+    },
+    "3_hours": {
+        "message": "3시간"
+    },
+    "tomorrow": {
+        "message": "내일"
+    }
+}

@@ -1,0 +1,28 @@
+<header>
+    <ul style="float: left">
+        <li id="menu-date" class="icon-date sortby" title="{{show_by_date}}"><div class="icon"></div></li>
+        <li id="menu-folders" class="icon-folders sortby" title="{{show_by_folder}}"><div class="icon"></div></li>
+        <!--<li id="menu-priority" class="icon-priority" title="Show by Priority"><div class="icon"></div></li>-->
+    </ul>
+    <ul style="float: right">
+        <li id="menu-done" class="icon-settings-clear" title="{{clear_completed}}"><div class="icon"></div></li>
+        <li id="menu-user" class="icon-settings" title="{{user_options}}"><div class="icon"></div></li>
+    </ul>
+</header>
+
+<div class="task-box speech-enabled"> <!-- TODO: Only add the speech-enabled class if a microphone is found -->
+    <div class="task-box-input">
+        <a href="#"><img src="/images/plus_icon.png"/></a>
+        <form class="add-item"></form>
+    </div>
+	<a class="speech-input dontCloseAutocomplete" href="#">&#61512<span class="ring"></span></a>
+</div>
+<div class="tasks-wrapper">
+    <div class="offline-mode-notice">
+        Offline Mode
+        <a href="#">?</a>
+    </div>
+	<div class="tasks">
+	</div>
+	<input class="new-folder-input" maxlength="100" type="text" placeholder="{{new_folder}}"/>
+</div>

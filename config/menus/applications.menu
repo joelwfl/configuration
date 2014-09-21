@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Menu
+  PUBLIC '-//freedesktop//DTD Menu 1.0//EN'
+  'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>
+<Menu>
+	<Name>Applications</Name>
+	<MergeFile type="parent">/etc/xdg/menus/gnome-applications.menu</MergeFile>
+	<Include>
+		<Filename>alacarte-made.desktop</Filename>
+	</Include>
+	<Include>
+		<Filename>alacarte-made-1.desktop</Filename>
+	</Include>
+	<Layout>
+		<Merge type="menus"/>
+		<Menuname>Accessories</Menuname>
+		<Menuname>chrome-apps</Menuname>
+		<Menuname>Education</Menuname>
+		<Menuname>Games</Menuname>
+		<Menuname>Graphics</Menuname>
+		<Menuname>Internet</Menuname>
+		<Menuname>Office</Menuname>
+		<Menuname>Other</Menuname>
+		<Menuname>Development</Menuname>
+		<Menuname>Science</Menuname>
+		<Menuname>Multimedia</Menuname>
+		<Menuname>Sundry</Menuname>
+		<Menuname>System Settings</Menuname>
+		<Menuname>System</Menuname>
+		<Menuname>Universal Access</Menuname>
+		<Menuname>Utilities</Menuname>
+		<Menuname>Web Applications</Menuname>
+		<Menuname>wine-wine</Menuname>
+		<Separator/>
+		<Filename>ubuntu-software-center.desktop</Filename>
+		<Merge type="files"/>
+	</Layout>
+	<Menu>
+		<Name>System</Name>
+		<Include>
+			<Filename>alacarte-made-2.desktop</Filename>
+		</Include>
+		<Layout>
+			<Merge type="menus"/>
+			<Menuname>Administration</Menuname>
+			<Menuname>Preferences</Menuname>
+			<Filename>apturl.desktop</Filename>
+			<Filename>Thunar-bulk-rename.desktop</Filename>
+			<Filename>dconf-editor.desktop</Filename>
+			<Filename>baobab.desktop</Filename>
+			<Filename>htop.desktop</Filename>
+			<Filename>gkbd-keyboard-display.desktop</Filename>
+			<Filename>Thunar-folder-handler.desktop</Filename>
+			<Filename>gnome-power-statistics.desktop</Filename>
+			<Filename>hplj1020.desktop</Filename>
+			<Filename>spacefm.desktop</Filename>
+			<Filename>gnome-system-log.desktop</Filename>
+			<Filename>gnome-system-monitor.desktop</Filename>
+			<Filename>gnome-control-center.desktop</Filename>
+			<Filename>checkbox-gui.desktop</Filename>
+			<Filename>Thunar.desktop</Filename>
+			<Filename>debian-uxterm.desktop</Filename>
+			<Filename>debian-xterm.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Office</Name>
+		<Include>
+			<Filename>mutt.desktop</Filename>
+		</Include>
+		<AppDir>/home/joel/.local/share/applications</AppDir>
+	</Menu>
+	<Menu>
+		<Name>Development</Name>
+		<Include>
+			<Filename>alacarte-made-3.desktop</Filename>
+		</Include>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>geany.desktop</Filename>
+			<Filename>python2.7.desktop</Filename>
+			<Filename>python3.4.desktop</Filename>
+			<Filename>sublime-text-2.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
+	</Menu>
+</Menu>

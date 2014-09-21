@@ -1,0 +1,18 @@
+<div class="popover-background"></div>
+<div class="popover-window">
+    <div class="popover-anchor"></div>
+    <div class="choose-folder">{{choose_folder}}</div>
+    <ul>
+    {{#categories}}
+    <li data-id="{{id}}" class="icon-folders {{#selected}}selected{{/selected}}">
+            <div class="icon"></div>
+    {{#canBeDeleted}}<div class='delete-button'></div>{{/canBeDeleted}}
+    {{#canBeDeleted}}<div class='edit-button'></div>{{/canBeDeleted}}
+    <div class="text">{{text}}</div>
+    <input class="edit-box" maxlength="100" value="{{text}}"/>
+        </li>
+        {{/categories}}
+    </ul>
+    <input placeholder="{{new_folder}}" class="new-folder" maxlength="100" />
+
+</div>

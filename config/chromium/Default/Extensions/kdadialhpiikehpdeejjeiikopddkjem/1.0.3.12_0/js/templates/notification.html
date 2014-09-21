@@ -1,0 +1,35 @@
+<div class="page visible" id="alert-page">
+    <div class="alert-info">
+        <img class="bell" src="/images/bell_white.gif"/>
+        <div id="task"></div>
+        <div id="description"></div>
+    </div>
+
+    <ul class="menu">
+        <li id="snooze">{{snooze}}</li>
+        <!--<li id="done">Complete</li>-->
+        <li id="dismiss">{{dismiss}}</li>
+
+    </ul>
+
+</div>
+
+<div class="page" id="snooze-page">
+    <table id="snooze-menu">
+        <tr>
+            <td data-minutes="5">{{5_minutes}}</td>
+            <td data-minutes="60">{{1_hour}}</td>
+        </tr>
+        <tr>
+            <td data-minutes="15">{{15_minutes}}</td>
+            <td data-minutes="180">{{3_hours}}</td>
+        </tr>
+        <tr>
+            <td data-minutes="30">{{30_minutes}}</td>
+            <td data-minutes="720">{{tomorrow}}</td>
+        </tr>
+    </table>
+    <ul class="menu" style="border: 0">
+        <li id="back">{{back}}</li>
+    </ul>
+</div>

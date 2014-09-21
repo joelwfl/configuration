@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1 päev(a)",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Vaadake kiiresti oma järgmise koosolekuni jäänud aega ükskõik millisest oma kalendrist. Kalendrisse minekuks klõpsake nupul."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1 h",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google'i kalender"
+   },
+   "minutes": {
+      "message": "$1 min",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Multi-Calendari tugi"
+   },
+   "multicalendartooltip": {
+      "message": "Mitme kalendri toe lubamiseks märkige ruut"
+   },
+   "name": {
+      "message": "Google Calendar Checker (Google)"
+   },
+   "notitle": {
+      "message": "(Pealkiri puudub)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Seaded salvestatud."
+   },
+   "status_saving": {
+      "message": "Salvestamine ..."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

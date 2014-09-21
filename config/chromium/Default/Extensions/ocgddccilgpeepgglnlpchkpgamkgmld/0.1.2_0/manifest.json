@@ -1,0 +1,24 @@
+{
+   "app": {
+      "background": {
+         "page": "js/chrome/background.html"
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_extension_description__",
+   "icons": {
+      "128": "icons/anydo-128-local.png",
+      "16": "icons/anydo-local.png",
+      "48": "icons/anydo-48-local.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8+UwWBNJ2c4sU2aFbIXKLWe499dYTwd7AKQZJ/oTy5EoFK9td2C0hZoRW75nCo4+j7/q0yatMsDMmquHaqADg3HS38SLnlqxun2G+Pj+AjoI0juMQNUyKClnNxHGSuI189vP9pl8cBmjMZloB+m5s0HmWjn6mO9Wt2z+LB8Jd4QIDAQAB",
+   "manifest_version": 2,
+   "name": "Any.do",
+   "offline_enabled": true,
+   "permissions": [ "audioCapture", "storage", "notifications", "contextMenus", "https://sm-dev.any.do/*/", "http://*/*", "https://*/*", "identity" ],
+   "sandbox": {
+      "pages": [ "embedded_host.html" ]
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.2"
+}

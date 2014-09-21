@@ -1,0 +1,1 @@
+function messageBackgroundPage(a){chrome.runtime.getBackgroundPage(function(b){b.postMessage(a,"*")})}window._gaq={push:function(){messageBackgroundPage({type:"report",report:$.makeArray(arguments)})}};window.onerror=function(a,b,c){_gaq.push(["_trackEvent","Exceptions","Application","["+b+" ("+c+")] "+a,null,!0])};

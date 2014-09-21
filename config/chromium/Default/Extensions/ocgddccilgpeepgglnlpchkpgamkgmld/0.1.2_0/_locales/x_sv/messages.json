@@ -1,0 +1,285 @@
+{
+    "extension_description": {
+        "message": "Any.DO hjälper dig att komma ihåg allt du måste göra.",
+        "description": "Used primarily in installation dialogs and such"
+    },
+
+    "task_added": {
+        "message": "Lade framgångsrikt till uppgift.",
+        "description": "Gmail: Shown after adding a task"
+    },
+    "error_must_login_first": {
+        "message": "Du måste logga in på Any.DO först.",
+        "description": "Shown when trying to add tasks from Gmail when the user isn't logged in to Any.DO in the extension"
+    },
+
+    "remind_me": {
+        "message": "Påminn mig",
+        "description": "Primary Gmail Button"
+    },
+    "add_this_thread": {
+        "message": "Lägg till denna uppgift",
+        "description": "Gmail button tooltip"
+    },
+    "add_to_my_anydo": {
+        "message": "Lägg till i min Any.DO",
+        "description": "Gmail dropdown: Main Title"
+    },
+    "gmail_task_title_label": {
+        "message": "Titel",
+        "description": "Label before task title field"
+    },
+
+    "date_today": {
+        "message": "Idag"
+    },
+    "date_tomorrow": {
+        "message": "Imorgon"
+    },
+    "date_this_week": {
+        "message": "Denna vecka"
+    },
+    "date_later": {
+        "message": "Senare"
+    },
+    "date_custom": {
+        "message": "Anpassad"
+    },
+
+    "in_2_hours": {
+        "message": "Om 2 h",
+        "description": "A short links to add quick reminders. Specifically for 2 hours from now. Must be as short as possible"
+    },
+    "in_x_hours": {
+        "message": "Om $number$ h",
+        "description": "A short link to add quick reminders. Must be as short as possible.",
+        "placeholders": {
+            "number": {
+                "content": "$1",
+                "example": "4"
+            }
+        }
+    },
+    "10am": {
+        "message": "10.00",
+        "description": "Keep it short"
+    },
+    "1pm": {
+        "message": "13.00",
+        "description": "Keep it short"
+    },
+    "5pm": {
+        "message": "17.00",
+        "description": "Keep it short"
+    },
+    "reminder_window_title": {
+        "message": "Ställ in tid"
+    },
+    "alert_when": {
+        "message": "När:",
+        "description": "Label in front of the alert time dropdowns"
+    },
+
+    "today": {
+        "message": "Idag"
+    },
+    "sun": {
+        "message": "Sön"
+    },
+    "mon": {
+        "message": "Mån"
+    },
+    "tue": {
+        "message": "Tis"
+    },
+    "wed": {
+        "message": "Ons"
+    },
+    "thu": {
+        "message": "Tor"
+    },
+    "fri": {
+        "message": "Fre"
+    },
+    "sat": {
+        "message": "Lör"
+    },
+
+    "jan": {
+        "message": "Jan"
+    },
+    "feb": {
+        "message": "Feb"
+    },
+    "mar": {
+        "message": "Mar"
+    },
+    "apr": {
+        "message": "Apr"
+    },
+    "may": {
+        "message": "Maj"
+    },
+    "jun": {
+        "message": "Jun"
+    },
+    "jul": {
+        "message": "Jul"
+    },
+    "aug": {
+        "message": "Aug"
+    },
+    "sep": {
+        "message": "Sep"
+    },
+    "oct": {
+        "message": "Okt"
+    },
+    "nov": {
+        "message": "Nov"
+    },
+    "dec": {
+        "message": "Dec"
+    },
+
+    "back": {
+        "message": "Tillbaka"
+    },
+    "set": {
+        "message": "Ställ in"
+    },
+
+
+    "welcome_title": {
+        "message": "Hej där!",
+        "description": "Top headline in welcome screen"
+    },
+    "welcome_intro": {
+        "message": "Synkronisera med din mobilapp och börja få saker gjorda",
+        "description": "Into paragraph"
+    },
+    "register": {
+        "message": "Registrera dig"
+    },
+    "login": {
+        "message": "Inloggning"
+    },
+    "log_in": {
+        "message": "Logga in"
+    },
+    "forgot": {
+        "message": "Glömt ditt lösenord?"
+    },
+    "your_email": {
+        "message": "Din e-postadress"
+    },
+    "password": {
+        "message": "Lösenord"
+    },
+    "choose_a_password": {
+        "message": "Välj ett lösenord"
+    },
+    "enter_your_name": {
+        "message": "Ange ditt namn"
+    },
+    "already": {
+        "message": "Redan medlem?"
+    },
+
+    "priority": {
+        "message": "Prioritet"
+    },
+    "folder": {
+        "message": "Mapp"
+    },
+    "reminder": {
+        "message": "Påminnelse"
+    },
+    "notes": {
+        "message": "Anteckningar"
+    },
+    "share": {
+        "message": "dela"
+    },
+
+    "personal": {
+        "message": "Personligt"
+    },
+    "work": {
+        "message": "Arbete"
+    },
+
+    "add_note": {
+        "message": "Lägg till en ny anteckning"
+    },
+
+    "choose_folder": {
+        "message": "Välj en mapp"
+    },
+    "new_folder": {
+        "message": "Ny mapp...",
+        "description": "Placeholder"
+    },
+    "insert_new_task": {
+        "message": "Infoga en ny uppgift...",
+        "description": "Placeholder"
+    },
+    "show_by_date": {
+        "message": "Visa enligt datum"
+    },
+    "show_by_folder": {
+        "message": "Visa enligt mapp"
+    },
+    "clear_completed": {
+        "message": "Rensa slutförda uppgifter"
+    },
+    "user_options": {
+        "message": "Användaralternativ"
+    },
+    "pop_out": {
+        "message": "Poppa ut"
+    },
+    "send_feedback": {
+        "message": "Skicka feedback till oss"
+    },
+    "week_start": {
+        "message": "Veckostart"
+    },
+    "sign_out": {
+        "message": "Logga ut"
+    },
+
+    "things": {
+        "message": "saker"
+    },
+
+    "context_add_to_anydo": {
+        "message": "Lägg till i Any.DO",
+        "description": "Context Menu Title"
+    },
+
+    "dismiss": {
+        "message": "Avfärda"
+    },
+    "snooze": {
+        "message": "Snooza"
+    },
+    "5_minutes": {
+        "message": "5 minuter"
+    },
+    "15_minutes": {
+        "message": "15 minuter"
+    },
+    "30_minutes": {
+        "message": "30 minuter"
+    },
+    "1_hour": {
+        "message": "1 timme"
+    },
+    "3_hours": {
+        "message": "3 timmar"
+    },
+    "tomorrow": {
+        "message": "imorgon"
+    }
+}

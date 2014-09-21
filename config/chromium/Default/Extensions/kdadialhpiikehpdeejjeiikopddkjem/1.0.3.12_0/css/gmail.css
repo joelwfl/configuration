@@ -1,0 +1,170 @@
+.anydo-button {
+    -webkit-box-shadow: 0px 4px 7px -6px rgba(0, 0, 0, 0.7);
+    box-shadow:         0px 4px 7px -6px rgba(0, 0, 0, 0.7);
+    border-color: rgba(0, 0, 0, 0.15) !important;
+}
+.anydo-menu {max-height: none !important;}
+.anydo-item {margin-left: 4px; margin-right: 4px; padding: 13px 8px 11px !important; font-size: 14px;}
+.anydo-item:hover {padding: 12px 8px 10px  !important; background: #f7f7f7 !important; border-color: #f7f7f7 !important;}
+.anydo-item .remind {position: relative; display: inline-block; visibility: hidden; float: right; margin-left: 8px;}
+.anydo-item .remind a {font-size: 12px; color: #009ac8; text-decoration: none; margin-left: 12px;}
+.anydo-item .remind a:first-child {margin-left: 0;}
+.anydo-item .remind a:hover {text-decoration: underline;}
+.anydo-item .remind span {vertical-align: middle;}
+.anydo-item:hover .remind {display: inline-block; visibility: visible;}
+.anydo-item.anydo-custom:hover .remind {display: none;}
+.anydo-item .remind:hover span {color: #009ac8;}
+.anydo-menu .reminderPanel {position: absolute; top: 0; right: -300px; -webkit-transition: opacity 0.3s ease-in;}
+.anydo-menu .calendarFrame {width: 300px; height: 314px; border: none; display: block; border-bottom: 1px solid #F1F1F1;}
+.reminderPanel > a, .anydo-setReminder, .anydo-setCustomReminder {background-position: 50% 7px; color: #000; background-repeat: no-repeat; box-sizing: border-box; text-align: center; width: 50%; text-decoration: none; font-size: 14px; padding: 32px 17px 10px; text-transform: uppercase;}
+.reminderPanel > a:hover, .anydo-setReminder:hover, .anydo-setCustomReminder:hover {background-color: #eeeeee;}
+.anydo-back {background-image: url(../images/button_back.png); float: left;}
+.anydo-setReminder, .anydo-setCustomReminder {background-image: url(../images/button_next.png); background-position: 51% 7px !important; float: right;}
+.invalid {box-shadow: 0 0 0 1px #f1ca7f;}
+.invalid .anydo-input-title {border-color: #c7a158 !important;}
+.anydo-menu h2 {color: #00bbe8; font-weight: 300; margin: 10px 12px 7px; font-family: "PFDinDisplayPro", sans-serif; font-size: 28px;}
+.anydo-tour {
+    position: absolute;
+    z-index: 100;
+    max-height: none;
+    overflow: hidden;
+    width: 276px;
+    top: 35px;
+    -webkit-box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.45);
+    box-shadow:         2px 3px 10px rgba(0, 0, 0, 0.45);
+    -webkit-border-radius: 2px;
+    border-radius:         2px;
+    border-top-color: transparent;
+}
+.anydo-tour-on:before {
+    content: "";
+    background: url(../images/popup-edge-top.png) 0 0 no-repeat;
+    width: 276px;
+    height: 12px;
+    position: absolute;
+    z-index: 200;
+    top: 23px;
+    left: 2px;
+}
+.anydo-tour h2 {
+    color: #4299c9;
+    font-weight: 300;
+    font-family: "PFDinDisplayPro", sans-serif;
+    font-size: 52.5px;
+    margin: 5px 17px 0;
+}
+.anydo-tour p {
+    color: #6b6b6b;
+    white-space: normal;
+    font-size: 14px;
+    margin: 0 24px 16px;
+    line-height: 20px;
+}
+.anydo-tour footer {
+    background: url(../images/logo-full.png) 173px 17px no-repeat;
+    height: 21px;
+    border-top: 1px solid #EBEBEB;
+    padding-top: 27px;
+    position: relative;
+    top: 2px;
+}
+.anydo-anybar {
+    font-size: 14px;
+}
+.suggested-task {
+    
+    background-color: inherit;
+    border: 0;
+    margin: 0;
+    outline: none;
+    
+}
+.anydo-anybar .gB {
+    padding-top: 16px !important;
+    padding-bottom: 12px !important;
+}
+.anydo-anybar .amr {
+    white-space: nowrap;
+}
+.anydo-anybar .bar-input {
+    padding: 4px 5px;
+    margin-left: 9px;
+    width: 24%;
+    min-width: 141px;
+}
+.anydo-anybar .suggestion-controls {
+    display: inline;
+    white-space: nowrap;
+}
+.anydo-anybar .suggestion-add {
+    color: #099acb;
+    margin-left: 3.6%;
+    text-decoration: none !important;
+}
+.anydo-anybar .suggestion-add:hover {
+    text-decoration: underline;
+}
+.suggestion-container {
+    position: relative;
+}
+.reminder-choices-popup, .hideReminderPopups .reminder-choices-popup.invisible {
+    position: absolute;
+    z-index: -1;
+    padding: 5px 17px 2px 9px;
+    left: 100%;
+    margin-left: 5px;
+    top: -50px;
+    background: #fff;
+    border: 1px solid rgba(145,145,145,0.5);
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 0;
+    -webkit-transition: all 350ms cubic-bezier(1,0,1,1);
+    transition: all 350ms cubic-bezier(1,0,1,1);
+    -webkit-box-shadow: 1px 1px 3px #C7C7C7;
+    box-shadow: 1px 1px 3px #C7C7C7;
+}
+.reminder-choices-popup:before {
+    content: url(../images/popup-edge-left.png);
+    position: absolute;
+    top: 49px;
+    right: 100%;
+}
+.reminder-choices-popup a {
+    display: block;
+    line-height: 26px;
+}
+.suggestion-date-category:not(.custom):hover + .reminder-choices-popup, .reminder-choices-popup:hover, .reminder-choices-popup.visible {
+    opacity: 1;
+    z-index: 2;
+    -webkit-transition: all 150ms ease-in;
+    transition: all 150ms ease-in;
+}
+.reminder-choices-popup.invisible {
+    z-index: -1;
+    opacity: 0;
+}
+.reminder-choices-popup.customReminderPicker {
+    padding: 2px;
+    top: -254px;
+}
+.reminder-choices-popup.customReminderPicker:before {
+    top: 253px;
+}
+.customReminderPicker .calendarFrame {
+    border: none;
+    margin-bottom: 0;
+    height: 269px;
+}
+.anydo-setCustomReminder.suggestion-add {
+    float: none;
+    width: 100%;
+    margin: 2px auto 0;
+    line-height: 17px;
+    padding-bottom: 4px;
+}
+.pastTime {
+    color: #636363 !important;
+    opacity: 0.4;
+    pointer-events: none;
+}

@@ -1,0 +1,17 @@
+{
+   "background_page": "ip_background.html",
+   "content_scripts": [ {
+      "js": [ "ip_content_script.js" ],
+      "matches": [ "http://*/*" ]
+   } ],
+   "description": "Finds links to images and youtube videos in the web page you're on and replaces the link with a lightbox popup.",
+   "icons": {
+      "128": "icon128.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/v/Mg94p+NZmGyKzdUwVYvJ8Q2YBGv1EzAkqgAaiYNG2YJJ/xu2o+BG5fI4yPi2BxL2BRHiiGRQa/T+MeDQVokdZoYwxPBwvJzvKIBfdT/4++ody9/1v1+M1+/GlHhZt1u/+gBxJku+VsvhJ4a/OugUUKpZp3f7d5XMJoaVHAeQIDAQAB",
+   "name": "Image Preview",
+   "options_page": "image_preview_options.html",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.2.0"
+}

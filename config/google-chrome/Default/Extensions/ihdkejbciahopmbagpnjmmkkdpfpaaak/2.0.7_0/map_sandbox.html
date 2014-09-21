@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+  <head>
+  <title>WeatherBug Maps</title>
+
+  <link href="css/maps.css" rel="stylesheet" type="text/css" />
+
+  <!--
+    X-WebKit-CSP:
+      Sets the CSP for the Google Analytics as per the specification at
+      https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html
+  -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' chrome-extension: https://*.googleapis.com https://*.gstatic.com; img-src 'self' chrome-extension: https://*.googleapis.com https://*.gstatic.com http://*.weatherbug.com;"/>
+  <script type="text/javascript" src="scripts/jquery-1.5.1.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery-ui-1.8.12.custom.min.js"></script>
+  <script type="text/javascript" src="scripts/maps-overlays.js"></script>
+  <script type="text/javascript" src="scripts/map_sandbox.js"></script>
+  
+  <link href="css/main/jquery-ui-1.8.12.custom.css" rel="stylesheet" type="text/css" />
+  <link href="css/common.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="map_container" style="height: 100%;"></div>
+
+
+            <fieldset id="map-animate-wrap" class="border-box" style="display:none;">
+              <div class="transparency"></div>
+              <div class="transparency-wrap flexbox vertical">
+                <div id="map-animate" class="flexbox horizontal center pack-center">
+                  <button id="anim-begin" style="display:none;">begining</button>
+                  <button id="anim-prev" style="display:none;">prev</button>
+                  <button id="anim-play">play</button>
+                  <button id="anim-next" style="display:none;">next</button>
+                  <button id="anim-end" style="display:none;">end</button>
+                </div>
+                <div id="map-animation-slots" style="display:none;" class="flexbox horizontal">
+                </div>
+              </div>
+            </fieldset>
+
+            <div id="map-legend">
+              <div class="transparency"></div>
+              <div id="map-update-info">
+                <div id="map-last-update"></div>
+              </div>
+              <img src="" alt="map legend" />
+            </div>
+            <img id="map-animation-loading" src="images/ajax-loader.gif" style="display:none;" alt="The animation is loading" />
+  </body>
+</html>

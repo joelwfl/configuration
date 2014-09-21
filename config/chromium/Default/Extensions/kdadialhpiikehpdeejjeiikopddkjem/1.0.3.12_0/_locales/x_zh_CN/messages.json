@@ -1,0 +1,285 @@
+{
+    "extension_description": {
+        "message": "Any.DO可帮助你记住所有要做的事情。",
+        "description": "Used primarily in installation dialogs and such"
+    },
+
+    "task_added": {
+        "message": "成功添加任务。",
+        "description": "Gmail: Shown after adding a task"
+    },
+    "error_must_login_first": {
+        "message": "你必须先登录Any.DO。",
+        "description": "Shown when trying to add tasks from Gmail when the user isn't logged in to Any.DO in the extension"
+    },
+
+    "remind_me": {
+        "message": "提醒我",
+        "description": "Primary Gmail Button"
+    },
+    "add_this_thread": {
+        "message": "添加此任务",
+        "description": "Gmail button tooltip"
+    },
+    "add_to_my_anydo": {
+        "message": "添加至我的Any.DO",
+        "description": "Gmail dropdown: Main Title"
+    },
+    "gmail_task_title_label": {
+        "message": "标题",
+        "description": "Label before task title field"
+    },
+
+    "date_today": {
+        "message": "今天"
+    },
+    "date_tomorrow": {
+        "message": "明天"
+    },
+    "date_this_week": {
+        "message": "本周"
+    },
+    "date_later": {
+        "message": "以后"
+    },
+    "date_custom": {
+        "message": "自定义"
+    },
+
+    "in_2_hours": {
+        "message": "2小时后",
+        "description": "A short links to add quick reminders. Specifically for 2 hours from now. Must be as short as possible"
+    },
+    "in_x_hours": {
+        "message": "$number$小时后",
+        "description": "A short link to add quick reminders. Must be as short as possible.",
+        "placeholders": {
+            "number": {
+                "content": "$1",
+                "example": "4"
+            }
+        }
+    },
+    "10am": {
+        "message": "上午10点",
+        "description": "Keep it short"
+    },
+    "1pm": {
+        "message": "下午1点",
+        "description": "Keep it short"
+    },
+    "5pm": {
+        "message": "下午5点",
+        "description": "Keep it short"
+    },
+    "reminder_window_title": {
+        "message": "设置时间"
+    },
+    "alert_when": {
+        "message": "时间:",
+        "description": "Label in front of the alert time dropdowns"
+    },
+
+    "today": {
+        "message": "今天"
+    },
+    "sun": {
+        "message": "周日"
+    },
+    "mon": {
+        "message": "周一"
+    },
+    "tue": {
+        "message": "周二"
+    },
+    "wed": {
+        "message": "周三"
+    },
+    "thu": {
+        "message": "周四"
+    },
+    "fri": {
+        "message": "周五"
+    },
+    "sat": {
+        "message": "周六"
+    },
+
+    "jan": {
+        "message": "一月"
+    },
+    "feb": {
+        "message": "二月"
+    },
+    "mar": {
+        "message": "三月"
+    },
+    "apr": {
+        "message": "四月"
+    },
+    "may": {
+        "message": "五月"
+    },
+    "jun": {
+        "message": "六月"
+    },
+    "jul": {
+        "message": "七月"
+    },
+    "aug": {
+        "message": "八月"
+    },
+    "sep": {
+        "message": "九月"
+    },
+    "oct": {
+        "message": "十月"
+    },
+    "nov": {
+        "message": "十一月"
+    },
+    "dec": {
+        "message": "十二月"
+    },
+
+    "back": {
+        "message": "返回"
+    },
+    "set": {
+        "message": "设置"
+    },
+
+
+    "welcome_title": {
+        "message": "你好!",
+        "description": "Top headline in welcome screen"
+    },
+    "welcome_intro": {
+        "message": "与你的手机应用程序同步并开始做事情",
+        "description": "Into paragraph"
+    },
+    "register": {
+        "message": "注册"
+    },
+    "login": {
+        "message": "登录"
+    },
+    "log_in": {
+        "message": "登录"
+    },
+    "forgot": {
+        "message": "忘记密码?"
+    },
+    "your_email": {
+        "message": "你的电子邮件"
+    },
+    "password": {
+        "message": "密码"
+    },
+    "choose_a_password": {
+        "message": "选择密码"
+    },
+    "enter_your_name": {
+        "message": "输入你的名字"
+    },
+    "already": {
+        "message": "已经是会员?"
+    },
+
+    "priority": {
+        "message": "优先级"
+    },
+    "folder": {
+        "message": "文件夹"
+    },
+    "reminder": {
+        "message": "提醒"
+    },
+    "notes": {
+        "message": "备注"
+    },
+    "share": {
+        "message": "分享"
+    },
+
+    "personal": {
+        "message": "个人"
+    },
+    "work": {
+        "message": "工作"
+    },
+
+    "add_note": {
+        "message": "添加一个新备注"
+    },
+
+    "choose_folder": {
+        "message": "选择一个文件夹"
+    },
+    "new_folder": {
+        "message": "新文件夹...",
+        "description": "Placeholder"
+    },
+    "insert_new_task": {
+        "message": "插入一个新任务...",
+        "description": "Placeholder"
+    },
+    "show_by_date": {
+        "message": "按日期显示"
+    },
+    "show_by_folder": {
+        "message": "按文件夹显示"
+    },
+    "clear_completed": {
+        "message": "清除完成的任务"
+    },
+    "user_options": {
+        "message": "用户选项"
+    },
+    "pop_out": {
+        "message": "弹出"
+    },
+    "send_feedback": {
+        "message": "给我们发送反馈"
+    },
+    "week_start": {
+        "message": "周开始"
+    },
+    "sign_out": {
+        "message": "退出"
+    },
+
+    "things": {
+        "message": "事情"
+    },
+
+    "context_add_to_anydo": {
+        "message": "添加至Any.DO",
+        "description": "Context Menu Title"
+    },
+
+    "dismiss": {
+        "message": "关闭"
+    },
+    "snooze": {
+        "message": "小睡"
+    },
+    "5_minutes": {
+        "message": "5分钟"
+    },
+    "15_minutes": {
+        "message": "15分钟"
+    },
+    "30_minutes": {
+        "message": "30分钟"
+    },
+    "1_hour": {
+        "message": "1小时"
+    },
+    "3_hours": {
+        "message": "3小时"
+    },
+    "tomorrow": {
+        "message": "明天"
+    }
+}

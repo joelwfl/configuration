@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1 يوم",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "يمكنك بسرعة التعرف على الوقت المتبقي لك إلى أن يحين موعد اجتماعك التالي من أي تقويم من تقاويمك. انقر على الزر ليتم نقلك إلى التقويم."
+   },
+   "direction": {
+      "message": "rtl"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1 ساعة",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "تقويم Google"
+   },
+   "minutes": {
+      "message": "$1 دقيقة",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "دعم متعدد للتقويم"
+   },
+   "multicalendartooltip": {
+      "message": "الرجاء تحديد المربع لتمكين الدعم المتعدد للتقويم."
+   },
+   "name": {
+      "message": "Google Calendar Checker (تدعمها Google)"
+   },
+   "notitle": {
+      "message": "(ليس هناك أي عنوان)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "تم حفظ الإعدادات."
+   },
+   "status_saving": {
+      "message": "جارِ الحفظ..."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

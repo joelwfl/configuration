@@ -1,0 +1,26 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "icon_19_19.png"
+      },
+      "default_popup": "sessions.html",
+      "default_title": "Session Manager"
+   },
+   "description": "Session Manager lets you save sessions of your opened tabs and windows, and to quickly re-open them whenever you like.",
+   "icons": {
+      "128": "icon_128_128.png",
+      "16": "icon_16_16.png",
+      "32": "icon_32_32.png",
+      "48": "icon_48_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8SbS3oR9cv67HO8MWw2muC6MUUGpjPRVnwhEEklQCNo0ld+4llowHZ0J2Hdb0GBpy/hV1XhYNoseaMHKOdB+eIOtBkpMSHQeAw5Gmhw+w0UCNbzNley/x17wWsNpYibsSBjfj0kggdV+GmlovnEr2phuPMqMnPMrNobbTnb4KGQIDAQAB",
+   "manifest_version": 2,
+   "name": "Session Manager",
+   "permissions": [ "tabs", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.5"
+}

@@ -1,0 +1,269 @@
+{
+    "set": {
+        "message": "Instellen"
+    }, 
+    "3_hours": {
+        "message": "3 uur"
+    }, 
+    "choose_folder": {
+        "message": "Kies een map"
+    }, 
+    "show_by_folder": {
+        "message": "Weergeven op Map"
+    }, 
+    "sep": {
+        "message": "Sep"
+    }, 
+    "apr": {
+        "message": "Apr"
+    }, 
+    "share": {
+        "message": "delen"
+    }, 
+    "back": {
+        "message": "Terug"
+    }, 
+    "alert_when": {
+        "message": "Wanneer:", 
+        "description": "Label in front of the alert time dropdowns"
+    }, 
+    "snooze": {
+        "message": "Sluimeren"
+    }, 
+    "welcome_title": {
+        "message": "Hé hallo!", 
+        "description": "Top headline in welcome screen"
+    }, 
+    "already": {
+        "message": "Al lid?"
+    }, 
+    "personal": {
+        "message": "Persoonlijk"
+    }, 
+    "your_email": {
+        "message": "Je e-mail"
+    }, 
+    "forgot": {
+        "message": "Wachtwoord vergeten?"
+    }, 
+    "error_must_login_first": {
+        "message": "Je moet eerst inloggen bij Any.DO.", 
+        "description": "Shown when trying to add tasks from Gmail when the user isn't logged in to Any.DO in the extension"
+    }, 
+    "work": {
+        "message": "Werk"
+    }, 
+    "tomorrow": {
+        "message": "morgen"
+    }, 
+    "sat": {
+        "message": "Zat"
+    }, 
+    "priority": {
+        "message": "Prioriteit"
+    }, 
+    "user_options": {
+        "message": "Gebruikers Opties"
+    }, 
+    "5pm": {
+        "message": "17u", 
+        "description": "Keep it short"
+    }, 
+    "date_today": {
+        "message": "Vandaag"
+    }, 
+    "remind_me": {
+        "message": "Herinner Me", 
+        "description": "Primary Gmail Button"
+    }, 
+    "aug": {
+        "message": "Aug"
+    }, 
+    "wed": {
+        "message": "Woe"
+    }, 
+    "date_this_week": {
+        "message": "Deze Week"
+    }, 
+    "sun": {
+        "message": "Zon"
+    }, 
+    "fri": {
+        "message": "Vrij"
+    }, 
+    "date_tomorrow": {
+        "message": "Morgen"
+    }, 
+    "gmail_task_title_label": {
+        "message": "Titel", 
+        "description": "Label before task title field"
+    }, 
+    "5_minutes": {
+        "message": "5 minuten"
+    }, 
+    "15_minutes": {
+        "message": "15 minuten"
+    }, 
+    "jan": {
+        "message": "Jan"
+    }, 
+    "1_hour": {
+        "message": "1 uur"
+    }, 
+    "week_start": {
+        "message": "Week Start"
+    }, 
+    "notes": {
+        "message": "Notities"
+    }, 
+    "task_added": {
+        "message": "Toevoegen taak gelukt.", 
+        "description": "Gmail: Shown after adding a task"
+    }, 
+    "dismiss": {
+        "message": "Negeren"
+    }, 
+    "folder": {
+        "message": "Map"
+    }, 
+    "insert_new_task": {
+        "message": "Een nieuwe taak invoeren...", 
+        "description": "Placeholder"
+    }, 
+    "add_this_thread": {
+        "message": "Voeg deze taak toe", 
+        "description": "Gmail button tooltip"
+    }, 
+    "oct": {
+        "message": "Okt"
+    }, 
+    "today": {
+        "message": "Vandaag"
+    }, 
+    "reminder": {
+        "message": "Herinnering"
+    }, 
+    "30_minutes": {
+        "message": "30 minuten"
+    }, 
+    "welcome_intro": {
+        "message": "Sync met je mobiele app en neem het heft in eigen hand", 
+        "description": "Into paragraph"
+    }, 
+    "mar": {
+        "message": "Maart"
+    }, 
+    "show_by_date": {
+        "message": "Weergeven op Datum"
+    }, 
+    "send_feedback": {
+        "message": "Stuur ons Feedback"
+    }, 
+    "in_x_hours": {
+        "message": "Over $number$h", 
+        "placeholders": {
+            "number": {
+                "content": "$1", 
+                "example": "4"
+            }
+        }, 
+        "description": "A short link to add quick reminders. Must be as short as possible."
+    }, 
+    "1pm": {
+        "message": "13u", 
+        "description": "Keep it short"
+    }, 
+    "may": {
+        "message": "Mei"
+    }, 
+    "add_to_my_anydo": {
+        "message": "Voeg toe aan mijn Any.DO", 
+        "description": "Gmail dropdown: Main Title"
+    }, 
+    "jun": {
+        "message": "Jun"
+    }, 
+    "extension_description": {
+        "message": "Any.DO helpt je te herinneren aan alles wat je moet doen.", 
+        "description": "Used primarily in installation dialogs and such"
+    }, 
+    "jul": {
+        "message": "Jul"
+    }, 
+    "pop_out": {
+        "message": "Pop Out"
+    }, 
+    "mon": {
+        "message": "Maan"
+    }, 
+    "add_note": {
+        "message": "Voeg een nieuwe notitie toe"
+    }, 
+    "feb": {
+        "message": "Feb"
+    }, 
+    "nov": {
+        "message": "Nov"
+    }, 
+    "password": {
+        "message": "Wachtwoord"
+    }, 
+    "tue": {
+        "message": "Din"
+    }, 
+    "log_in": {
+        "message": "Inloggen"
+    }, 
+    "new_folder": {
+        "message": "Nieuwe Map...", 
+        "description": "Placeholder"
+    }, 
+    "in_2_hours": {
+        "message": "Over 2u", 
+        "description": "A short links to add quick reminders. Specifically for 2 hours from now. Must be as short as possible"
+    }, 
+    "thu": {
+        "message": "Don"
+    }, 
+    "register": {
+        "message": "Registreren"
+    }, 
+    "context_add_to_anydo": {
+        "message": "Toevoegen aan Any.DO", 
+        "description": "Context Menu Title"
+    }, 
+    "enter_your_name": {
+        "message": "Voer je naam in"
+    }, 
+    "10am": {
+        "message": "10u", 
+        "description": "Keep it short"
+    }, 
+    "sign_out": {
+        "message": "Afmelden"
+    }, 
+    "reminder_window_title": {
+        "message": "Tijd instellen"
+    }, 
+    "choose_a_password": {
+        "message": "Kies een wachtwoord"
+    }, 
+    "date_custom": {
+        "message": "Aangepast"
+    }, 
+    "clear_completed": {
+        "message": "Voltooide Taken wissen"
+    }, 
+    "things": {
+        "message": "dingen"
+    }, 
+    "login": {
+        "message": "Login"
+    }, 
+    "dec": {
+        "message": "Dec"
+    }, 
+    "date_later": {
+        "message": "Later"
+    }
+}

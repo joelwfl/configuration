@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1η",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Δείτε γρήγορα πότε είναι η επόμενη συνάντησή σας από οποιοδήποτε από τα ημερολόγιά σας. Κάντε κλικ στο κουμπί για να μεταφερθείτε στο ημερολόγιό σας."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1ω",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Ημερολόγιο Google"
+   },
+   "minutes": {
+      "message": "$1λ",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Υποστήριξη πολλών ημερολογίων"
+   },
+   "multicalendartooltip": {
+      "message": "Επιλέξτε το πλαίσιο για να ενεργοποιήσετε την υποστήριξη πολλών ημερολογίων"
+   },
+   "name": {
+      "message": "Google Calendar Checker (από την Google)"
+   },
+   "notitle": {
+      "message": "(Χωρίς τίτλο)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Οι ρυθμίσεις αποθηκεύτηκαν."
+   },
+   "status_saving": {
+      "message": "Αποθήκευση...."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

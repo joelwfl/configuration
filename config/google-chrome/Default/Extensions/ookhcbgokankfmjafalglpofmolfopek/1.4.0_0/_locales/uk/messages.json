@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1 дн.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Швидко переглядайте свої календарі, щоб дізнатися, скільки часу залишилося до наступної зустрічі. Натисніть цю кнопку, щоб перейти до календаря."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1 год.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Календар Google"
+   },
+   "minutes": {
+      "message": "$1 хв.",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Підтримка декількох календарів"
+   },
+   "multicalendartooltip": {
+      "message": "Поставте прапорець, щоб увімкнути підтримку декількох календарів"
+   },
+   "name": {
+      "message": "Google Calendar Checker (від Google)"
+   },
+   "notitle": {
+      "message": "(Без назви)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Налаштування збережено."
+   },
+   "status_saving": {
+      "message": "Зберігання...."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

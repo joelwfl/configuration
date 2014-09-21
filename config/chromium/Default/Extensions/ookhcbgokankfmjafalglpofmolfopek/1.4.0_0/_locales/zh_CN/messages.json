@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1d",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "快速查看离您的任意日历中下一次会议还有多长时间。您只需点击该按钮即可进入自己的日历。"
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1h",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google 日历"
+   },
+   "minutes": {
+      "message": "$1m",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "多日历支持"
+   },
+   "multicalendartooltip": {
+      "message": "请选中此框以启用多日历支持"
+   },
+   "name": {
+      "message": "Google Calendar Checker（由 Google 提供）"
+   },
+   "notitle": {
+      "message": "（无标题）"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "设置已保存。"
+   },
+   "status_saving": {
+      "message": "正在保存..."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

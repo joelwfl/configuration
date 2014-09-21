@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1d",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "Szybko sprawdź w dowolnym kalendarzu, ile masz czasu do następnego zebrania. Kliknij przycisk, aby przejść do kalendarza."
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1g",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Kalendarz Google"
+   },
+   "minutes": {
+      "message": "$1m",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "Obsługa wielu kalendarzy"
+   },
+   "multicalendartooltip": {
+      "message": "Zaznacz pole, aby włączyć obsługę wielu kalendarzy"
+   },
+   "name": {
+      "message": "Google Calendar Checker (by Google)"
+   },
+   "notitle": {
+      "message": "(Bez tytułu)"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "Zapisano ustawienia."
+   },
+   "status_saving": {
+      "message": "Zapisywanie..."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

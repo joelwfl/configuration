@@ -1,0 +1,62 @@
+{
+   "days": {
+      "message": "$1d",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "description": {
+      "message": "どのカレンダーからでも次の会議までの時間をすばやくチェック。ボタンをクリックするとカレンダーにアクセスできます。"
+   },
+   "direction": {
+      "message": "ltr"
+   },
+   "extensionname": {
+      "message": "Google Calendar Checker"
+   },
+   "hours": {
+      "message": "$1h",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "imagetooltip": {
+      "message": "Google カレンダー"
+   },
+   "minutes": {
+      "message": "$1m",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "multicalendartext": {
+      "message": "複数のカレンダーに対応"
+   },
+   "multicalendartooltip": {
+      "message": "複数のカレンダーを使用できるようにするにはチェックボックスをオンにしてください"
+   },
+   "name": {
+      "message": "Google Calendar Checker（by Google）"
+   },
+   "notitle": {
+      "message": "（タイトルなし）"
+   },
+   "optionstitle": {
+      "message": "Google Calendar Checker"
+   },
+   "status_saved": {
+      "message": "設定が保存されました。"
+   },
+   "status_saving": {
+      "message": "保存しています..."
+   },
+   "title": {
+      "message": "Google Calendar Checker"
+   }
+}

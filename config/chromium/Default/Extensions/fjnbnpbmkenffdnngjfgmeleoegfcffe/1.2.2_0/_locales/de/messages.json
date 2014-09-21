@@ -1,0 +1,238 @@
+{
+   "addStyleLabel": {
+      "description": "Label for the button to go to the add style page",
+      "message": "Neuen Stil schreiben"
+   },
+   "addStyleTitle": {
+      "description": "Title of the page for adding styles",
+      "message": "Stil hinzufügen"
+   },
+   "appliesAdd": {
+      "description": "Label for the button to add an 'applies' entry",
+      "message": "Hinzufügen"
+   },
+   "appliesDisplay": {
+      "description": "Text on the manage screen to describe what the style applies to",
+      "message": "Gilt für: $applies$",
+      "placeholders": {
+         "applies": {
+            "content": "$1"
+         }
+      }
+   },
+   "appliesDisplayTruncatedSuffix": {
+      "description": "Text added to appliesDisplay when there are more sites for the style than are displayed",
+      "message": "und vieles mehr"
+   },
+   "appliesDomainOption": {
+      "description": "Option to make the style apply to the entered string as a domain",
+      "message": "URLs auf der Domain"
+   },
+   "appliesHelp": {
+      "description": "Help text for 'applies to' section",
+      "message": "Legen Sie mit den Steuerungselementen \"Gilt für\" fest, für welche URLs der Code in diesem Bereich gilt."
+   },
+   "appliesLabel": {
+      "description": "Label for 'applies to' fields on the edit/add screen",
+      "message": "Gilt für"
+   },
+   "appliesRegexpOption": {
+      "description": "Option to make the style apply to the entered string as a regular expression",
+      "message": "Mit dem regulären Ausdruck übereinstimmende URLs"
+   },
+   "appliesRemove": {
+      "description": "Label for the button to remove an 'applies' entry",
+      "message": "Löschen"
+   },
+   "appliesSpecify": {
+      "description": "Label for the button to make a style apply only to specific sites",
+      "message": "Angeben"
+   },
+   "appliesToEverything": {
+      "description": "Text displayed for styles that apply to all sites",
+      "message": "Alle"
+   },
+   "appliesUrlOption": {
+      "description": "Option to make the style apply to the entered string as a URL",
+      "message": "URL"
+   },
+   "appliesUrlPrefixOption": {
+      "description": "Option to make the style apply to the entered string as a URL prefix",
+      "message": "URLs beginnend mit"
+   },
+   "checkAllUpdates": {
+      "description": "Label for the button to check all styles for updates",
+      "message": "Nach Updates für alle Stile suchen"
+   },
+   "checkForUpdate": {
+      "description": "Label for the button to check a single style for an update",
+      "message": "Nach Updates suchen"
+   },
+   "checkingForUpdate": {
+      "description": "Text to display when checking a style for an update",
+      "message": "Überprüfen..."
+   },
+   "deleteStyleConfirm": {
+      "description": "Confirmation before deleting a style",
+      "message": "Möchten Sie diesen Stil wirklich löschen?"
+   },
+   "deleteStyleLabel": {
+      "description": "Label for the button to delete a style",
+      "message": "Löschen"
+   },
+   "desc": {
+      "message": "Nutzerstile sind Designs für Websites, mit denen Nutzer Websites anpassen und somit noch reibungsloser surfen können: Entfernen Sie nicht relevante Inhalte, ändern Sie Farben oder gestalten Sie eine komplette Website um.\n\nMit Stylish ist das Verwalten Ihrer Nutzerstile ganz einfach. Sie können mit wenigen Klicks Stile hinzufügen, löschen, aktivieren und deaktivieren oder ordnen, ohne dass Sie Code bearbeiten oder versteckte Konfigurationen suchen müssen. Auf userstyles.org, der Partner-Website von Stylish, stehen Ihnen unzählige Nutzerstile zur Auswahl, die von anderen Nutzern entworfen wurden.\n\nEin Hinweis für alle Technikfreaks: Stylish und userstyles.org erfüllen bei CSS die gleiche Funktion wie Greasemonkey und userscripts.org bei JavaScript.\n\n*** Wenn Sie Hilfe benötigen, stellen Sie Ihre Fragen bitte auf http://forum.userstyles.org. Wenn Sie Ihre Fragen hier posten, kann ich sie nicht beantworten."
+   },
+   "description": {
+      "description": "Extension description",
+      "message": "Gestalten Sie das Web mit dem Nutzerstil-Manager Stylish neu."
+   },
+   "disableStyleLabel": {
+      "description": "Label for the button to disable a style",
+      "message": "Deaktivieren"
+   },
+   "editStyleHeading": {
+      "description": "Title of the page for editing styles",
+      "message": "Stil bearbeiten"
+   },
+   "editStyleLabel": {
+      "description": "Label for the button to go to the edit style page",
+      "message": "Bearbeiten"
+   },
+   "editStyleTitle": {
+      "description": "Title of the page for editing styles",
+      "message": "Stil $stylename$ bearbeiten",
+      "placeholders": {
+         "stylename": {
+            "content": "$1"
+         }
+      }
+   },
+   "enableStyleLabel": {
+      "description": "Label for the button to enable a style",
+      "message": "Aktivieren"
+   },
+   "findStylesForSite": {
+      "description": "Text for a link that gets a list of styles for the current site",
+      "message": "Mehr Stile für diese Website finden"
+   },
+   "helpAlt": {
+      "description": "Alternate text for help buttons",
+      "message": "Hilfe"
+   },
+   "installUpdate": {
+      "description": "Label for the button to install an update for a single style",
+      "message": "Update installieren"
+   },
+   "manageHeading": {
+      "description": "Heading for the manage page",
+      "message": "Installierte Stile"
+   },
+   "manageText": {
+      "description": "Help text on the manage page",
+      "message": "Vorgefertigte Stile finden Sie auf \u003Ca href='http://userstyles.org'>userstyles.org\u003C/a>. Wenn Sie Hilfe benötigen, können Sie im \u003Ca href='http://forum.userstyles.org'>Forum\u003C/a> Fragen stellen."
+   },
+   "manageTitle": {
+      "description": "Title for the manage page",
+      "message": "Stylish"
+   },
+   "noStylesForSite": {
+      "description": "Text displayed when no styles are installed for the current site",
+      "message": "Für diese Website sind keine Stile installiert."
+   },
+   "openManage": {
+      "description": "Link to open the manage page.",
+      "message": "Installierte Stile verwalten"
+   },
+   "sectionAdd": {
+      "description": "Label for the button to add a section",
+      "message": "Weiteren Bereich hinzufügen"
+   },
+   "sectionCode": {
+      "description": "Label for the code for a section",
+      "message": "Code"
+   },
+   "sectionHelp": {
+      "description": "Help text for sections",
+      "message": "Über Bereiche können Sie unterschiedliche Codes auf unterschiedliche URLs mit dem gleichen Stil anwenden. Beispielsweise kann über einen einzigen Stil die Startseite der Website geändert werden, während für den Rest der Website andere Änderungen gelten."
+   },
+   "sectionRemove": {
+      "description": "Label for the button to remove a section",
+      "message": "Bereich entfernen"
+   },
+   "styleCancelEditLabel": {
+      "description": "Label for cancel button for style editing",
+      "message": "Zurück zum Manager"
+   },
+   "styleChangesNotSaved": {
+      "description": "Text for the prompt when changes are made to a style and the user tries to leave without saving",
+      "message": "Sie haben diesen Stil geändert, ohne ihn zu speichern."
+   },
+   "styleEnabledLabel": {
+      "description": "Label for the enabled state of styles",
+      "message": "Aktiviert"
+   },
+   "styleInstall": {
+      "description": "Confirmation when installing a style",
+      "message": "\"$stylename$\" in Stylish installieren?",
+      "placeholders": {
+         "stylename": {
+            "content": "$1"
+         }
+      }
+   },
+   "styleMissingName": {
+      "description": "Error displayed when user saves without providing a name",
+      "message": "Geben Sie einen Namen ein."
+   },
+   "styleNameLabel": {
+      "description": "Label for the name of styles",
+      "message": "Name"
+   },
+   "styleSaveLabel": {
+      "description": "Label for save button for style editing",
+      "message": "Speichern"
+   },
+   "styleSectionsTitle": {
+      "description": "Title for the style sections section",
+      "message": "Bereiche"
+   },
+   "styleToMozillaFormat": {
+      "description": "Label for the button that converts the code to Mozilla format",
+      "message": "In Mozilla-Format"
+   },
+   "styleToMozillaFormatHelp": {
+      "description": "Help info for the button that converts the code to Mozilla format",
+      "message": "Das Mozilla-Codeformat kann mit Stylish für Firefox verwendet und an userstyles.org gesendet werden."
+   },
+   "styleUpdate": {
+      "description": "Confirmation when updating a style",
+      "message": "Möchten Sie wirklich nach Updates für \"$stylename\" suchen?",
+      "placeholders": {
+         "stylename": {
+            "content": "$1"
+         }
+      }
+   },
+   "updateCheckFailBadResponseCode": {
+      "description": "Text that displays when an update check failed because the response code indicates an error",
+      "message": "Updatefehler - Server hat den Fehler $code$ ausgegeben.",
+      "placeholders": {
+         "code": {
+            "content": "$1"
+         }
+      }
+   },
+   "updateCheckFailServerUnreachable": {
+      "description": "Text that displays when an update check failed because the update server is unreachable",
+      "message": "Updatefehler - Server nicht erreichbar"
+   },
+   "updateCheckSucceededNoUpdate": {
+      "description": "Text that displays when an update check completed and no update is available",
+      "message": "Der Stil ist aktuell."
+   },
+   "updateCompleted": {
+      "description": "Text that displays when an update completed",
+      "message": "Update abgeschlossen"
+   }
+}
