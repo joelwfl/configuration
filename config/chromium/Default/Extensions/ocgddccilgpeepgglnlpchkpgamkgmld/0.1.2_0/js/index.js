@@ -1,1 +1,0 @@
-function initializePage(){require(["views/app","helpers/global"],function(a){window.app=new a;console.log("Application initialized.");app.trackPageview("/openPopup");$("html").removeClass("loggedin")})}initializePage();

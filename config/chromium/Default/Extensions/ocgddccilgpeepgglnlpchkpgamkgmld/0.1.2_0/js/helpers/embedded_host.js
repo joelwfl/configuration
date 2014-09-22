@@ -1,1 +1,0 @@
-(function(b){function d(a){this.bridge=a}d.prototype.push=function(a){this.bridge.postMessage(a,"*")};window.addEventListener("load",function(){var a=document.getElementById("embedded_ga").contentWindow;if(a){var c=[];void 0!==b._gaq&&(c=b._gaq);b._gaq=new d(a);for(var e in c)b._gaq.push(c[e])}else console.log("Cannot find embedded_ga element.")})})(window);
