@@ -1,0 +1,3 @@
+MAILTO="joel" 
+05 17 * * * /usr/bin/rsync -avzP --exclude-from '/home/joel/exclude_me.txt' --delete $HOME/.??* backup@slacktop:/home/backup/backups
+
