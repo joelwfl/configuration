@@ -92,7 +92,7 @@ URxvt*color13:                                  #E82752
 URxvt*color6:                                   #D4D4D4
 URxvt*color14:                                  #EDEDED
 !white
-URxvt*color7:                                  #dedede
+URxvt*color7:                                  #E7212A
 URxvt*color15:                                  #dedede
  
 URxvt.colorIT:                                  #87af5f
@@ -101,12 +101,11 @@ URxvt.colorUL:                                  #BF1E2D
 URxvt.background:                                [85]#151515
 !URxvt.background:                                [95]#2d2d2d
 
-URxvt*foreground:                               #dedede
 !------------------------------------------------------------------------------
 ! General Colors
 
-*foreground:                               #2d2d2d
-!*background:                               [95]#091114
+*foreground:                               #ebebeb
+*background:                               [95]#091114
 *URxvt.depth: 100
 !black
 *color0:                                   #303030
@@ -130,5 +129,5 @@ URxvt*foreground:                               #dedede
 *color6:                                   #D4D4D4
 *color14:                                  #EDEDED
 !white
-*color7:                                   #2d2d2d
+*color7:                                   #E7212A
 *color15:                                  #2d2d2d
