@@ -42,11 +42,11 @@ ZSH_THEME="kphoen"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# WhicH plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,7 +102,10 @@ export PAGER=less
 
 export PAGER=less
 
-
+HISTFILE=~/.zsh_history
+HISTSIZE=SAVEHIST=1000000
+setopt sharehistory
+setopt extendedhistory
 export PAGER=less
 
 
@@ -131,6 +134,37 @@ unpack () {
 alias apt-unlock=" sudo rm /var/lib/apt/lists/lock && sudo rm /var/cache/apt/archives/lock
 
 "
+cb() {
+  local _scs_col="\e[0;32m"; local _wrn_col='\e[1;31m'; local _trn_col='\e[0;33m'
+  # Check that xclip is installed.
+  if ! type xclip > /dev/null 2>&1; then
+    echo -e "$_wrn_col""You must have the 'xclip' program installed.\e[0m"
+  # Check user is not root (root doesn't have access to user xorg server)
+  elif [[ "$USER" == "root" ]]; then
+    echo -e "$_wrn_col""Must be regular user (not root) to copy a file to the clipboard.\e[0m"
+  else
+    # If no tty, data should be available on stdin
+    if ! [[ "$( tty )" == /dev/* ]]; then
+      input="$(< /dev/stdin)"
+    # Else, fetch input from params
+    else
+      input="$*"
+    fi
+    if [ -z "$input" ]; then  # If no input, print usage message.
+      echo "Copies a string to the clipboard."
+      echo "Usage: cb <string>"
+      echo "       echo <string> | cb"
+    else
+      # Copy input to clipboard
+      echo -n "$input" | xclip -selection c
+      # Truncate text for status
+      if [ ${#input} -gt 80 ]; then input="$(echo $input | cut -c1-80)$_trn_col...\e[0m"; fi
+      # Print status.
+      echo -e "$_scs_col""Copied to clipboard:\e[0m $input"
+    fi
+  fi
+}
+
 #export -f unpack
 whichprocess() {
     #do things with parameters like $1 such as
@@ -148,3 +182,20 @@ export PAGER="less"
 alias gz="tar xzf"
 alias chistory="strings .zsh_history >hist.txt;fc -R hist.txt;fc -W"   
 alias extract="/bin/extract" 
+setopt NO_HUP
+setopt NO_LIST_BEEP
+setopt LOCAL_OPTIONS # allow functions to have local options
+setopt LOCAL_TRAPS # allow functions to have local traps
+setopt HIST_VERIFY
+setopt SHARE_HISTORY # share history between sessions ???
+setopt EXTENDED_HISTORY # add timestamps to history
+setopt PROMPT_SUBST
+setopt CORRECT
+setopt COMPLETE_IN_WORD
+setopt IGNORE_EOF
+#alias clipboard"=xclip -selection c"
+#alias xclip=”xclip -selection c
+alias clipclip="xclip -o"
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/dircolors && eval "$(dircolors -b ~/dircolors)" || eval "$(dircolors -b)"
+fi
