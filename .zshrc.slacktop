@@ -1,16 +1,9 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
 
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
-
-# Customize to your needs...
+source ~/zsh/colors.zsh
 export TERM=rxvt-unicode-256color
-if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
 
+source ~/zsh/completion.zsh
+source ~/zsh/prompt.zsh
+source ~/zsh/setopt.zsh
+source ~/zsh/alias.zsh
+source ~/zsh/zsh-history-substring-search.zsh
