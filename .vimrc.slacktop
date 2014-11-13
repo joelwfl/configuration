@@ -1,0 +1,10 @@
+
+
+set title
+set titleold=""
+set titlestring=VIM:\ %F
+set number
+set backup " backup on
+set backupdir=~/.backup
+set directory=~/.backup
+
