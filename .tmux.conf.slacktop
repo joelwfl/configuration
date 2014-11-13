@@ -1,0 +1,56 @@
+# Statusbar Right properties.
+set -g status-right-length 50
+set -g status-right "#[fg=colour16]  (#[fg=colour9]%H:%M#[fg=colour16])"
+# Statusbar left and title properties.
+set -g status-bg black
+set -g status-fg white
+set -g status-left-length 50
+set -g status-left "#[fg=colour241]#P #[fg=colour16] - #[fg=colour241]#W #[fg=colour16]@ #[fg=colour241]#H"
+set -g status-justify centre
+set -g set-titles on
+set -g set-titles-string "#S - #I - #T - #W"
+# Window index centered
+set -g status-justify centre
+set-window-option -g window-status-current-attr bold
+set-window-option -g window-status-current-fg colour11
+set-window-option -g window-status-current-bg black
+# Vi mode key bindings
+setw -g mode-keys vi
+unbind [
+bind-key Escape copy-mode                       # enter copy mode; default [
+bind-key -t vi-copy Escape cancel               # exit copy mode; or hit q
+bind-key p paste-buffer                         # paste; default ]
+bind-key -t vi-copy v begin-selection           # begin visual mode
+bind-key -t vi-copy V select-line               # visual line
+bind-key -t vi-copy y copy-selection            # yank
+bind-key -t vi-copy r rectangle-toggle          # visual block toggle
+# remap prefix to Control + a, bind R to source config
+set -g prefix C-a
+unbind r
+bind r source-file ~/.tmux.conf
+# Misc key bindings
+#   Selecting panes
+bind h select-pane -L
+unbind Down
+bind j select-pane -D
+unbind Up
+bind k select-pane -U
+unbind Right
+bind l select-pane -R
+bind-key n next-window
+bind-key p previous-window
+bind-key < command-prompt -p "send to tmux:" "run-shell 'tmux set-buffer -- \"$(xsel -o -b)\"'"
+bind-key > command-prompt -p "send to xsel:" "run-shell 'tmux show-buffer | xsel -i -b'"
+run-shell ~/clone/path/yank.tmux
+bind-key x kill-pane
+# Bind function keys.
+bind -n F1 select-window -t 1
+bind -n F2 select-window -t 2
+bind -n F3 select-window -t 3
+bind -n F4 select-window -t 4
+bind -n F5 select-window -t 5
+bind -n F6 select-window -t 6
+bind -n F7 select-window -t 7
+bind -n F8 select-window -t 8
+
+select-window -t 1 
