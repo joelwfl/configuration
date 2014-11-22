@@ -1,3 +1,4 @@
+set -g default-terminal "screen-256color"
 # Statusbar Right properties.
 set -g status-right-length 50
 set -g status-right "#[fg=colour16]  (#[fg=colour9]%H:%M#[fg=colour16])"
@@ -39,8 +40,8 @@ unbind Right
 bind l select-pane -R
 bind-key n next-window
 bind-key p previous-window
-bind-key < command-prompt -p "send to tmux:" "run-shell 'tmux set-buffer -- \"$(xsel -o -b)\"'"
-bind-key > command-prompt -p "send to xsel:" "run-shell 'tmux show-buffer | xsel -i -b'"
+bind-key < command-prompt -p "send to tmux:" "run-shell 'tmux set-buffer -- \"$(xsel -o -b)\'"
+bind-key > command-prompt -p "send to xsel:" "run-shell 'tmux show-buffer | ssh jwflol@192.168.1.3 'xsel -i -b'"
 run-shell ~/clone/path/yank.tmux
 bind-key x kill-pane
 # Bind function keys.
