@@ -1,0 +1,18 @@
+# Tint2 config file
+
+# Background definitions
+# ID 1
+rounded = 0
+border_width = 0
+background_color = #787878 0
+border_color = #22aaee 0
+
+# ID 2
+rounded = 3
+border_width = 0
+background_color = #FFFFFF 0
+border_color = #FFFFFF 0
+
+# ID 3
+rounded = 3
+border_width = 1

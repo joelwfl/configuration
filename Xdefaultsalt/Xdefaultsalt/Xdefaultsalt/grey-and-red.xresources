@@ -1,5 +1,20 @@
-URxvt.clipboard.copycmd: xsel -ib
-URxvt.clipboard.pastecmd: xsel -ob
+ 
+URxvt.perl-ext-common : tabbedex,default,keyboard-select,url-select,clipboard,matcher
+URxvt.perl-lib: /usr/lib/urxvt/perl
+URxvt.keysym.M-x           : perl:keyboard-select:activate
+URxvt.keysym.M-u           : perl:url-select:select_next
+URxvt.keysym.C-c           : perl:clipboard:copy
+URxvt.keysym.C-v           : perl:clipboard:paste
+URxvt.keysym.M-s           : perl:keyboard-select:search
+URxvt.keysym.M-C-v         : perl:clipboard:paste_escaped
+urxvt*matcher.button:        1
+urxvt*matcher.pattern.1:   \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.keysym.Shift-F1: perl:tabbedex:next_tab
+urxvt*urlLauncher:        /usr/bin/google-chrome
+URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
 URxvt.url-select.underline:                     true
 URxvt.url-select.launcher:                      /usr/bin/google-chrome
 URxvt.url-launcher:      /usr/bin/google-chrome
@@ -7,39 +22,12 @@ URxvt.underlineURLs:                            true
 Xft.autohint: true
 Xft.antialias: true
 Xft.hinting: true
-URxvt.keysym.M-x           : perl:keyboard-select:activate
-URxvt.keysym.M-u           : perl:url-select:select_next
-URxvt.keysym.Mod4-c           : perl:clipboard:copy 
-URxvt.keysym.Mod4-v           : perl:clipboard:paste
-URxvt.keysym.M-s           : perl:keyboard-select:search
-URxvt.keysym.M-C-v         : perl:clipboard:paste_escaped
-urxvt*matcher.button:        1
-urxvt*matcher.pattern.1:   \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
-URxvt.keysym.Control-t: perl:tabbedex:new_tab
-URxvt.keysym.Shift-F1: perl:tabbedex:next_tab
-
-URxvt.perl-ext-common : tabbedex,default,keyboard-select,url-select,clipboard,matcher
-URxvt.perl-lib: /usr/lib/urxvt/perl
 Xft.hintstyle: hintslight
-!Xft.dpi: 96
-URxvt*scrollBar:        false
+
+URxvt.tabbed.autohide: yes URxvt.tabbed.new-button: no URxvt.tabbed.title: no
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
-URxvt*externalBorder: 0
-urxvt.saveLines: 10000
-urxvt.internalBorder: 5
-URxvt.tabbed.autohide: yes URxvt.tabbed.new-button: no URxvt.tabbed.title: no
-!URxvt*background: [95]#151515
-URxvt.matcher.button:   1 
-URxvt*font:                                     xft:Ohsnap:hinting=true:pixelsize=12:2:antialias=false
-URxvt*boldFont:                                 xft:Ohsnap:style=bold:hinting=true:pixelsize=10:antialias=false
-URxvt*italicFont:                               xft:Ohsnap:style=italic:hinting=true:pixelsize=10:antialias=false
-URxvt*boldItalicFont:                           xft:Ohsnap:style=bolditalic:hinting=true:pixelsize=10:
-!Font
-!URxvt.font: xft:DejaVu Sans Mono:normal:size=8
-URxvt.cursorBlink: True
-URxvt.cursorUnderline: True
-URxvt.geometry: 50%x50%
+URxvt*shading: 35
 xscreensaver.Dialog.headingFont:        -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
 xscreensaver.Dialog.bodyFont:           -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
 xscreensaver.Dialog.labelFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
@@ -47,46 +35,41 @@ xscreensaver.Dialog.unameFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
 xscreensaver.Dialog.buttonFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
 xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*
 xscreensaver.passwd.passwdFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+
 xscreensaver.Dialog.foreground:         #101010
 xscreensaver.Dialog.background:         #D8D8D8
 xscreensaver.Dialog.topShadowColor:     #D8D8D8
 xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
 xscreensaver.Dialog.Button.foreground:  #101010
 xscreensaver.Dialog.Button.background:  #E5E5E5
-!username/password input box and date text colour
 xscreensaver.Dialog.text.foreground:    #101010
 xscreensaver.Dialog.text.background:    #E5E5E5
 xscreensaver.Dialog.internalBorderWidth:24
-xscreensaver.Dialog.borderWidth:        0
+xscreensaver.Dialog.borderWidth:       1
 xscreensaver.Dialog.shadowThickness:    2
 xscreensaver.passwd.thermometer.foreground:  #101010
-xscreensaver.passwd.thermometer.bacgkround:  #2E2E2
-Exscreensaver.passwd.thermometer.width:       8
+xscreensaver.passwd.thermometer.background:  #2E2E2E
+xscreensaver.passwd.thermometer.width:       8
+URxvt.geometry: 76x23
+URxvt*externalBorder: 0
+URxvt*internalBorder:5
+URxvt*borderLess: false
 
-*cursorColor:                         #917154
-*colorIT:                             #E3AB8D
-*colorBD:                             #F0E5DF
-*colorUL:                             #cd546c
-*VT100.colorBDMode:                   true
-*VT100.colorBD:                       red
-*VT100.colorULMode:                   true
-*VT100.colorUL:                       magenta
-*VT100.veryBoldColors:                6
+URxvt*transparent: true
 
+URxvt*tintColor: White
 
-      
-!------------------------------------------------------------------------------
-! XFT Settings
-     
-Xft.dpi:                                        96
-Xft.antialias:                                  true
-Xft.rgba:                                       rgb
-Xft.hinting:                                    true
-Xft.hintstyle:                                  hintslight
-     
-!------------------------------------------------------------------------------
-! URxvt Colors
-Urxvt*foreground: #FFFFFF
+URxvt*font: xft:Liberation Mono:pixelsize=11:antialias=true:hinting=true
+URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=13:antialias=true:hinting=true
+
+URxvt*scrollBar: false
+
+URxvt*scrollBar_right: false
+URxvt*scrollstyle: rxvt
+
+URxvt*titleBar: false
+
+URxvt.intensityStyles: false
 !black
 URxvt*color0:                                   #303030
 URxvt*color8:                                   #474747
@@ -109,20 +92,22 @@ URxvt*color13:                                  #E82752
 URxvt*color6:                                   #D4D4D4
 URxvt*color14:                                  #EDEDED
 !white
-URxvt*color7:                                   #ebebeb
-URxvt*color15:                                  #cccccc
+URxvt*color7:                                  #dedede
+URxvt*color15:                                  #dedede
  
 URxvt.colorIT:                                  #87af5f
 URxvt.colorBD:                                  #d7d7d7
 URxvt.colorUL:                                  #BF1E2D
+URxvt.background:                                [85]#151515
+!URxvt.background:                                [95]#2d2d2d
 
-
+URxvt*foreground:                               #dedede
 !------------------------------------------------------------------------------
 ! General Colors
 
-*foreground:                              #555753 
-*background:                               #1A1A1A
-
+*foreground:                               #2d2d2d
+!*background:                               [95]#091114
+*URxvt.depth: 100
 !black
 *color0:                                   #303030
 *color8:                                   #474747
@@ -145,7 +130,5 @@ URxvt.colorUL:                                  #BF1E2D
 *color6:                                   #D4D4D4
 *color14:                                  #EDEDED
 !white
-*color7:                                   #ebebeb
-*color15:                                  #cccccc
-
-
+*color7:                                   #2d2d2d
+*color15:                                  #2d2d2d

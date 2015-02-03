@@ -1,18 +1,3 @@
- 
-URxvt.perl-ext-common : tabbedex,default,keyboard-select,url-select,clipboard,matcher
-URxvt.perl-lib: /usr/lib/urxvt/perl
-URxvt.keysym.M-x           : perl:keyboard-select:activate
-URxvt.keysym.M-u           : perl:url-select:select_next
-URxvt.keysym.C-c           : perl:clipboard:copy
-URxvt.keysym.C-v           : perl:clipboard:paste
-URxvt.keysym.M-s           : perl:keyboard-select:search
-URxvt.keysym.M-C-v         : perl:clipboard:paste_escaped
-urxvt*matcher.button:        1
-urxvt*matcher.pattern.1:   \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
-URxvt.keysym.Control-t: perl:tabbedex:new_tab
-URxvt.keysym.Shift-F1: perl:tabbedex:next_tab
-urxvt*urlLauncher:        /usr/bin/google-chrome
-URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
 URxvt.clipboard.copycmd:  xclip -i -selection clipboard
 URxvt.clipboard.pastecmd: xclip -o -selection clipboard
 URxvt.url-select.underline:                     true
@@ -31,9 +16,14 @@ URxvt*externalBorder: 0
 urxvt.saveLines: 10000
 urxvt.internalBorder: 5
 URxvt.tabbed.autohide: yes URxvt.tabbed.new-button: no URxvt.tabbed.title: no
-!URxvt*background: [95]#000000
+!URxvt*background: [95]#151515
 URxvt.matcher.button:   1 
-URxvt.font: xft:DejaVu Sans Mono:normal:size=8
+URxvt*font:                                     xft:Ohsnap:hinting=true:pixelsize=12:2:antialias=false
+URxvt*boldFont:                                 xft:Ohsnap:style=bold:hinting=true:pixelsize=10:antialias=false
+URxvt*italicFont:                               xft:Ohsnap:style=italic:hinting=true:pixelsize=10:antialias=false
+URxvt*boldItalicFont:                           xft:Ohsnap:style=bolditalic:hinting=true:pixelsize=10:
+!Font
+!URxvt.font: xft:DejaVu Sans Mono:normal:size=8
 URxvt.cursorBlink: True
 URxvt.cursorUnderline: True
 URxvt.geometry: 50%x50%
@@ -60,39 +50,45 @@ xscreensaver.passwd.thermometer.foreground:  #101010
 xscreensaver.passwd.thermometer.bacgkround:  #2E2E2
 Exscreensaver.passwd.thermometer.width:       8
 
-!--------------------------------------------------------
-URxvt.foreground:                               #000000
-URxvt.background:                                [50]#FFFFFF
-URxvt.color0:               #000000
-URxvt.color8:               #000000
+*cursorColor:                         #6d715e
+*VT100.colorBDMode:                   true
+*VT100.colorULMode:                   true
+*VT100.colorUL:                       magenta
+*VT100.veryBoldColors:                6
 
-URxvt.color1:               #000000
-URxvt.color9:               #000000
+*background: [85]#1f1f1f
+*foreground: #c0b18b
+
+!black
+*color0:#4A3637
+*color8:#4A3637
+
+!red
+*color1:#d17b49
+*color9:#d17b49
 
 !green
-URxvt*color2:                                   #D7D7D7
-URxvt*color10:                                  #000000
+*color2:#7b8748
+*color10:#7b8748
 
-URxvt.color3:               #000000
-URxvt.color11:             #000000
+!yellow
+*color3:#af865a
+*color11:#af865a
 
-URxvt.color4:               #000000
-URxvt.color12:              #FFFFFF
+!blue
+*color4:#535C5C
+*color12:#535C5C
 
-URxvt.color5:              #000000
-URxvt.color13:              #000000
+!magenta
+*color5:#775759
+*color13:#775759
 
-URxvt.color6:              #000000
-URxvt.color14:              #000000
+!cyan
+*color6:#6d715e
+*color14:#6d715e
 
-URxvt.color7:              #000000
-URxvt.color15:             #000000
+!white
+*color7:#c0b18b
+*color15:#c0b18b
 
-!------------------------------------------------------------------------------
-! General Colors
-*foreground:                               #000000
-
-*background:                               [95]#FFFFFF
-*URxvt.depth: 32
-!black
 

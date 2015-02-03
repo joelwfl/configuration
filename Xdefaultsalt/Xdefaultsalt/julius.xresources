@@ -1,0 +1,75 @@
+Rxvt.perl-ext-common : tabbedex,default,keyboard-select,url-select,clipboard,matcher
+URxvt.perl-lib: /usr/lib/urxvt/perl
+URxvt.keysym.M-x           : perl:keyboard-select:activate
+URxvt.keysym.M-u           : perl:url-select:select_next
+URxvt.keysym.C-c           : perl:clipboard:copy
+URxvt.keysym.C-v           : perl:clipboard:paste
+URxvt.keysym.M-s           : perl:keyboard-select:search
+URxvt.keysym.M-C-v         : perl:clipboard:paste_escaped
+urxvt*matcher.button:        1
+urxvt*matcher.pattern.1:   \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.keysym.Shift-F1: perl:tabbedex:next_tab
+urxvt*urlLauncher:        /usr/bin/google-chrome
+URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+URxvt.url-select.underline:                     true
+URxvt.url-select.launcher:                      /usr/bin/google-chrome
+URxvt.url-launcher:      /usr/bin/google-chrome
+URxvt.underlineURLs:                            true
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Rxvt*iconFile: ~/.icons/Moka/32x32/apps/gnome-terminal.png
+Xft.hintstyle: hintslight
+!Xft.dpi: 96
+URxvt*scrollBar:        false
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+URxvt*externalBorder: 0
+urxvt.saveLines: 10000
+urxvt.internalBorder: 5
+URxvt.tabbed.autohide: yes URxvt.tabbed.new-button: no URxvt.tabbed.title: no
+!URxvt*background: [95]#151515
+URxvt.matcher.button:   1 
+URxvt.font: xft:DejaVu Sans Mono:normal:size=8
+URxvt.cursorBlink: True
+URxvt.cursorUnderline: True
+URxvt.geometry: 50%x50%
+urxvt*depth: 32
+! New colorset
+! New colorset
+
+! New colorset
+
+*foreground: #AAAAAA
+*background: #151515
+
+
+!black
+*color0: #3b3b3b
+*color8: #2a2a29
+!red
+*color1: #ba4d4d
+*color9: #984040
+!green
+*color2: #94c19b
+*color10: #7b9f81
+!yellow
+*color3: #d7cd94
+*color11: #b3ab7c
+!blue
+*color4: #66AABB
+*color12: #508a98
+!magenta
+*color5: #8e6a80
+*color13: #745568
+!cyan
+*color6: #989081
+*color14: #827c6f
+!white
+*color7: #eae8e6
+*color15: #cfcdcc
+
+

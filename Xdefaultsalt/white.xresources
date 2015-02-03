@@ -1,0 +1,107 @@
+URxvt.clipboard.copycmd: xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+URxvt.url-select.underline:                     true
+URxvt.url-select.launcher:                      /usr/bin/google-chrome
+URxvt.url-launcher:      /usr/bin/google-chrome
+URxvt.underlineURLs:                            true
+Rxvt.keysym.M-x           : perl:keyboard-select:activate
+URxvt.keysym.Mod4-u           : perl:url-select:select_next
+URxvt.keysym.Mod4-c           : perl:clipboard:copy
+URxvt.keysym.Mod4-v           : perl:clipboard:paste
+URxvt.keysym.M-s           : perl:keyboard-select:search
+URxvt.keysym.M-C-v         : perl:clipboard:paste_escaped
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+URxvt.keysym.Mod4-Up:   perl:font-size:incglobal
+URxvt.keysym.Mod4-Down: perl:font-size:decglobal
+
+
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
+urxvt*matcher.button:        1
+urxvt*matcher.pattern.1:   \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvtc*iconFile: /home/joel/.icons/Faenza/apps/32/Terminal.png
+ranger*iconFile:/home/joel/.icons/darkenza/apps/32/file-manager.png 
+ncmpcpp*iconfile: /home/joel/.icons/Moka/32x32/apps/gmpc.png
+mutt*iconfile: /home/joel/.icons/Moka/32x32/apps/kmail.png
+urxvt.perl-lib:                     /usr/lib/urxvt/perl
+
+URxvt.perl-ext-common : default,font-size,keyboard-select,url-select,clipboard,matcher
+URxvt*scrollBar:        false
+Xft.lcdfilter: lcddefault
+URxvt*externalBorder: 0
+urxvt.saveLines: 10000
+urxvt.internalBorder: 5
+URxvt*background: [95]#151515
+!urxvtc.font: xft:GohuFont:size=8
+!urxvtc.boldfont: xft:terminus-l2:weight=bold:size=8
+URxvt.font: xft:Droid Sans Mono:size=8 
+
+URxvtc.font: xft:Droid Sans Mono:size=8
+URxvt.letterspacing: -1
+ranger.font: xft:GohuFont:size=8
+ncmpcpp.font: xft:GohuFont:size=8
+URxvt.matcher.button:   1 
+URxvt.cursorBlink: True
+URxvt.cursorUnderline: True
+URxvt.geometry: 50%x50%
+xscreensaver.Dialog.headingFont:        -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.foreground:         #101010
+xscreensaver.Dialog.background:         #D8D8D8
+xscreensaver.Dialog.topShadowColor:     #D8D8D8
+xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
+xscreensaver.Dialog.Button.foreground:  #101010
+xscreensaver.Dialog.Button.background:  #E5E5E5
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #101010
+xscreensaver.Dialog.text.background:    #E5E5E5
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        0
+xscreensaver.Dialog.shadowThickness:    2
+xscreensaver.passwd.thermometer.foreground:  #101010
+xscreensaver.passwd.thermometer.bacgkround:  #2E2E2
+Exscreensaver.passwd.thermometer.width:       8
+! vim: set filetype=xdefaults :
+*foreground:#F5F1F0
+*background: #000000
+cursor: #839496
+
+!black
+*color0: #353540
+*color8: #545466
+!red
+*color1: #8c5760
+*color9: #b26f7a
+!green
+*color2: #7b8c58
+*color10: #9db270
+!yellow
+*color3: #8c6e43
+*color11: #b28c55
+!blue
+
+*color4: #AFB8C9
+*color12: #AFB8C9
+!*color4: #58698c
+!*color12: #7086b2
+!magenta
+*color5: #7b5e7d
+*color13: #9c77b2
+!cyan
+*color6: #66808c
+*color14: #82a2b2
+!white
+*color7: #FFFFFF
+*color15: #FFFFFF
+URxvt.transparent:   true
+URxvt.shading:      25 

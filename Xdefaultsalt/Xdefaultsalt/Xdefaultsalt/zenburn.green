@@ -1,0 +1,72 @@
+Xft.dpi:        96  
+Xft.antialias:  true
+Xft.rgba:       rgb 
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
+urxvt*matcher.button:        1   
+urxvt*matcher.pattern.1:   \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvtc*iconFile: /home/joel/.icons/Faenza/apps/32/Terminal.png
+ranger*iconFile:/home/joel/.icons/darkenza/apps/32/file-manager.png 
+ncmpcpp*iconfile: /home/joel/.icons/Moka/32x32/apps/gmpc.png
+mutt*iconfile: /home/joel/.icons/Moka/32x32/apps/kmail.png
+urxvt.perl-lib:                     /usr/lib/urxvt/perl
+URxvt.keysym.Mod4-u           : perl:url-select:select_next
+URxvt.keysym.Mod4-c           : perl:clipboard:copy
+URxvt.keysym.Mod4-v           : perl:clipboard:paste
+URxvt.keysym.M-s           : perl:keyboard-select:search
+URxvt.keysym.M-C-v         : perl:clipboard:paste_escaped
+
+URxvt.perl-ext-common : default,font-size,keyboard-select,url-select,clipboard,matcher
+URxvt*scrollBar:        false
+Xft.lcdfilter: lcddefault
+URxvt*externalBorder: 0
+urxvt.saveLines: 10000
+urxvt.internalBorder: 5
+!urxvtc.font: xft:GohuFont:size=8
+!urxvtc.boldfont: xft:terminus-l2:weight=bold:size=8
+URxvt.font: xft:Droid Sans Mono:size=8 
+
+URxvtc.font: xft:Droid Sans Mono:size=8
+URxvt.letterspacing: -1
+ranger.font: xft:GohuFont:size=8
+ncmpcpp.font: xft:GohuFont:size=8
+URxvt.matcher.button:   1   
+URxvt.cursorBlink: True
+URxvt.cursorUnderline: True
+URxvt.geometry: 50%x50%
+!Black
+URxvt*color0: #293132
+URxvt*color8: #9BA8AA
+!Red
+URxvt*color1: #E55E5D
+URxv*color9: #E55E5D
+!green
+URxvt*color2: #00D56A
+
+URxvt*color10: #00D56A
+!yellow
+
+URxvt*color3: #E5990D
+
+URxvt*color11:#E69803
+!blue
+URxvt*color4:#59D8DA
+
+URxvt*color12: #58D7D9
+!magenta
+URxvt*color5: #ec93d3
+
+URxvt*color13: #E60358
+!cyan
+URxvt*color6 :#008BAA
+
+URxvt*color14: #46A4FF
+!white
+URxvt*color7: #FFFFFF
+ 
+URxvt*color15: #FFFFFF
+
+URxvt*background: #071113 
+URxvt*foreground: #E6EAEA
+URxvt.transparent:   true
+URxvt.shading:     19

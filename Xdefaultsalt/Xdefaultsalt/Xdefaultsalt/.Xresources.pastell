@@ -31,9 +31,14 @@ URxvt*externalBorder: 0
 urxvt.saveLines: 10000
 urxvt.internalBorder: 5
 URxvt.tabbed.autohide: yes URxvt.tabbed.new-button: no URxvt.tabbed.title: no
-!URxvt*background: [95]#000000
+!URxvt*background: [95]#151515
 URxvt.matcher.button:   1 
-URxvt.font: xft:DejaVu Sans Mono:normal:size=8
+URxvt*font:                                     xft:Ohsnap:hinting=true:pixelsize=12:2:antialias=false
+URxvt*boldFont:                                 xft:Ohsnap:style=bold:hinting=true:pixelsize=10:antialias=false
+URxvt*italicFont:                               xft:Ohsnap:style=italic:hinting=true:pixelsize=10:antialias=false
+URxvt*boldItalicFont:                           xft:Ohsnap:style=bolditalic:hinting=true:pixelsize=10:
+!Font
+!URxvt.font: xft:DejaVu Sans Mono:normal:size=8
 URxvt.cursorBlink: True
 URxvt.cursorUnderline: True
 URxvt.geometry: 50%x50%
@@ -61,38 +66,35 @@ xscreensaver.passwd.thermometer.bacgkround:  #2E2E2
 Exscreensaver.passwd.thermometer.width:       8
 
 !--------------------------------------------------------
-URxvt.foreground:                               #000000
-URxvt.background:                                [50]#FFFFFF
-URxvt.color0:               #000000
-URxvt.color8:               #000000
-
-URxvt.color1:               #000000
-URxvt.color9:               #000000
-
-!green
-URxvt*color2:                                   #D7D7D7
-URxvt*color10:                                  #000000
-
-URxvt.color3:               #000000
-URxvt.color11:             #000000
-
-URxvt.color4:               #000000
-URxvt.color12:              #FFFFFF
-
-URxvt.color5:              #000000
-URxvt.color13:              #000000
-
-URxvt.color6:              #000000
-URxvt.color14:              #000000
-
-URxvt.color7:              #000000
-URxvt.color15:             #000000
-
-!------------------------------------------------------------------------------
-! General Colors
-*foreground:                               #000000
-
-*background:                               [95]#FFFFFF
-*URxvt.depth: 32
+! New colorset
+! New colorset
+! New colorset
+*foreground: #AAAAAA
+*background: #151515
 !black
+*color0: #3b3b3b
+*color8: #2a2a29
+!red
+*color1: #ba4d4d
+*color9: #984040
+!green
+*color2: #94c19b
+*color10: #7b9f81
+!yellow
+*color3: #d7cd94
+*color11: #b3ab7c
+!blue
+*color4: #66AABB
+*color12: #508a98
+!magenta
+*color5: #8e6a80
+*color13: #745568
+!cyan
+*color6: #989081
+*color14: #827c6f
+!white
+*color7: #eae8e6
+*color15: #cfcdcc
+!
+
 
