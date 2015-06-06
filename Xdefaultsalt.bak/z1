@@ -1,0 +1,130 @@
+ 
+URxvt.perl-ext-common : tabbedex,default,keyboard-select,url-select,clipboard,matcher
+URxvt.perl-lib: /usr/lib/urxvt/perl
+URxvt.keysym.M-x           : perl:keyboard-select:activate
+URxvt.keysym.M-u           : perl:url-select:select_next
+URxvt.keysym.C-c           : perl:clipboard:copy
+URxvt.keysym.C-v           : perl:clipboard:paste
+URxvt.keysym.M-s           : perl:keyboard-select:search
+URxvt.keysym.M-C-v         : perl:clipboard:paste_escaped
+urxvt*matcher.button:        1
+urxvt*matcher.pattern.1:   \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.keysym.Shift-F1: perl:tabbedex:next_tab
+urxvt*urlLauncher:        /usr/bin/google-chrome
+URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+URxvt.url-select.underline:                     true
+URxvt.url-select.launcher:                      /usr/bin/google-chrome
+URxvt.url-launcher:      /usr/bin/google-chrome
+URxvt.underlineURLs:                            true
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+!Xft.dpi: 96
+URxvt*scrollBar:        false
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+URxvt*externalBorder: 0
+urxvt.saveLines: 10000
+urxvt.internalBorder: 5
+URxvt.tabbed.autohide: yes URxvt.tabbed.new-button: no URxvt.tabbed.title: no
+!URxvt*background: [95]#151515
+URxvt.matcher.button:   1 
+URxvt.font: xft:DejaVu Sans Mono:normal:size=8
+URxvt.cursorBlink: True
+URxvt.cursorUnderline: True
+URxvt.geometry: 50%x50%
+!------------------------------------------------------------------------------
+! XFT Settings
+     
+Xft.dpi:                                       96 
+Xft.antialias:                                  true
+Xft.rgba:                                       rgb
+Xft.hinting:                                    true
+Xft.hintstyle:                                  hintslight
+
+
+URxvt.perl-ext-common:  default,matcher,vtwheel
+URxvt.url-launcher:      /usr/bin/dwb
+URxvt.matcher.button:   1
+
+
+URxvt.depth: 32
+URxvt.saveLines: 12000
+!URxvt.background: [92]#091114
+
+!------------------------------------------------------------------------------
+! URXVT - Settings
+
+URxvt*geometry:                                 80x25
+URxvt*borderLess:                               false
+URxvt*scrollBar:                                false
+URxvt*cursorBlink:                              true
+URxvt*cursorUnderline:                          false
+URxvt*scrollColor:                              #151515
+URxvt*perl-ext-common:                          default,clipboard,url-select,keyboard-select,vtwheel
+URxvt*font:                                     xft:terminus12:hinting=true:pixelsize=12:antialias=false
+URxvt*boldFont:                                 xft:terminus12:style=bold:hinting=true:pixelsize=12:antialias=false
+URxvt*italicFont:                               xft:terminus12:style=italic:hinting=true:pixelsize=12:antialias=false
+URxvt*boldItalicFont:                           xft:terminus12:style=bolditalic:hinting=true:pixelsize=12:antialias=false
+URxvt.underlineURLs:                            true
+URxvt.url-select.launcher:                      /usr/bin/firefox
+URxvt.url-select.underline:                     true
+URxvt*keysym.Home: \033[1~
+URxvt*keysym.End: \033[4~
+!------------------------------------------------------------------------------
+! URxvt Colors
+
+*cursorColor:                         #6d715e
+*VT100.colorBDMode:                   true
+*VT100.colorULMode:                   true
+*VT100.colorUL:                       magenta
+*VT100.veryBoldColors:                6
+
+*background: [85]#1f1f1f
+*foreground: #c0b18b
+
+!black
+*color0:#4A3637
+*color8:#4A3637
+
+!red
+*color1:#d17b49
+*color9:#d17b49
+
+!green
+*color2:#7b8748
+*color10:#7b8748
+
+!yellow
+*color3:#af865a
+*color11:#af865a
+
+!blue
+*color4:#535C5C
+*color12:#535C5C
+
+!magenta
+*color5:#775759
+*color13:#775759
+
+!cyan
+*color6:#6d715e
+*color14:#6d715e
+
+!white
+*color7:#c0b18b
+*color15:#c0b18b
+
+
+!------------------------------------------------------------------------------
+! Man pages colors
+
+!*VT100.colorBDMode:                             true
+!*VT100.colorBD:                                 red
+!*VT100.colorULMode:                             true
+!*VT100.colorUL:                                 magenta
+!*VT100.veryBoldColors:                          6

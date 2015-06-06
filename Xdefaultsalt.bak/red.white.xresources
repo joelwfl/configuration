@@ -1,0 +1,133 @@
+ 
+URxvt.perl-ext-common : tabbedex,default,keyboard-select,url-select,clipboard,matcher
+URxvt.perl-lib: /usr/lib/urxvt/perl
+URxvt.keysym.M-x           : perl:keyboard-select:activate
+URxvt.keysym.M-u           : perl:url-select:select_next
+URxvt.keysym.C-c           : perl:clipboard:copy
+URxvt.keysym.C-v           : perl:clipboard:paste
+URxvt.keysym.M-s           : perl:keyboard-select:search
+URxvt.keysym.M-C-v         : perl:clipboard:paste_escaped
+urxvt*matcher.button:        1
+urxvt*matcher.pattern.1:   \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.keysym.Shift-F1: perl:tabbedex:next_tab
+urxvt*urlLauncher:        /usr/bin/google-chrome
+URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+URxvt.url-select.underline:                     true
+URxvt.url-select.launcher:                      /usr/bin/google-chrome
+URxvt.url-launcher:      /usr/bin/google-chrome
+URxvt.underlineURLs:                            true
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+xft.dpi: 100
+URxvt.tabbed.autohide: yes URxvt.tabbed.new-button: no URxvt.tabbed.title: no
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+URxvt*shading: 35
+xscreensaver.Dialog.headingFont:        -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+
+xscreensaver.Dialog.foreground:         #101010
+xscreensaver.Dialog.background:         #D8D8D8
+xscreensaver.Dialog.topShadowColor:     #D8D8D8
+xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
+xscreensaver.Dialog.Button.foreground:  #101010
+xscreensaver.Dialog.Button.background:  #E5E5E5
+xscreensaver.Dialog.text.foreground:    #101010
+xscreensaver.Dialog.text.background:    #E5E5E5
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:       1
+xscreensaver.Dialog.shadowThickness:    2
+xscreensaver.passwd.thermometer.foreground:  #101010
+xscreensaver.passwd.thermometer.background:  #2E2E2E
+xscreensaver.passwd.thermometer.width:       8
+URxvt.geometry: 76x23
+URxvt*externalBorder: 0
+URxvt*internalBorder:5
+URxvt*borderLess: false
+
+URxvt*transparent: true
+
+URxvt*tintColor: White
+
+URxvt*font: xft:Liberation Mono:pixelsize=11:antialias=true:hinting=true
+URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=13:antialias=true:hinting=true
+
+URxvt*scrollBar: false
+
+URxvt*scrollBar_right: false
+URxvt*scrollstyle: rxvt
+
+URxvt*titleBar: false
+
+URxvt.intensityStyles: false
+!black
+URxvt*color0:                                   #303030
+URxvt*color8:                                   #474747
+!red
+URxvt*color1:                                   #BF1E2D
+URxvt*color9:                                   #E7212A
+!green
+URxvt*color2:                                   #D7D7D7
+URxvt*color10:                                  #E6E6E6
+!yellow
+URxvt*color3:                                   #666666
+URxvt*color11:                                  #808080
+!blue
+URxvt*color4:                                   #FFFFFF
+URxvt*color12:                                  #ebebeb
+!magenta
+URxvt*color5:                                   #C3143B
+URxvt*color13:                                  #E82752
+!cyan
+URxvt*color6:                                   #D4D4D4
+URxvt*color14:                                  #EDEDED
+!white
+URxvt*color7:                                  #E7212A
+URxvt*color15:                                  #dedede
+ 
+URxvt.colorIT:                                  #87af5f
+URxvt.colorBD:                                  #d7d7d7
+URxvt.colorUL:                                  #BF1E2D
+URxvt.background:                                [85]#151515
+!URxvt.background:                                [95]#2d2d2d
+
+!------------------------------------------------------------------------------
+! General Colors
+
+*foreground:                               #ebebeb
+*background:                               [95]#091114
+*URxvt.depth: 100
+!black
+*color0:                                   #303030
+*color8:                                   #474747
+!red
+*color1:                                   #BF1E2D
+*color9:                                   #E7212A
+!green
+*color2:                                   #D7D7D7
+*color10:                                  #E6E6E6
+!yellow
+*color3:                                   #666666
+*color11:                                  #808080
+!blue
+*color4:                                   #FFFFFF
+*color12:                                  #ebebeb
+!magenta
+*color5:                                   #C3143B
+*color13:                                  #E82752
+!cyan
+*color6:                                   #D4D4D4
+*color14:                                  #EDEDED
+!white
+*color7:                                   #E7212A
+*color15:                                  #2d2d2d

@@ -1,0 +1,86 @@
+Xft.dpi: 96
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+
+
+URxvt.perl-ext-common:  default,matcher,vtwheel
+URxvt.url-launcher:      /usr/bin/dwb
+URxvt.matcher.button:   1
+
+
+URxvt.depth: 32
+URxvt.saveLines: 12000
+!URxvt.background: [92]#202020
+URxvt.background: [80]#191C23
+URxvt.foreground: #9BBBC6
+URxvt.cursorColor: #1E828C1
+URxvt.colorUL: #1E828C
+
+URxvt.color0:               #323246
+URxvt.color8:               #323246
+
+URxvt.color1:               #5A7882
+URxvt.color9:               #5A7882
+
+URxvt.color2:               #8C8CA0
+URxvt.color10:              #8C8CA0
+
+URxvt.color3:               #1E828C
+URxvt.color11:              #1E828C
+
+URxvt.color4:               #3C788C
+URxvt.color12:              #3C788C
+
+URxvt.color5:               #6EA0B4
+URxvt.color13:              #6EA0B4
+
+URxvt.color6:               #6E8CA0
+URxvt.color14:              #6E8CA0
+
+URxvt.color7:               #96BEC8
+URxvt.color15:              #96BEC8
+
+URxvt.scrollBar: false
+URxvt.font: xft:Terminusmodx.Icons:size=9
+Xft.dpi:        96  
+Xft.antialias:  true
+Xft.rgba:       rgb 
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
+urxvt*matcher.button:        1   
+urxvt*matcher.pattern.1:   \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvtc*iconFile: /home/joel/.icons/Faenza/apps/32/Terminal.png
+ranger*iconFile:/home/joel/.icons/darkenza/apps/32/file-manager.png 
+ncmpcpp*iconfile: /home/joel/.icons/Moka/32x32/apps/gmpc.png
+mutt*iconfile: /home/joel/.icons/Moka/32x32/apps/kmail.png
+urxvt.perl-lib:                     /usr/lib/urxvt/perl
+URxvt.keysym.Mod4-u           : perl:url-select:select_next
+URxvt.keysym.Mod4-c           : perl:clipboard:copy
+URxvt.keysym.Mod4-v           : perl:clipboard:paste
+URxvt.keysym.M-s           : perl:keyboard-select:search
+URxvt.keysym.M-C-v         : perl:clipboard:paste_escaped
+
+URxvt.perl-ext-common : default,font-size,keyboard-select,url-select,clipboard,matcher
+URxvt*scrollBar:        false
+Xft.lcdfilter: lcddefault
+URxvt*externalBorder: 0
+urxvt.saveLines: 10000
+urxvt.internalBorder: 5
+!urxvtc.font: xft:GohuFont:size=8
+!urxvtc.boldfont: xft:terminus-l2:weight=bold:size=8
+URxvt.font: xft:Droid Sans Mono:size=8 
+
+URxvtc.font: xft:Droid Sans Mono:size=8
+URxvt.letterspacing: -1
+ranger.font: xft:GohuFont:size=8
+ncmpcpp.font: xft:GohuFont:size=8
+URxvt.matcher.button:   1   
+URxvt.cursorBlink: True
+URxvt.cursorUnderline: True
+URxvt.geometry: 50%x50%
+
