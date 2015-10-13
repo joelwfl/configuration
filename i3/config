@@ -11,13 +11,13 @@
 # font
 #.......
 
-font xft:Liberation Sans 8
+font anorexia.se 8
 
 #..........
 # windows
 #..........
-new_window pixel 1 
-new_float pixel 3 
+new_window pixel 1
+new_float pixel 3
 # colors
 #..........
 # color variables
@@ -27,7 +27,6 @@ set $white #FFFFFF
 set $gray3 #222222
 set $gray4 #5f676a
 set $green1 #01080A
-set $green2 #4EFFEC
 #class                        border   backgr.  text indicator
  client.focused              $gray1  $gray1 $white #333333
  client.focused_inactive     $gray2  $gray2  $white #000000
@@ -38,20 +37,22 @@ client.urgent                #101010 #999999 #2e3436
 #client.focused_inactive #000000 #000000 #4D4D4D
 #client.unfocused        #191919 #151515 #999999
 #client.urgent           #cd989a #cd989a #2e3436
-#client.background       #151515 #000000 #2e3436
+client.background       #151515 #000000 #2e3436
 
 #font pango:GohuFont 8
 # movement bindings
-set $up k 
+set $up k
 set $down j
-set $left h 
+set $left h
 set $right l
 
-
 # focus the parent container
-bindsym ctrl+e focus parent
+bindsym Mod4+e focus parent
 # focus the child container
-bindsym ctrl+d focus child
+bindsym F4 border normal
+
+bindsym F3 border 1pixel
+bindsym Mod4+d focus child
 
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
@@ -60,7 +61,7 @@ floating_modifier Mod1
 bindsym Mod1+Return exec urxvtc
 
 # kill focused window
-bindsym Ctrl+w kill
+bindsym Control+w kill
 
 # start dmenu (a program launcher)
 bindsym Mod1+F2 exec dmenu_run
@@ -104,21 +105,27 @@ bindsym Mod1+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym Mod1+s layout stacking
-bindsym Mod1+w layout tabbed
+bindsym Mod4+w layout tabbed
 bindsym Mod1+e layout toggle split
 
 # toggle tiling / floating
 bindsym Mod1+Shift+space floating toggle
-
-# change focus between tiling / floating windows
+bindsym Mod1+space focus mode_toggle
 
 # focus the parent container
-bindsym Mod4+a focus parent
+#bindsym Mod4+a focus parent
+
+# ASSIGN WORKSPACE VARIABLES
+set $WS1 Term
+set $WS2 Ranger
+set $WS3 Browser
+set $WS4 Vim/VLC
+
 
 # dsiable mouse over
 focus_follows_mouse no
 # focus the child container
-bindsym Mod4+d focus child
+#bindsym Mod4+d focus child
 
 # move the currently focused window to the scratchpad
 bindsym Mod1+Shift+minus move scratchpad
@@ -129,27 +136,22 @@ bindsym Mod1+minus scratchpad show
 # workspace key bindings and variables
 
  # switch to workspace
-bindsym Mod1+1 workspace 1: Term
-bindsym Mod1+2 workspace 2: Ranger/NCMPCPP
-bindsym Mod1+3 workspace 3: Browser
-bindsym Mod1+4 workspace 4: Vim/VLC
+bindsym Mod1+1 workspace $WS1
+bindsym Mod1+2 workspace $WS2
+bindsym Mod1+3 workspace $WS3
+bindsym Mod1+4 workspace $WS4
 bindsym Mod1+d workspace next
 bindsym Mod1+a workspace prev
 
 #bindsym Mod1+x move workspace to output right
 # move focused container to workspace
-bindsym Mod1+Shift+1 move container to workspace 1: Term 
-bindsym Mod1+Shift+2 move container to workspace 2: Ranger/NCMPCPP 
-bindsym Mod1+Shift+3 move container to workspace 3: Browser 
-bindsym Mod1+Shift+4 move container to workspace 4: Vim/VLC 
-bindsym Mod1+Shift+a move window to workspace prev
-bindsym Mod1+Shift+d move window to workspace next 
 
-# ASSIGN WORKSPACE VARIABLES
-set $WS1 1: Term 
-set $WS2 2: Ranger/NCMPCPP
-set $WS3 3: Browser
-set $WS4 4: Vim/VLC
+bindsym Mod1+Shift+1 move container to workspace $WS1
+bindsym Mod1+Shift+2 move container to workspace $WS2
+bindsym Mod1+Shift+3 move container to workspace $WS3
+bindsym Mod1+Shift+4 move container to workspace $WS4
+bindsym Mod1+Shift+a move window to workspace prev
+bindsym Mod1+Shift+d move window to workspace next
 
 # reload the configuration file
 bindsym Mod1+Shift+c reload
@@ -189,40 +191,51 @@ bindsym Mod1+r mode "resize"
 #ADDIDTIONAL BINDINGS
 bar {
         mode dock
-        position top    
-    
- font xft:Ubuntu 8
-   workspace_buttons yes 
-   status_command ~/.i3/conky.sh -w 1100 -h 13 -x 333
+        position top
+
+ font pango:anorexia.se. FontAwesome 8
+   workspace_buttons yes
+   status_command i3blocks -c /home/joel/scripts/i3blocks/config
    colors {
-       background       #101010
-       statusline       #404040
- 
-    # Class colors         border   BACKGR   TEXT   
-    
-    
-       focused_workspace  #101010 #1C1D1D #FFFFFF
+       background       #1f1f1f
+       statusline       #c0b18b
+
+    # Class colors         border   BACKGR   TEXT
+
+
+       focused_workspace  #101010 #1C1D1D #af865a
        active_workspace   #5f5f5f  #101010  #101010
-       inactive_workspace #101010  #101010  #2d2d2d
-       urgent_workspace   #101010  #999999
-        }   
+       inactive_workspace #101010  #101010  #4A3637
+       urgent_workspace   #101010  #d17b49
+        }
 }
 
 
  # Assign applications to workspaces
 
-assign [class="URxvt" instance="ranger"] → $WS2
-assign [class="^URxvt$" instance="^ncmpcpp$"] → $WS2
-assign [class="feh"] → $WS2
-assign [class="Iceweasel"] → $WS3 
-assign [class="mplayer"] → $WS4
+assign [class="URxvt" instance="ranger"]  $WS2
+assign [class="^URxvt$" instance="^ncmpcpp$"] $WS2
+assign [class="feh"] $WS2
+assign [class="Iceweasel"] $WS3
+assign [class="mplayer"]  $WS4
+
+assign [title="Transmission"] $WS4
+
+
+assign [title="Wicd Network Manager"] $WS2
+#for_window [title="ranger"]  floating enable
 for_window [class="feh"] floating enable
 for_window [title="Library"] floating enable
 for_window [class="mplayer"] floating enable
-for_window [class="YADWIN"] border none
 
-for_window [title="alsa-tray"] floating enable 
-for_window [class="YADWIN"]floating enable 
+
+for_window [title="Wicd Network Manager"] floating enable
+for_window [title="Transmission"] floating enable
+for_window [title="alsa-tray"] floating enable
+for_window [class="YADWIN"]floating enable
+for_window [title="gsimplecal"] floating enable
+
+
  # Program execuion key bindings
 
 bindsym KP_Add exec ssh slacktop 'amixer -q sset Master 3%+'
@@ -234,30 +247,36 @@ bindsym KP_Prior exec mpc -h 192.168.1.2 -p 1337 next
 bindsym KP_Home exec mpc -h 192.168.1.2 -p 1337  prev
 bindsym KP_Enter exec mpc -h 192.168.1.2 -p 1337  pause
 bindsym KP_0 exec mpc ls | mpc add
-bindsym Mod4+q exec /home/jwfl/rannger
-bindsym Mod4+w exec /home/jwfl/icewe
-bindsym Mod4+n exec urxvtc -name ncmpcpp -e ncmpcpp 
+bindsym Mod4+q exec /home/joel/rannger.sh
+bindsym Mod4+b exec /home/joel/icewe.sh
 
-# Startup 
- 
- 
+
+# Startup
+
+
 # Layout
 
-exec i3-msg "workspace 2: Ranger/NCMPCPP; append_layout /home/jwflol/.i3/ws_2.json; exec urxvtc -name topleft -e ranger; exec urxvtc -name topright; exec urxvtc -name bottomleft -e ncmpcpp -h 192.168.1.2 -p 1337; exec urxvtc -name stack1"
- 
+exec i3-msg "workspace 2: Ranger/NCMPCPP; append_layout /home/jwflolol/.i3/ws_2.json; exec urxvtc -name topleft -e ranger; exec urxvtc -name topright; exec urxvtc -name bottomleft -e ncmpcpp -h 192.168.1.2 -p 1337; exec urxvtc -name stack1"
+
 # Execution
 
-exec compton --config /home/jwfl/compton.conf -backend glx --vsync opengl
+exec compton
+
+#exec compton --config /home/jwflol/compton.conf -backend glx --vsync opengl
+exec pnmixer
 exec nitrogen --restore
 exec urxvtd -q -o -f
 exec mkfontdir /usr/share/fonts
+exec /usr/local/bin/net-up.sh
 exec mkfontscale /usr/share/fonts
 exec xset +fp /usr/share/fonts
+exec wicd-client
 exec setxkbmap -option terminate:ctrl_alt_bksp
-exec alsa-tray
-exec nm-applet
-exec NetworkManager
+#exec setxkbmap se
 #exec /home/jwflol/icewe
+exec dropbox
+exec keepass
+exec parcellite
 
 # Execution of layout assigned windows
 
