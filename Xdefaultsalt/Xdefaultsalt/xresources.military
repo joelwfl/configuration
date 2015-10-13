@@ -1,0 +1,89 @@
+!------------------------------------------------------------------------------
+! XFT Settings
+     
+Xft.dpi:                                       96 
+Xft.antialias:                                  true
+Xft.rgba:                                       rgb
+Xft.hinting:                                    true
+Xft.hintstyle:                                  hintslight
+
+!URxvt.depth: 32
+URxvt.saveLines: 12000
+!URxvt.background: [92]#091114
+
+!------------------------------------------------------------------------------
+! URXVT - Settings
+
+URxvt*geometry:                                 80x25
+URxvt*borderLess:                               false
+URxvt*scrollBar:                                false
+URxvt*cursorBlink:                              false
+URxvt*cursorUnderline:                          true
+URxvt*scrollColor:                              #151515
+URxvt*perl-ext-common:                          default,clipboard,url-select,keyboard-select
+URxvtc*font:                                     xft:Droid Sans Mono:hinting=true:pixelsize=12:antialias=false
+URxvt*boldFont:                                 xft:terminus12:style=bold:hinting=true:pixelsize=12:antialias=false
+URxvt*italicFont:                               xft:terminus12:style=italic:hinting=true:pixelsize=12:antialias=false
+URxvt*boldItalicFont:                           xft:terminus12:style=bolditalic:hinting=true:pixelsize=12:antialias=false
+URxvt.underlineURLs:                            true
+URxvt.url-select.launcher:                      /usr/bin/firefox
+URxvt.url-select.underline:                     true
+URxvt*keysym.Home: \033[1~
+URxvt*keysym.End: \033[4~
+URxvt.keysym.Mod4-p           : perl:url-select:select_prev
+
+URxvt.keysym.Mod4-n           : perl:url-select:select_next
+URxvt.keysym.C-c           : perl:clipboard:copy
+URxvt.keysym.C-v           : perl:clipboard:paste
+URxvt.keysym.C-s           : perl:keyboard-select:search
+URxvt.keysym.M-C-v         : perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+xvt.perl-lib: /usr/lib/urxvt/perl
+!------------------------------------------------------------------------------
+! URxvt Colors
+
+*cursorColor:                        #d17b49
+*VT100.colorBDMode:                   true
+*VT100.colorULMode:                   true
+*VT100.colorUL:                       magenta
+*VT100.veryBoldColors:                6
+*.background: #1f1f1f
+*foreground: #c0b18b
+
+!black
+*color0:#4A3637
+*color8:#4A3637
+
+!red
+*color1:#d17b49
+*color9:#d17b49
+
+!green
+*color2:#355237
+*color10:#355237
+
+!yellow
+*color3:#A59F7A
+*color11:#A59F7A
+
+!blue
+*color4:#535C5C
+*color12:#535C5C
+
+!magenta
+*color5:#5F4535
+*color13:#5F4535
+
+!cyan
+*color6:#7b8748
+*color14:#7b8748
+
+!white
+*color7:#c0b18b
+*color15:#c0b18b
+
+
+URxvt.transparent:   true
+URxvt.shading:    5
+
+

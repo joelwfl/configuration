@@ -1,0 +1,323 @@
+##
+## i3 config
+##
+
+
+##
+## Autostart
+##
+
+exec ~/.config/i3/autostart.sh
+
+
+##
+## Variables
+##
+
+## Mod-keys ##
+set $alt Mod1
+set $super Mod4
+
+## Terminal ##
+set $tmx xterm -e ~/bin/tmx
+set $term xterm
+
+## Navigation ##
+set $left h
+set $down j
+set $up k
+set $right l
+
+## Workspaces ##
+set $WS0 0:
+set $WS1 1:
+set $WS2 2:
+set $WS3 3:
+set $WS4 4:
+set $WS5 5:
+set $WS6 6:
+set $WS7 7:
+set $WS8 8:
+
+
+##
+## Borders, and titles
+##
+
+font pango:DejaVu Sans 8
+for_window [class="Obshutdown"] floating enable
+
+## Hide titles ##
+for_window [class="Firefox" instance="Navigator"] border none
+for_window [class="utox" instance="utox"] border none
+for_window [class="Deadbeef" instance="deadbeef"] border none
+for_window [class="Gimp" instance="gimp"] border none
+for_window [class="NetBeans IDE 8.0.2" instance="sun-awt-X11-XFramePeer"] border none
+for_window [class="Geeqie" instance="geeqie"] border none
+
+## Size of border ##
+new_window pixel 1
+
+
+##
+## Colors
+##
+
+## Default ##
+# client.focused            #4c7899 #285577 #ffffff #2e9ef4
+# client.focused_inactive   #333333 #5f676a #ffffff #484e50
+# client.unfocused          #333333 #222222 #888888 #292d2e
+# client.urgent             #2f343a #900000 #ffffff #900000
+
+# class                   border  backgr. text    indicator
+client.focused            #cecece #cecece #2b2b2b #cecece
+client.focused_inactive   #5f676a #5f676a #cecece #5f676a
+client.unfocused          #222222 #222222 #888888 #222222
+client.urgent             #2f343a #900000 #ffffff #900000
+
+
+##
+## Keys
+##
+
+## Use Controlouse ##
+floating_modifier $super
+
+## Functional keys ##
+bindsym XF86MonBrightnessUp exec xbacklight +10
+bindsym XF86MonBrightnessDown exec xbacklight -10
+bindsym XF86AudioMute exec ~/.config/i3/togglesound.sh
+
+## Screenshot ##
+bindsym Print exec import -window root ~/pic/scr/`date +%d%m%y%H%M%S`.png
+
+## Start a terminal ##
+bindsym $super+Return exec $term
+bindsym $super+t exec $tmx
+ 
+## Start dmenu (a program launcher) ##
+bindsym F1 exec ~/bin/dmenu
+
+
+##
+## MPD integration
+##
+
+bindsym F9 exec mpc stop
+bindsym F10 exec mpc toggle
+bindsym F11 exec mpc prev
+bindsym F12 exec mpc next
+
+
+##
+## WND mode
+##
+
+bindsym $super+r mode "WND"
+mode "WND" {
+	bindsym $left resize shrink width 1 px or 1 ppt
+	bindsym $down resize shrink height 1 px or 1 ppt
+	bindsym $up resize grow height 1 px or 1 ppt
+	bindsym $right resize grow width 1 px or 1 ppt
+
+	## Title / show / hide border ##
+	bindsym o border toggle
+
+	## Back to normal ##
+	bindsym r mode "default"
+} 
+
+
+##
+## Tiles
+##
+
+## Kill focused window ##
+bindsym $alt+q kill
+
+## Focus tile ##
+bindsym $super+$left focus left
+bindsym $super+$down focus down
+bindsym $super+$up focus up
+bindsym $super+$right focus right
+ 
+## Move focused window ##
+bindsym $alt+$left move left
+bindsym $alt+$up move up
+bindsym $alt+$down move down
+bindsym $alt+$right move right
+ 
+## Split in horizontal orientation ##
+bindsym $super+g split h
+ 
+## Split in vertical orientation ##
+bindsym $super+v split v
+ 
+## Enter fullscreen mode for the focused container ##
+bindsym $super+f fullscreen toggle
+ 
+## Change container layout (stacked, tabbed, toggle split) ##
+bindsym $super+s layout stacking
+bindsym $super+w layout tabbed
+# bindsym $super+e layout toggle split
+ 
+## Toggle tiling / floating ##
+bindsym $alt+space floating toggle
+ 
+## Change focus between tiling / floating windows ##
+bindsym $super+space focus mode_toggle
+ 
+## Focus the parent container ##
+bindsym $super+a focus parent
+
+
+##
+## Power control buttons
+##
+
+## Reload the configuration file ##
+bindsym $alt+c reload
+ 
+## Restart i3 inplace ##
+bindsym $alt+r restart
+
+## Obshutdown ##
+bindsym $alt+o exec obshutdown -c ~/.config/obshutdown.rc
+
+## i3shutdown ##
+bindsym $alt+i exec ~/bin/i3shutdown
+
+## Force suspend ##
+bindcode $alt+63 exec systemctl suspend
+
+## Exit in i3 ##
+# bindsym $alt+e exit
+
+
+##
+## Workspaces
+##
+
+## Support NumPad with code-keys ##
+#     [+] [-] |      [86] [82]
+# [7] [8] [9] | [79] [80] [81]
+# [4] [5] [6] | [83] [84] [85]
+# [1] [2] [3] | [87] [88] [89]
+#     [0]     |      [90]
+
+## Terminal with administrator permisions ##
+workspace $WS0 output PRIMARY_OUTPUT
+bindsym $super+0 workspace $WS0
+bindsym $alt+0 move container to workspace $WS0
+bindcode $super+90 workspace $WS0
+bindcode $alt+90 move container to workspace $WS0
+
+## Tmux ##
+workspace $WS1 output PRIMARY_OUTPUT
+bindsym $super+1 workspace $WS1
+bindsym $alt+1 move container to workspace $WS1
+bindcode $super+87 workspace $WS1
+bindcode $alt+87 move container to workspace $WS1
+
+## Firefox or any other web browser ##
+workspace $WS2	output PRIMARY_OUTPUT
+bindsym $super+2 workspace $WS2
+bindsym $alt+2 move container to workspace $WS2
+bindcode $super+88 workspace $WS2
+bindcode $alt+88 move container to workspace $WS2
+
+##  IRC, TOX, etc... ##
+workspace $WS3 output PRIMARY_OUTPUT
+bindsym $super+3 workspace $WS3
+bindsym $alt+3 move container to workspace $WS3
+bindcode $super+89 workspace $WS3
+bindcode $alt+89 move container to workspace $WS3
+
+## View films or listen music ##
+workspace $WS4 output PRIMARY_OUTPUT
+bindsym $super+4 workspace $WS4
+bindsym $alt+4 move container to workspace $WS4
+bindcode $super+83 workspace $WS4
+bindcode $alt+83 move container to workspace $WS4
+
+## NetBeans / IDEA or pseudo IDE ##
+workspace $WS5	output PRIMARY_OUTPUT
+bindsym $super+5 workspace $WS5
+bindsym $alt+5 move container to workspace $WS5
+bindcode $super+84 workspace $WS5
+bindcode $alt+84 move container to workspace $WS5
+
+## Usualy GIMP ##
+workspace $WS6 output PRIMARY_OUTPUT
+bindsym $super+6 workspace $WS6
+bindsym $alt+6 move container to workspace $WS6
+bindcode $super+85 workspace $WS6
+bindcode $alt+85 move container to workspace $WS6
+
+## Files ##
+workspace $WS7 output PRIMARY_OUTPUT
+bindsym $super+7 workspace $WS7
+bindsym $alt+7 move container to workspace $WS7
+bindcode $super+79 workspace $WS7
+bindcode $alt+79 move container to workspace $WS7
+
+## Misc ##
+workspace $WS8 output PRIMARY_OUTPUT
+bindsym $super+8 workspace $WS8
+bindsym $alt+8 move container to workspace $WS8
+bindcode $super+80 workspace $WS8
+bindcode $alt+80 move container to workspace $WS8
+
+## Do sth ##
+#workspace 9 output PRIMARY_OUTPUT
+#bindsym  $super+9  workspace 9
+#bindcode $super+81 workspace 9
+#bindsym $alt+9 move container to workspace 9
+#bindcode $alt+81 move container to workspace 9
+
+## Navigation of workspaces (go to, move to) ##
+bindcode $super+86 workspace next
+bindsym $super+n workspace next
+bindcode $alt+86 move container to workspace next
+bindsym $alt+n move container to workspace next
+bindcode $super+82 workspace prev
+bindsym $super+b workspace prev
+bindcode $alt+82 move container to workspace prev
+bindsym $alt+b move container to workspace prev
+
+## Workspaces for applications ##
+assign [class="Firefox"]  $WS2
+assign [class="utox"]     $WS3
+assign [class="Deadbeef"] $WS4
+assign [class="Netbeans"] $WS5
+assign [class="Gimp"]     $WS6
+assign [class="Pcmanfm"]  $WS7
+assign [class="Engrampa"] $WS7
+assign [class="Geeqie"]   $WS7
+assign [class="Deluge"]   $WS7
+
+
+##
+## Bar
+##
+
+bar {
+	strip_workspace_numbers	yes
+	font					pango:dejavu sans book 9
+	status_command			~/.config/i3/bar.sh
+	workspace_buttons 		yes
+	tray_output				none
+	separator_symbol		" " 
+	i3bar_command			/usr/bin/i3bar-icons
+ 
+	colors {
+		background	#1b1b1b
+		statusline	#999999
+
+#                           border  backgr  text
+		focused_workspace	#cccccc #444444 #cccccc
+		active_workspace	#cccccc #444444 #cccccc
+		inactive_workspace	#444444 #1b1b1b #cccccc
+		urgent_workspace	#cccccc #bf3939 #cccccc 
+	}
+}

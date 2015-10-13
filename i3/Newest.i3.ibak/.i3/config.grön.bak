@@ -1,0 +1,262 @@
+# i3 config file (v4)
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+#
+# This config file uses keycodes (bindsym) and was written for the QWERTY
+# layout.
+#
+# To get a config file with the same key positions, but for your current
+# layout, use the i3-config-wizard
+
+# font
+#.......
+
+font xft:Liberation Sans 8
+
+#..........
+# windows
+#..........
+floating_minimum_size 750 x 50 
+new_window pixel 1 
+new_float pixel 3 
+# colors
+#..........
+# color variables
+set $gray1 #3D756F
+set $gray2 #224440
+set $white #FFFFFF
+set $gray3 #222222
+set $gray4 #5f676a
+set $green1 #01080A
+set $green2 #4EFFEC
+#class                        border   backgr.  text indicator
+ client.focused              $gray1  $gray1 $white #333333
+ client.focused_inactive     $gray2  $gray2  $white #000000
+client.unfocused             $gray2  $gray2  $white #000000
+client.urgent                #101010 #999999 #2e3436
+#class                  border   backgr.  text
+#client.focused          #0D0D0D #1F1F1F #CCCCCC
+#client.focused_inactive #000000 #000000 #4D4D4D
+#client.unfocused        #191919 #151515 #999999
+#client.urgent           #cd989a #cd989a #2e3436
+#client.background       #151515 #000000 #2e3436
+
+#font pango:GohuFont 8
+
+# movement bindings
+set $up k 
+set $down j
+set $left h 
+set $right l
+
+# use Mouse+Mod1 to drag floating windows to their wanted position
+floating_modifier Mod1
+
+# start a terminal
+bindsym Mod1+Return exec urxvtc
+
+# kill focused window
+bindsym Ctrl+w kill
+
+# start dmenu (a program launcher)
+bindsym Mod1+F2 exec dmenu_run
+# There also is the (new) i3-dmenu-desktop which only displays applications
+# shipping a .desktop file. It is a wrapper around dmenu, so you need that
+# installed.
+# bindsym Mod1+d exec --no-startup-id i3-dmenu-desktop
+
+# change focus
+bindsym Mod1+$left focus left
+bindsym Mod1+$down focus down
+bindsym Mod1+$up focus up
+bindsym Mod1+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym Mod1+Left focus left
+bindsym Mod1+Down focus down
+bindsym Mod1+Up focus up
+bindsym Mod1+Right focus right
+
+# move focused window
+bindsym Mod1+Shift+$left move left
+bindsym Mod1+Shift+$down move down
+bindsym Mod1+Shift+$up move up
+bindsym Mod1+Shift+$right move right
+
+# alternatively, you can use the cursor keys:
+bindsym Mod1+Shift+Left move left
+bindsym Mod1+Shift+Down move down
+bindsym Mod1+Shift+Up move up
+bindsym Mod1+Shift+Right move right
+
+# split in horizontal orientation
+bindsym Mod1+aring split h
+
+# split in vertical orientation
+bindsym Mod1+odiaeresis split v
+
+# enter fullscreen mode for the focused container
+bindsym Mod1+f fullscreen
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym Mod1+s layout stacking
+bindsym Mod1+w layout tabbed
+bindsym Mod1+e layout toggle split
+
+# toggle tiling / floating
+bindsym Mod1+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+
+# focus the parent container
+bindsym Mod4+a focus parent
+
+# dsiable mouse over
+focus_follows_mouse no
+# focus the child container
+bindsym Mod4+d focus child
+
+# move the currently focused window to the scratchpad
+bindsym Mod1+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym Mod1+minus scratchpad show
+# workspace key bindings and variables
+
+ # switch to workspace
+bindsym Mod1+1 workspace 1: Term
+bindsym Mod1+2 workspace 2: Ranger/NCMPCPP
+bindsym Mod1+3 workspace 3: Browser
+bindsym Mod1+4 workspace 4: Vim/VLC
+bindsym Mod1+d workspace next
+bindsym Mod1+a workspace prev
+
+#bindsym Mod1+x move workspace to output right
+# move focused container to workspace
+bindsym Mod1+Shift+1 move container to workspace 1: Term 
+bindsym Mod1+Shift+2 move container to workspace 2: Ranger/NCMPCPP 
+bindsym Mod1+Shift+3 move container to workspace 3: Browser 
+bindsym Mod1+Shift+4 move container to workspace 4: Vim/VLC 
+bindsym Mod1+Shift+a move window to workspace prev
+bindsym Mod1+Shift+d move window to workspace next 
+
+# ASSIGN WORKSPACE VARIABLES
+set $WS1 1: Term 
+set $WS2 2: Ranger/NCMPCPP
+set $WS3 3: Browser
+set $WS4 4: Vim/VLC
+
+# reload the configuration file
+bindsym Mod1+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym Mod1+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s heighte
+        bindsym $left       resize shrink width 10 px or 10 ppt
+        bindsym $down       resize grow height 10 px or 10 ppt
+        bindsym $up         resize shrink height 10 px or 10 ppt
+        bindsym $right      resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left        resize shrink width 10 px or 10 ppt
+        bindsym Down        resize grow height 10 px or 10 ppt
+        bindsym Up          resize shrink height 10 px or 10 ppt
+        bindsym Right       resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym Mod1+r mode "resize"
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+	mode dock
+	position top	
+    
+ font xft:Terminus-l2 7 
+   workspace_buttons yes
+  
+   status_command ~/.i3/conky.sh -w 1100 -h 13 -x 333
+
+   colors {
+       background       $green1	
+       statusline       #404040
+ 
+    # Class colors         border   BACKGR   TEXT   
+     
+      
+       focused_workspace  $green1 $green1  $green2
+       active_workspace   $green1  $green1 $gray2 
+       inactive_workspace $green1 $green1  $gray2
+       urgent_workspace   $green1 $green1
+	}
+}
+
+#ADDIDTIONAL BINDINGS
+
+ # Assign applications to workspaces
+
+assign [class="URxvt" instance="ranger"] → $WS2
+assign [class="^URxvt$" instance="^ncmpcpp$"] → $WS2
+assign [class="feh"] → $WS2
+assign [class="Iceweasel"] → $WS3 
+assign [class="mplayer"] → $WS4
+for_window [class="feh"] floating enable
+
+for_window [class="alsa-tray"] floating enable
+for_window [title="Library"] floating enable
+for_window [class="mplayer"] floating enable
+floating_minimum_size 510x120
+for_window [class="YADWIN"] border none
+ # Program execuion key bindings
+
+bindsym KP_Add exec ssh slacktop 'amixer -q sset Master 3%+'
+bindsym KP_Subtract exec ssh slacktop 'amixer -q sset Master 3%-'
+bindsym XF86AudioMute exec ssh slacktop 'amixer -q sset Master toggle'
+bindsym XF86AudioStop exec mpc stop
+bindsym KP_8 exec mpc -h 192.168.1.2 -p 1337 play
+bindsym KP_Prior exec mpc -h 192.168.1.2 -p 1337 next
+bindsym KP_Home exec mpc -h 192.168.1.2 -p 1337  prev
+bindsym KP_Enter exec mpc -h 192.168.1.2 -p 1337  pause
+bindsym KP_0 exec mpc ls | mpc add
+bindsym Mod4+q exec /home/jwflol/rannger
+bindsym Mod4+w exec /home/jwflol/icewe
+bindsym Mod4+n exec urxvtc -name ncmpcpp -e ncmpcpp 
+
+# Startup 
+ 
+ 
+# Layout
+
+exec i3-msg "workspace 2: Ranger/NCMPCPP; append_layout /home/jwflol/.i3/ws_2.json; exec urxvtc -name topleft -e ranger; exec urxvtc -name topright; exec urxvtc -name bottomleft -e ncmpcpp; exec urxvtc -name stack1"
+ 
+# Execution
+
+exec compton --config /home/jwflol/compton.conf -backend glx --vsync opengl
+exec nitrogen --restore
+exec urxvtd -q -o -f
+exec mkfontdir /usr/share/fonts
+exec mkfontscale /usr/share/fonts
+exec xset +fp /usr/share/fonts
+exec setxkbmap -option terminate:ctrl_alt_bksp
+exec alsa-tray
+exec nm-applet
+#exec /home/jwflol/icewe
+
+# Execution of layout assigned windows
+
+exec 'urxvtc -name bottomleft -e ncmpcpp'
+exec 'urxvtc -name stack1'

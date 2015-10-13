@@ -1,0 +1,24 @@
+[general]
+version=        0.1-rc1
+verbose=        flase
+default_action= shutdown
+composite=      true
+theme=          foom
+buttons=        cancel lock logout suspend shutdown restart
+images=         true
+relief=         false
+ 
+[actions]
+restart=        systemctl reboot
+shutdown=       systemctl poweroff
+logout=         /home/kalterfive/bin/exit
+lock=           /home/kalterfive/bin/lock
+suspend=        /home/kalterfive/bin/suspend
+ 
+[labels]
+cancel=   CANCEL
+logout=   EXIT
+restart=  REBOOT
+shutdown= SHUTDOWN
+lock=     LOCK
+suspend=  SUSPEND

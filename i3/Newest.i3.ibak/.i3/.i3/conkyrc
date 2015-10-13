@@ -1,0 +1,36 @@
+out_to_x no
+own_window no
+out_to_console yes
+background no
+max_text_width 0
+# Update interval in seconds
+update_interval 2.0
+total_run_times 0
+short_units yes
+pad_percents 3
+override_utf8_locale yes
+#mpd
+mpd_host 192.168.1.2
+mpd_port 1337
+#| SF: ${tztime US/Pacific %H:%M} | Free: $memfree | ${exec /home/jwfl/bin/pacvol.sh display} | $downspeed $upspeed | ${smapi_bat_perc 0}% ${smapi_bat_power 0} | CPU $cpu% [ ${cpu cpu1}.${cpu cpu2}.${cpu cpu3}.${cpu cpu4} ] | ${time %a %d %b | %H:%M} |
+TEXT
+
+[
+{ "full_text" : "MPD " , "color" : "\#7b8748F","separator":false } ,
+ { "full_text" : " ${if_mpd_playing}${mpd_smart 50} ${mpd_elapsed}/${mpd_length}${else}${mpd_status}${endif} ","separator":false } ,  
+ { "full_text" :  "HD " , "color" : "\#7b8748F","separator":false } ,
+ { "full_text" : "home: ", "color" : "\#2d2d2d","separator":false } ,
+{ "full_text" : "${fs_free /home}/${fs_size /home}","separator":false } , 
+{ "full_text" : "root:"  ,"color": "\#2d2d2d","separator":false } , 
+{ "full_text" :  "${fs_free /}/${fs_size /}","separator":false} , 
+ { "full_text" : " Ram" , "color" : "\#7b8748F","separator":false } ,
+ { "full_text" : " ${mem}","separator":false},
+ { "full_text" : " Wifi " , "color" : "\#7b8748F","separator":false} ,
+ { "full_text" : " ${wireless_essid enp2s0}" , "color" : "\#2d2d2d","separator":false } ,
+{ "full_text" : " Up: ${upspeed enp2s0} Down: ${downspeed enp2s0}","separator":false  } ,
+ { "full_text" : " Bat" , "color" : "\#7b8748F","separator":false  } ,
+ { "full_text" : " ${battery BAT0} " , "color" : 
+  ${if_match ${battery_percent BAT0}<20}"\#b95670"${else}"\#404040"${endif} ,"separator":false } ,
+ {"full_text": "${time %a %d %b} ", "name":"date"},
+ {"full_text": "${time %H:%M} "}
+]  ,

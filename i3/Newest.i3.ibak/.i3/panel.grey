@@ -1,0 +1,21 @@
+        mode dock
+        position top    
+    
+ font xft:nu 8
+   workspace_buttons yes 
+   status_command ~/.i3/conky.sh -w 1100 -h 13 -x 333 
+   colors {
+       background       #101010
+       statusline       #404040
+ 
+    # Class colors         border   BACKGR   TEXT   
+    
+    
+       focused_workspace  #101010 #1C1D1D #FFFFFF
+       active_workspace   #5f5f5f  #101010  #101010
+       inactive_workspace #101010  #101010  #2d2d2d
+       urgent_workspace   #101010  #999999
+        }   
+}
+
+

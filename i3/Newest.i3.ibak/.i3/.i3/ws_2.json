@@ -1,0 +1,111 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 316,
+               "width": 644,
+               "x": 0,
+               "y": 0
+            },
+            "name": "ranger",
+            "percent": 0.5,
+            "swallows": [
+               {
+              "class": "^URxvt$",
+              "instance": "^topleft$",
+              "title": "^ranger$",
+              "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 316,
+               "width": 644,
+               "x": 0,
+               "y": 0
+            },
+            "name": "^bottomleft$",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+             "instance": "^bottomleft$",
+              "title": "^ncmpcpp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // stacked split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "stacked",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 316,
+               "width": 644,
+               "x": 0,
+               "y": 0
+            },
+            "name": "topright",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^topright$",
+               "title": "^topright$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 316,
+               "width": 644,
+               "x": 0,
+               "y": 0
+            },
+            "name": "stack1",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^stack1$",
+               "title": "^stack1$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
