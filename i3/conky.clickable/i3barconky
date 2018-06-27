@@ -15,7 +15,7 @@ while read;do
     \"updates\")
       yad --button gtk-apply:0 --text-info --geometry=200x200+$X+20 --class "YADWIN" --margins=10 --filename=<(pacman -Sup --print-format="%n %v" | grep -v "^::")
       if [[ $? -eq 0 ]];then
-        xfce4-terminal -H --command "/home/jwflol/.i3/conkexec.sh sudo pacmatic -Syu" -T "Menu Update"
+        xfce4-terminal -H --command "/home/illustratum/.i3/conkexec.sh sudo pacmatic -Syu" -T "Menu Update"
       fi
       ;;
     \"date\")
@@ -25,18 +25,18 @@ while read;do
       yad --no-buttons --text-info --geometry=500x260+$X+20 --class "YADWIN" --margins=10 --filename=<(acpi -V)
       ;;
     \"bright\")
-      LEVEL=`/home/jwflol/.i3/blevel.sh`
+      LEVEL=`/home/illustratum/.i3/blevel.sh`
       OUT=`yad --text="Brightness" --scale --value $LEVEL --button gtk-ok:0 --geometry=x200+$X+20 --class "YADWIN" --vertical --text-align center`
       if [[ $? -eq 0 ]];then
-        Q=`/home/jwflol/.i3/conkexec.sh sudo light $OUT`
+        Q=`/home/illustratum/.i3/conkexec.sh sudo light $OUT`
       fi
       ;;
     \"volume\")
-      VOL=`/home/jwflol/.i3/pacvol.sh display | sed "s/[^1-9]//" | sed "s/%//"`
+      VOL=`/home/illustratum/.i3/pacvol.sh display | sed "s/[^1-9]//" | sed "s/%//"`
       OUT=`yad --text="Volume" --scale --value $VOL --button gtk-ok:0 --geometry=x200+$X+20 --class "YADWIN" --vertical --text-align center`
       if [[ $? -eq 0 ]];then
         TARGET="$((655*$OUT))"
-        /home/jwflol/.i3/conkexec.sh pacmd set-sink-volume 0 $TARGET
+        /home/illustratum/.i3/conkexec.sh pacmd set-sink-volume 0 $TARGET
       fi
       ;;
     *)

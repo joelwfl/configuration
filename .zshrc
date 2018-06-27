@@ -1,3 +1,21 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.zshistory
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory autocd extendedglob nomatch notify
+unsetopt beep
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/illustratum/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+
+
+
 cb() {
   local _scs_col="\e[0;32m"; local _wrn_col='\e[1;31m'; local _trn_col='\e[0;33m'
   # Check that xclip is installed.
@@ -37,10 +55,16 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory autocd extendedglob nomatch
-source /usr/share/zsh/plugins/antigen/antigen.zsh
-antigen bundle zsh-users/zsh-history-substring-search
+unsetopt beep
+#source /usr/share/zsh/plugins/antigen/antigen.zsh
+#§antigen bundle zsh-users/zsh-history-substring-search
+for r in $HOME/etc/zsh/*.zsh; do
+  if [[ $DEBUG > 0 ]]; then
+    echo "zsh: sourcing $r"
+  fi
+  source $r
+done
 antigen apply
-bindkey -e
 export PAGER="less"
 setopt LOCAL_OPTIONS # allow functions to have local options
 setopt LOCAL_TRAPS # allow functions to have local traps
@@ -51,10 +75,7 @@ setopt PROMPT_SUBST
 setopt CORRECT
 setopt COMPLETE_IN_WORD
 setopt IGNORE_EOF
-setopt NO_BEEP
-alias ls="ls -tr --color=auto"
-alias server="systemctl"
-alias ...='cd ../..'
+alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias clipclip="xclip -o"
 if [ -x /usr/bin/dircolors ]; then
@@ -68,8 +89,6 @@ zstyle ':completion:*:*:*:*:hosts' list-colors '=*=30;41'
 zstyle ':completion:*:*:*:*:users' list-colors '=*=$color[green]=$color[red]'
 zstyle ':completion:*' menu select
 
-auto-ls () { ls; }
-chpwd_functions=( auto-ls $chpwd_functions )
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
@@ -85,34 +104,15 @@ setopt \
   extendedglob \
   no_beep \
   inc_append_history
-
-for r in $HOME/etc/zsh2/*.zsh; do
-  if [[ $DEBUG > 0 ]]; then
-    echo "zsh: sourcing $r"
-  fi
-  source $r
-done
+ 
 zmodload zsh/terminfo
-export MPD_HOST=192.168.1.2
-export MPD_PORT=1337
+fpath=(/home/illustratum/zsh-users/zsh-completions/src $fpath)
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
 
 
-alias android-connect='mtpfs -o allow_other /media/LG'
-alias android-disconnect='fusermount -u /media/LG'
 bindkey -v
 bindkey -a 'gg' beginning-of-buffer-or-history
 bindkey -a 'g~' vi-oper-swap-case
 bindkey -a G end-of-buffer-or-history
-logfile ()   {
-      sudo journalctl _SYSTEMD_UNIT=$@
-}
-alias $WS2='ranger'
-fpath=(/home/jwflol/zsh-users/zsh-completions/src $fpath)
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
-alias colors="bash /home/joel/colorscripts/ett"
 
-if [ -z "$SSH_AUTH_SOCK" ] ; then
-  eval `ssh-agent -s`
-  ssh-add
-fi

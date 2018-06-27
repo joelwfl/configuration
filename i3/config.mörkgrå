@@ -216,9 +216,9 @@ floating_minimum_size 510x120
 # program execuion key bindings
 
  
-bindsym Mod4+q exec /home/jwflol/rannger
-bindsym Mod4+w exec /home/jwflol/icewe
-bindsym Mod4+n exec /home/jwflol/ncmpp
+bindsym Mod4+q exec /home/illustratum/rannger
+bindsym Mod4+w exec /home/illustratum/icewe
+bindsym Mod4+n exec /home/illustratum/ncmpp
 
 exec compton -backend glx --vsync opengl
 exec urxvtd -q -o -f
@@ -228,6 +228,6 @@ exec xset +fp /usr/share/fonts
 exec setxkbmap -option terminate:ctrl_alt_bksp
 exec alsa-tray
 exec nm-applet
-exec /home/jwflol/rannger
-exec /home/jwflol/icewe
-exec /home/jwflol/ncmpcpp
+exec /home/illustratum/rannger
+exec /home/illustratum/icewe
+exec /home/illustratum/ncmpcpp

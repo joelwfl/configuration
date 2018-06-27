@@ -230,8 +230,8 @@ bindsym KP_Prior exec mpc -h 192.168.1.2 -p 1337 next
 bindsym KP_Home exec mpc -h 192.168.1.2 -p 1337  prev
 bindsym KP_Enter exec mpc -h 192.168.1.2 -p 1337  pause
 bindsym KP_0 exec mpc ls | mpc add
-bindsym Mod4+q exec /home/jwflol/rannger
-bindsym Mod4+w exec /home/jwflol/icewe
+bindsym Mod4+q exec /home/illustratum/rannger
+bindsym Mod4+w exec /home/illustratum/icewe
 bindsym Mod4+n exec urxvtc -name ncmpcpp -e ncmpcpp 
 
 # Startup 
@@ -239,11 +239,11 @@ bindsym Mod4+n exec urxvtc -name ncmpcpp -e ncmpcpp
  
 # Layout
 
-exec i3-msg "workspace 2: Ranger/NCMPCPP; append_layout /home/jwflol/.i3/ws_2.json; exec urxvtc -name topleft -e ranger; exec urxvtc -name topright; exec urxvtc -name bottomleft -e ncmpcpp; exec urxvtc -name stack1"
+exec i3-msg "workspace 2: Ranger/NCMPCPP; append_layout /home/illustratum/.i3/ws_2.json; exec urxvtc -name topleft -e ranger; exec urxvtc -name topright; exec urxvtc -name bottomleft -e ncmpcpp; exec urxvtc -name stack1"
  
 # Execution
 
-exec compton --config /home/jwflol/compton.conf -backend glx --vsync opengl
+exec compton --config /home/illustratum/compton.conf -backend glx --vsync opengl
 exec nitrogen --restore
 exec urxvtd -q -o -f
 exec mkfontdir /usr/share/fonts
@@ -252,7 +252,7 @@ exec xset +fp /usr/share/fonts
 exec setxkbmap -option terminate:ctrl_alt_bksp
 exec alsa-tray
 exec nm-applet
-#exec /home/jwflol/icewe
+#exec /home/illustratum/icewe
 
 # Execution of layout assigned windows
 

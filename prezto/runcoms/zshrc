@@ -1,0 +1,31 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
+HSTFILE=~/.zshistory
+
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory autocd extendedglob nomatch notify
+unsetopt beep
+
+bindkey -v
+autoload -Uz compinit
+
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-colors 'reply=( "=(#b)(*$VAR)(?)*=00=$color[green]=$color[bg-green]" )'
+zstyle ':completion:*:*:*:*:hosts' list-colors '=*=30;41'
+zstyle ':completion:*:*:*:*:users' list-colors '=*=$color[green]=$color[red]'
+zstyle ':completion:*' menu select
+
+compinit
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...

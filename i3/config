@@ -256,13 +256,13 @@ bindsym Mod4+b exec /home/joel/icewe.sh
 
 # Layout
 
-exec i3-msg "workspace 2: Ranger/NCMPCPP; append_layout /home/jwflolol/.i3/ws_2.json; exec urxvtc -name topleft -e ranger; exec urxvtc -name topright; exec urxvtc -name bottomleft -e ncmpcpp -h 192.168.1.2 -p 1337; exec urxvtc -name stack1"
+exec i3-msg "workspace 2: Ranger/NCMPCPP; append_layout /home/illustratumol/.i3/ws_2.json; exec urxvtc -name topleft -e ranger; exec urxvtc -name topright; exec urxvtc -name bottomleft -e ncmpcpp -h 192.168.1.2 -p 1337; exec urxvtc -name stack1"
 
 # Execution
 
 exec compton
 
-#exec compton --config /home/jwflol/compton.conf -backend glx --vsync opengl
+#exec compton --config /home/illustratum/compton.conf -backend glx --vsync opengl
 exec pnmixer
 exec nitrogen --restore
 exec urxvtd -q -o -f
@@ -273,7 +273,7 @@ exec xset +fp /usr/share/fonts
 exec wicd-client
 exec setxkbmap -option terminate:ctrl_alt_bksp
 #exec setxkbmap se
-#exec /home/jwflol/icewe
+#exec /home/illustratum/icewe
 exec dropbox
 exec keepass
 exec parcellite

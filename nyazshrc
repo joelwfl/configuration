@@ -73,7 +73,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'l:|=* r:|=*'
-zstyle :compinstall filename '/home/jwflol/.zshrc'
+zstyle :compinstall filename '/home/illustratum/.zshrc'
 
 setopt \
   autocd \
@@ -89,7 +89,7 @@ for r in $HOME/etc/zsh2/*.zsh; do
   source $r
 done
 zmodload zsh/terminfo
-fpath=(/home/jwflol/zsh-users/zsh-completions/src $fpath)
+fpath=(/home/illustratum/zsh-users/zsh-completions/src $fpath)
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 export MPD_HOST=192.168.1.2

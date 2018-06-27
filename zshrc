@@ -74,7 +74,7 @@ for r in $HOME/etc/zsh2/*.zsh; do
 done
 zmodload zsh/terminfo
 source  zsh-history-substring-search/zsh-history-substring-search.zsh
-fpath=(/home/jwflol/zsh-users/zsh-completions/src $fpath)
+fpath=(/home/illustratum/zsh-users/zsh-completions/src $fpath)
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 export MPD_HOST=192.168.1.2
